@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Portfolio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="#">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="#">Contact</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Tutorfair
+                    <small>Targeting marketing and recruitment</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-7">  
+                 <p>I worked with <i>Tutorfair</i>, an online tutor marketplace, to use their data to more precisely direct their marketing and recruitment campaigns.</p>
+                 <img class="img-responsive" src="images1/trans_map.png" alt="Example data on london map">
+                 <p><i>An example of the visualisation of geographic data.  The shapes are the London postcode regions.</i></p>
+                 <h1>Customer</h1>
+                 <p><i>Tutorfair</i> is a London-based startup providing an online marketplace for tutors, currently growing rapidly.  It helps children succeed by making it easy to find the best tutors, and for every student who pays, they give free tutoring to a child who can't.
+
+As a recent, technology-centred startup <i>Tutorfair</i> has a large, quite comprehensive and complete transactions and tutors databases.  They also have quite exhaustive records of their traffic website, collected using <i>Google Analytics</i>.   They market using <i>Google Ads</i>, making bids for appropriate key word searches.</p>
+                 <h1>Challenge</h1>
+                 <p><i>Tutorfair</i> was going to substantially increase the amount they were bidding for <i>Google Ads</i>.  In advance of this increased spending, they wanted to more accurately target their marketing efforts to specific regions, to more successfully link tutors with children.  <i>Tutorfair</i> also wanted to target their recruitment to areas where they already had a large demand for tutoring but weaker coverage of tutors.</p>
+                <h1>Solution</h1>
+                <p>To target marketing, the regions with high tutor coverage were prioritised; these are specific areas of London where lots of tutors would travel to.  The regions with high sales were also prioritised – the <i>Tutorfair</i> infrastructure was well established in those regions, and would support an increase in demand.  We also looked for regions where tutors would visit for tutoring, but didn't have many sales, as additional targets for increased marketing.</p>
+                <p>To find the tutor coverage, I calculated how far each tutor had travelled, and used this to estimate where in London they'd be willing to go.  This combined where the tutor is based, from the tutor database, combined with where the tutor has tutored, using the sales database.</p>    
+                <p>I found the regions where <i>Tutorfair</i> has successfully sold using the sales database, and finally, using the <i>Google Analytics</i> information I found the regions where more people where searching for tutoring.</p>
+                <p>This geographical information was presented on maps of London, along with more standard regression analyses.  We also repeated this analysis for subject tutored, and subject level tutored, though the subjects tutored were, in general, the subjects in demand.</p>
+                <h1>Results</h1>
+                <p>This lead to some clear recommendations – marketing should be directed to these regions where their tutor coverage is high, and recruitment should be directed where searches are high but coverage and sales are low.  Using these results, <i>Tutorfair</i> directed their marketing efforts towards the recommended regions, increasing the <i>Google Ads</i> bidding.</p>
+                <p>They also took the analysis and plotting code and, as they were all automated, implemented this code as part of their monthly reporting.</p>
+            </div>
+        </div>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Chris J Davie</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
