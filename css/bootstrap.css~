@@ -75,7 +75,7 @@ sub,
 sup {
   position: relative;
   font-size: 75%;
-  line-height: 0;
+  line-height: 0;'Myriad Pro'
   vertical-align: baseline;
 }
 sup {
@@ -264,6 +264,7 @@ th {
     border: 1px solid #ddd !important;
   }
 }
+
 @font-face {
   font-family: 'Glyphicons Halflings';
 
@@ -277,7 +278,7 @@ th {
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.5;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
