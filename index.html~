@@ -90,7 +90,7 @@
 
 <p>My skills include statistical data analysis, MySQL, Google Analytics, web scraping and C++.  I have experience of algorithm development from my Physics background, I am currently improving my machine learning and d3 skills.</p>
 
-<p>My most recent major project was working with <i>Tutorfair</i>, <a href="Tutorfair.html">using data to drive their marketing and recruitment decisions</a>.  Below is an example of one of these visualisations (with random numbers instead of their data).</p>
+<p>My most recent major project was working with <i>Tutorfair</i>, <a href="Tutorfair.html">using data to drive their marketing and recruitment decisions</a>.  Below is an example of one of the visualisations (with random numbers instead of their data).</p>
 
 <a href="Tutorfair.html">
     <img class="img-responsive" src="images1/trans_map.png" alt="">
