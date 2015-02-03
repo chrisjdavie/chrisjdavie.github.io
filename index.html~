@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <!--<li>-->
                     <!--    <a href="#">Services</a>-->
@@ -124,14 +124,14 @@
                 <h3>
                     <a href="RTI.html">Rayleigh Taylor Instability</a>
                 </h3>
-                <p>We're building a platform to examine the physics behind the most damaging phenomena in laser fusion.</p>
+                <p>I'm building a platform to examine the physics behind the most damaging phenomena in laser fusion.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
+                <a href="spherical_collapse.html">
                     <img class="img-responsive" src="images/comp.png" alt="" vspace="22">
                 </a>
                 <h3>
-                    <a href="#">Spherical collapse</a>
+                    <a href="spherical_collapse.html">Spherical collapse</a>
                 </h3>
                 <p>Examining the physics behind a new scheme for laser fusion.</p>
             </div>
@@ -140,65 +140,65 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                <a href="shares/sentiment.html">
+                    <img class="img-responsive" src="shares/images/good_case.svg" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="shares/sentiment.html">Sentiment analysis on news</a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p>Looking at how well machine learning can assess the sentiment of news articles.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                <a href="shares/tips.html">
+                    <img class="img-responsive" src="shares/images/end_of_day.svg" alt="" vspace="46">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="shares/tips.html">Stock tips vs. trackers</a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p>I compare stock tips from the Telegraph to the FTSE 100.</p>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
+<!--            <div class="col-md-4 portfolio-item">-->
+<!--                <a href="#">-->
+<!--                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">-->
+<!--                </a>-->
+<!--                <h3>-->
+<!--                    <a href="#">Project Name</a>-->
+<!--                </h3>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>-->
+<!--            </div>-->
         </div>
         <!-- /.row -->
 
-        <hr>
+<!--        <hr>-->
 
         <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!--        <div class="row text-center">-->
+<!--            <div class="col-lg-12">-->
+<!--                <ul class="pagination">-->
+<!--                    <li>-->
+<!--                        <a href="#">&laquo;</a>-->
+<!--                    </li>-->
+<!--                    <li class="active">-->
+<!--                        <a href="#">1</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">2</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">3</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">4</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">5</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#">&raquo;</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
         <!-- /.row -->
 
         <hr>

@@ -3,6 +3,10 @@
 /*    max-width: 640px;*/
 /*}*/
 
+.style-svg {
+  width: 96%; 
+}
+
 .col-lg-7{
     max-width: 640px;
     width: 100%;
