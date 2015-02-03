@@ -70,9 +70,9 @@
 
         <!-- Page Header -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Rayleigh-Taylor Instability
-                    <small>Examining the physics behind the most damaging phenomena in laser fusion</small>
+            <div class="col-md-12">
+                <h1 class="page-header">Chris Davie
+                    <small>Data Scientist - I solve business problems with data.</small>
                 </h1>
             </div>
         </div>
@@ -80,19 +80,24 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-lg-7">  
-                 <p>The <a href="http://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability">Rayleigh-Taylor instability</a> (RTI) is believed to be the culprit for the failure of current <a href="http://en.wikipedia.org/wiki/Inertial_confinement_fusion">laser fusion</a> experiments - it rips the fuel apart before it can burn.   I'm designing a 3D simulation to understand how it differs from 2D.</p>
-                 <p><i>Skills employed:  Hydrodynamics, convolution smoothing, time series analysis, mathematics, large dataset analysis, Linux, parallel computing, C++, Python, Cython, Matplotlib, NumPy SciPy.</i></p>   
-                 <div class="videoWrapper">
-                    <iframe width=605 height=537 src="https://www.youtube.com/embed/NU3zwcj_fJc"></iframe>
-                 </div>
-                 <p>This is a video of the simplest form of RTI – a heavy fluid buoyant above a lighter one.  After around t~2.5 the simulation exhibits inaccuracies due to the finite spacing of the rectangular grid.  It was challenging reduce it to even this level – while it’s likely I could do better, this was stable enough for long enough to show the behaviour we are interested in, so I didn’t improve it.</p>
-                <p>To examine RTI  I’m constructing a baseline models to work from;  planar geometry is the simplest case that replicates an analytic solution.  I reproduce this solution within the regime of interest, the video above shows one of the final production simulations.  The image below compares the simulation growth to the theory, that of Kull.</p>
-                <img class="style-svg" src="http://www.chrisjdavie.co.uk/wp-content/uploads/2014/09/a_v_t_athena_v_Kull_wavl_0.svg" alt="RTI growth, simulation compared to analytics."/>
-                <p>Each blue circle represents the position of the blue line in the video above.  After about t&gt;2.5, the simulation diverges from the analytic results - this is due to the inaccuracies from the grid.  The theory is not complete, it would have diverged from the simulation eventually (if I'd got the simulation behaving perfectly), but this shows at least I'm matching the test analytics.</p>
-                <p>We are now extending this to spherical geometry and have reconstruct an analytic solution, as the first stage for examining IFE-relevant physics.</p>
-                <iframe width="605" height="454" src="https://www.youtube.com/embed/W_zIGHNh_y4" frameborder="0" allowfullscreen></iframe>
-                <p>This is a video of the Kidder solution for compression of material.  The analytic RTI growth rate uses the Kidder solution, a spherical compression that involves no heating of the material.   As the first stage of this 3D simulation of spherical RTI, I recreate the Kidder solution (this example is symmetric 2D).</p>
+            <div class="col-md-6">  
+<p>I'm a data science consultant, and I enjoy using data to solve business problems and help businesses make better decisions. I have 4 years Python experience and have consulting experience, providing data analysis and visualisations.  I have a PhD in Computational Physics from Imperial College London, have published academic papers and given presentations at international conferences.</p>
+
+<p>Have a look at <a href="portfolio.html">my project portfolio</a>.</p>
+
+<p>I help businesses understand their data; I typically extract and clean data, analyse it and visualise the results.  I can also provide code to allow automation, and then I build presentations and write reports.</p>
+
+<p>My skills include statistical data analysis, MySQL, Google Analytics, web scraping and C++.  I have experience of algorithm development from my Physics background, I am currently improving my machine learning and d3 skills.</p>
+
+<p>My most recent major project was working with <i>Tutorfair</i>, <a href="Tutorfair.html">using data to drive their marketing and recruitment decisions</a>.</p>
+
+<a href="Tutorfair.html">
+    <img class="img-responsive" src="images1/trans_map.png" alt="">
+</a>
+
+            </div>
+            <div class="col-md-6">  
+                <img class="img-responsive" src="images/Chris.jpg" alt="">
             </div>
         </div>
     
@@ -102,7 +107,8 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Chris J Davie, 2015</p>
+                    <p>Copyright &copy; Chris J Davie</p>
+                    <p>So, there's something strange with something with this bootstraping.  The lhs only aligns properly if I have a full line of text in the "col-lg-12" section of my pages.  Which is what you're reading just at the moment.  This is of course undermining my confidence in the whole exercise, but ah well, what can you do...</p>
                 </div>
             </div>
             <!-- /.row -->
