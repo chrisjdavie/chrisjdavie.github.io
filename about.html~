@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="My about me page">
+    <meta name="author" content="Chris J. Davie">
     
     <title>About</title>
 
@@ -44,7 +44,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Portfolio</a>
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -113,7 +114,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Chris J Davie</p>
-                    <p>So, there's something strange with something with this bootstraping.  The lhs only aligns properly if I have a full line of text in the "col-lg-12" section of my pages.  Which is what you're reading just at the moment.  This is of course undermining my confidence in the whole exercise, but ah well, what can you do...</p>
+                    <p></p>
+                    
+<p><font color="white"><i>So, there's something strange with this bootstraping; the left hand side only aligns properly if the content of the page exceeds the length of the screen it's rendered in - I suspect it's to do with the reactive content, or some such.  And this is what you're reading just at the moment, on a standard HD screen at 100% zoom this should drop off the end.</p>
+
+<p>This is of course undermining my confidence in the whole exercise and it is a not-very-elegant hack, but ah well, what can you do... (well, apart from make the text white)</i></font></p>
+
                 </div>
             </div>
             <!-- /.row -->

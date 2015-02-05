@@ -8,9 +8,13 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/*.portfolio-item {*/
-/*    margin-bottom: 25px;*/
-/*}*/
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.img-responsive {
+  border-radius: 6px;
+}
 
 footer {
     margin: 50px 0;

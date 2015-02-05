@@ -12,6 +12,10 @@ body {
     margin-bottom: 25px;
 }
 
+.img-responsive {
+  border-radius: 6px;
+}
+
 footer {
     margin: 50px 0;
 }

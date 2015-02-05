@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="My data science freelancer personal home page">
+    <meta name="author" content="Chris J. Davie">
     
-    <title>Rayleigh-Taylor instability</title>
+    <title>Chris Davie - Data Scientist</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -82,9 +82,14 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-6">  
-<p>I'm a data science consultant, and I enjoy using data to solve business problems and help businesses make better decisions. I have 4 years Python experience and have consulting experience, providing data analysis and visualisations.  I have a PhD in Computational Physics from Imperial College London, have published academic papers and given presentations at international conferences.</p>
+<p>I'm a data science freelancer and consultant, and I enjoy using data to solve business problems and help businesses make better decisions. I have 4 years Python experience and have consulting experience, providing data analysis and visualisations.  I have a PhD in Computational Physics from Imperial College London, have published academic papers and given presentations at international conferences.</p>
 
-<p>Have a look at <a href="portfolio.html">my project portfolio</a>.</p>
+<a class="btn" href="portfolio.html">
+    <button class="btn btn-primary" style="
+       margin-top: 15px;
+       margin-bottom: 15px;
+    ">View my portfolio</button>
+</a>
 
 <p>I help businesses understand their data; I typically extract and clean data, analyse it and visualise the results.  I can also provide code to allow automation, and then I build presentations and write reports.</p>
 
@@ -109,7 +114,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Chris J Davie</p>
-                    <p>So, there's something strange with something with this bootstraping.  The lhs only aligns properly if I have a full line of text in the "col-lg-12" section of my pages.  Which is what you're reading just at the moment.  This is of course undermining my confidence in the whole exercise, but ah well, what can you do...</p>
                 </div>
             </div>
             <!-- /.row -->
