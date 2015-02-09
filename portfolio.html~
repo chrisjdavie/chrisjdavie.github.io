@@ -100,7 +100,7 @@
                     <img class="img-responsive" src="globe/images/globe.png" alt="">
                 </a>
                 <h3>
-                    <a href="globe/">Globe visualisations</a>
+                    <a href="globe/">Choropleth globe visualisations</a>
                 </h3>
                 <p>An interactive globe visualisation would be awesome.  My boss agreed, as she is also awesome.  And so I'm making this.</p>
             </div>
@@ -152,7 +152,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="shares/tips.html">
-                    <img class="style-svg" src="shares/images/end_of_day.svg" style="margin-top: 37.5%;">
+                    <img class="style-svg" src="shares/images/end_of_day.svg" style="margin-top: 32.5%;">
                 </a>
                 <h3>
                     <a href="shares/tips.html">Stock tips vs. trackers</a>
