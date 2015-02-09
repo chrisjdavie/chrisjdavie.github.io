@@ -83,6 +83,8 @@
         <div class="row">
             <div class="col-lg-7">  
                  <p>Using high performance computing techniques, I examined physics underpinning laser fusion by simulating collapsing shocks through bounce and reflection at the origin.  This was as part of my academic research.</p>
+                  <p>I designed, implemented and interpreted these simulations, in C++ and Fortran, parallel on 100s of cores, adapting an external code.  I also designed and constructed parallel algorithms for data analysis, in compiled Python, processing data in parallel up to 100s Gbs/min.
+</p>  
                  <p>This campaign of simulations was successful, leading to publications, talks at international conferences and further contracts with the research group.</p>
                  <p><i>Skills employed:  Hydrodynamics, time series analysis, mathematics, large dataset analysis, Linux, parallel computing, C++, Python, Cython, Matplotlib, NumPy SciPy.</i></p>   
                  <div class="tallvideoWrapper">
@@ -90,8 +92,6 @@
                  </div>
                 <p>This video shows an example simulation output, the lower half showing the shock front and top half showing a cut through of the hydrodynamic data.</p>
                 <h1>Computing Summary</h1>
-                <p>I designed, implemented and interpreted these simulations, in C++ and Fortran, parallel on 100s of cores, adapting an external code.  I also designed and constructed parallel algorithms for data analysis, in compiled Python, processing data in parallel up to 100s Gbs/min.
-</p>
                 <p>The most resource intensive and difficult computation aspect was finding the shock front, with these difficulties compounded when transferring to 3D - the algorithm needed to explore 10s of gigabytes of data, output from the simulation a few times a minute.</p>
                 <p>I designed and implemented this algorithm for finding the shock front, and optimised the most resource intensive parts of the Python using a range of techniques, including exploiting natural symmetries in the geometry of the problem and the requirement that the shock front position was smoothly varying. I also used computational techniques, firstly rewriting the code in compiled Python (Cython), ensuring the code ran in stride and ensuring that the code could be simply vectorised by the compiler and libraries.</p>
                 <p>I finally wrote it in such a way that it could be run in parallel, and this parallelisation was effective on up to 15 nodes.</p>
