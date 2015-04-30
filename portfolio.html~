@@ -78,6 +78,15 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
+                <a href="lineuplab.html">
+                    <img class="style-svg" src="images/lineuplab.svg" alt="">
+                </a>
+                <h3>
+                    <a href="lineuplab.html">Lineuplab</a>
+                </h3>
+                <p>I worked with <i>lineuplab</i>, a fantasy sports website, to create a custom algorithm that underpins a new premium product range.</p>
+            </div>        
+            <div class="col-md-4 portfolio-item">
                 <a href="Cookit/">
                     <img class="img-responsive" src="Cookit/images/ConsGORHH-12dec13_regions_.png" alt="Portions of Fruit and veg consumed in specific UK regions.">
                 </a>
@@ -95,6 +104,12 @@
                 </h3>
                 <p>I worked with <i>Tutorfair</i> to use their data to more precisely direct their marketing and recruitment campaigns.</p>
             </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="globe/">
                     <img class="img-responsive" src="globe/images/globe.png" alt="">
@@ -103,12 +118,7 @@
                     <a href="globe/">Choropleth globe visualisations</a>
                 </h3>
                 <p>An interactive globe visualisation would be awesome.  My boss agreed, as she is also awesome.  And so I'm making this.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
+            </div>        
             <div class="col-md-4 portfolio-item">
                 <a href="Olympics_redo/">
                     <img class="img-responsive" src="Olympics_redo/images/score_vs_rank.png" alt="">
@@ -127,9 +137,14 @@
                 </h3>
                 <p>I'm building a platform to examine the physics behind the most damaging phenomena in laser fusion.</p>
             </div>
+
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="spherical_collapse.html">
-                    <img class="img-responsive" src="images/comp.png" alt="">
+                    <img class="img-responsive" src="images/comp.png" alt="" style="margin-top: 33%;">
 <!-- vspace="22">-->
                 </a>
                 <h3>
@@ -137,10 +152,7 @@
                 </h3>
                 <p>Examining the physics behind a new scheme for laser fusion.</p>
             </div>
-        </div>
-
-        <!-- Projects Row -->
-        <div class="row">
+            
             <div class="col-md-4 portfolio-item">
                 <a href="shares/sentiment.html">
                     <img class="img-responsive" src="shares/images/good_case.svg" alt="">
@@ -152,13 +164,13 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="shares/tips.html">
-                    <img class="style-svg" src="shares/images/end_of_day.svg" style="margin-top: 32.5%;">
+                    <img class="style-svg" src="shares/images/end_of_day.svg" style="margin-top: 33.25%;">
                 </a>
                 <h3>
                     <a href="shares/tips.html">Stock tips vs. trackers</a>
                 </h3>
                 <p>Performance of stock tips from the Telegraph compared to the FTSE 100.</p>
-            </div>
+            </div>            
 <!--            <div class="col-md-4 portfolio-item">-->
 <!--                <a href="#">-->
 <!--                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">-->
@@ -209,7 +221,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Chris J. Davie 2015</p>
+                    <p>Copyright &copy; Chris J. Davie, 2015</p>
                 </div>
             </div>
             <!-- /.row -->
