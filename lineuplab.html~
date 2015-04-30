@@ -87,7 +87,7 @@
                  <img class="style-svg" src="images/lineuplab.svg" alt="example of a player tree">
                  <p><i>An visualisation of a tree, the type of algorithm developed for lineuplab.  Here, each node is a better choice than the nodes behind.</i></p>
                  <h1>Customer</h1>
-                 <p><i>Lineuplab</i> is a website that helps fantasy sports players calculate their optimal fantasy teams for basketball and American football each day.  To win in fantasy sports, the user must build a team with the highest possible “points” after a series of games – for example, in football a player who scores more goals would gain more points.</p>
+                 <p><i>Lineuplab</i> is a website that helps fantasy sports players calculate their optimal fantasy teams for basketball and American football each day.  To win in fantasy sports the user must build a team with the highest possible “points” after a series of games – for example, in football a player who scores more goals would gain more points.</p>
 
 <p>Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance.  Each player also has a corresponding statistical projection of their success, from other sources. </p>  
 
