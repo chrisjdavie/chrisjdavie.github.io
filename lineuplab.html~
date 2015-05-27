@@ -9,7 +9,7 @@
     <meta name="description" content="Tutorfair - analysing and visualising internal company data">
     <meta name="author" content="Chris J. Davie">
     
-    <title>Lineuplab - algorithm development for a fantasy sports website</title>
+    <title>Lineup Lab - algorithm development for a fantasy sports website</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -46,6 +46,7 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,7 +73,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Lineuplab
+                <h1 class="page-header">Lineup Lab
                     <small>Algorithm development for fantasy sports</small>
                 </h1>
             </div>
@@ -82,18 +83,17 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-lg-7">  
-                 <p>I worked with <a href="http://www.lineuplab.com/"><i>lineuplab</i></a>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
+                 <p>I worked with <a href="http://www.lineuplab.com/"><i>Lineup Lab</i></a>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
                 <p><i>Skills employed:  Algorithm design, Mathematics, Python, (numpy, scipy), project design, Linux</i></p>
                  <img class="style-svg" src="images/lineuplab.svg" alt="example of a player tree">
-                 <p><i>A visualisation of a tree, the type of algorithm developed for lineuplab.  Here, each node is a better choice than the nodes behind.  The colour implies the depth of the tree from the trunk node.</i></p>
+                 <p><i>A visualisation of a tree, the type of algorithm developed for Lineup Lab.  Here, each node is a better choice than the nodes behind.  The colour shows the depth of the tree from the trunk node.</i></p>
                  <h1>Customer</h1>
-                 <p><i>Lineuplab</i> is a website that helps fantasy sports players calculate their optimal fantasy teams for basketball and American football each day.  To win in fantasy sports the user must build a team with the highest possible “points” after a series of games – for example, in football a player who scores more goals would gain more points.</p>
-
-<p>Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance.  Each player also has a corresponding statistical projection of their success, from other sources. </p>  
-
-<p>Using <i>lineuplab</i>, the user can find the best team for a given budget, using these statistical scorings.</p>
+                 <p><i>Lineup Lab</i> is a website that helps fantasy sports players calculate the players for their optimal fantasy teams for basketball and American football each day.<sup><a href="#fn1" id="ref1">1</a></sup></p>
+                 
+                 <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009.  Now, 6 years later, it is at least billion dollar market and looks set for continued rapid growth.</p>
+                 
                  <h1>Challenge</h1>
-                 <p>Lineuplab had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams from all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
+                 <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams from all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
 
 <p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p> 
 
@@ -103,11 +103,18 @@
 
 <p>The final algorithm was a tree-based algorithm, using two interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first.  This arrangement was also true of knapsacks and sub-combinations of knapsacks.</p>
                 <h1>Results</h1>
-                <p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for Lineuplab's use.  I provided an updated solution based on this new data, which consistently solved the problem in the required time.  After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
+                <p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for Lineup Lab's use.  I provided an updated solution based on this new data, which consistently solved the problem in the required time.  After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
 
 <p>The algorithm was then deployed to the live server as during the product release, underpinning all the solutions produced by the website, and has performed reliably ever since.</p>
 
-<p>We went on to work together on another set of sports and adding additional features to the algorithm.</p>
+<p>We went on to work together on another set of sports and adding additional features to the algorithm.</p><br>
+
+<sup id="fn1">1. To win in fantasy sports the user must build a team with the highest possible "points" after a series of games - for example, in football a player who scores more goals would gain more points.<br>
+
+Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance.  Each player also has a corresponding statistical projection of their success, from other sources.<br>
+
+Using <i>Lineup Lab</i>, the user can find the best team for a given budget, using these statistical scorings.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+
             </div>
         </div>
     

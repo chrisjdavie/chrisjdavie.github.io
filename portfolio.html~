@@ -42,6 +42,7 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,7 +85,7 @@
                 <h3>
                     <a href="lineuplab.html">Lineuplab</a>
                 </h3>
-                <p>I worked with <i>lineuplab</i>, a fantasy sports website, to create a custom algorithm that underpins a new premium product range.</p>
+                <p>I worked with <i>lineuplab</i>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
             </div>        
             <div class="col-md-4 portfolio-item">
                 <a href="Cookit/">
