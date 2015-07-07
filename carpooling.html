@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tutorfair - analysing and visualising internal company data">
+    <meta name="author" content="Chris J. Davie">
+    
+    <title>Carpooling algorithm - matching passengers and drivers</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    
+    <link href="css/style_not_gh_pages.css" rel="stylesheet">
+
+
+
+<!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a href="#">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a href="#">Contact</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Carpooling algorithm
+                    <small>Matching drivers and passengers.</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-7">  
+                 <p>Working with a Singaporean startup, I designed and prototyped an algorithm for carpooling, matching drivers and passengers.</p>
+                <p><i>Skills employed:  algorithm design, algorithm prototyping, report writing, GIS, Google Maps API, Python (numpy, scipy, matplotlib), project design, Linux</i></p>
+                 <img class="style-svg" src="images/coarse_map.svg" alt="consumer spending">
+                 <p><i>The initial coarse matching stage for the algorithm.  The red grid cells show the driver start and end points, the yellow cells show where he can likely pick people up for carpooling, overlaid onto a region of Singapore.</i></p>
+                 <h1>Customer</h1>
+                 <p>I worked with a new startup in Singapore, helping to build a website that sets up carpools, automatically matching drivers to passengers.  The market leader is a website with tens of thousands of users, but is simply a database which allows the users themselves to find a match.</p>  
+
+<p>This new website will allow users to input their start and end points and travel times, acceptable diversion times, and any other requirements, and have a list of the top suggestions for a match, for both drivers and passengers.</p>
+                 
+                 <h1>Challenge</h1>
+                 <p>The company required an algorithm that matched the drivers to the passengers.  The algorithm needed to match acceptable start times and positions with end times and positions, take into account travel times, acceptable diversion times and distances, include the capacity for multiple passengers, the requirements of passengers and drivers (such as smoking or not) and do this matching over the whole of Singapore.</p>
+
+<p>The algorithm needed to find multiple close matches within seconds, and be able to deal with tens of thousands of users, with up to many hundreds of users at once.</p> 
+
+                <h1>Solution</h1>
+<p>The algorithm was a two stage approach - an initial, coarse matching based on times and positions through a subdivision of the geographical areas of Singapore, and once a reasonable number of matches have been found, a more precise matching through the Google Maps API, confirming the validity of the coarse matches</p>
+
+<p>I provided design documentation for the algorithm, and prototype code.  I also am providing ongoing support for the implementation.</p>
+
+<p>The complexity of the problem was greatly reduced by combining two free-to-access standard methods - using the Google maps API for the route finding, and a standard MySQL database for storing the results.  There was no need for a full GIS (geographical information system) database as the complexity of the routes and mapping were handled by the Google API.  MySQL databases are very mature, well established and appropriate for this sort of data, and there are very standard methods for switching them with other, more parallel databases should the load become too high.</p>
+
+<p>This solution is reasonably scaleable - the Google Maps APIs have a free quota of several hundred thousand queries a day.</p>
+                <h1>Results</h1>
+                <p>The startup was pleased with the algorithm, and although the website isn’t completely built, we’re confident that the algorithm will work successfully.</p>
+
+<p>We are planning to work together on implementing new features to the website.</p><br>
+
+            </div>
+        </div>
+    
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Chris J Davie, 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -46,6 +46,7 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,7 +74,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-header">Chris Davie
-                    <small>Data Scientist - I solve business problems with data.</small>
+                    <small>Data science and algorithm design - I solve business problems with data.</small>
                 </h1>
             </div>
         </div>
@@ -83,7 +84,7 @@
         <div class="row">
             <div class="col-md-6">  
 
-<p>I'm a data science freelancer and consultant, and I enjoy using data to solve business problems and help businesses make better decisions; I typically gather and clean data, analyse it and create visualisations of the results.  I also provide code to allow automation, give presentations and write reports.</p>
+<p>I'm a data science and algorithm design freelancer and consultant, and I enjoy using data and computational mathematics to solve business problems, and to help businesses make better decisions.  On the data science side, I typically gather and clean data, analyse it and create visualisations of the results.  I also provide code to allow automation, give presentations and write reports.  With algorithm design, I research, design, prototype and implement algorithms for novel applications.</p>
 
 <a class="btn" href="portfolio.html">
     <button class="btn btn-primary" style="
@@ -92,15 +93,14 @@
     ">View my portfolio</button>
 </a>
 
-<p>I have 4 years Python experience and have consulting experience, providing data analysis and visualisations.  My skills include statistical data analysis, MySQL, Google Analytics, web scraping, Cython and C++.  I have experience of algorithm development from my Physics background, and I am currently improving my machine learning and d3 skills.</p>
+<p>I have 4 years Python experience and 9 months consulting experience, providing data analysis, algorithm design and visualisations.  My skills include statistical data analysis, MySQL, Google Analytics, Google Maps, GIS, web scraping, Cython and C++.  I have experience with algorithm development, using tree solutions to solve fantasy sports problems and designing a geographical carpooling algorithm.  I am currently improving my machine learning and d3 skills.</p>
 
 <p>I have a PhD in Computational Physics from Imperial College London, have published academic papers and given presentations at international conferences.</p>
 
+<p>My most recent major project was working with Lineup Lab for 5 months, <a href="lineuplab.html">designing and implementing an algorithm for optimising fantasy sports</a>.  Below is an example visualisation of a <i>tree</i>, the type of solution used.</p>
 
-<p>My most recent major project was working with <i>Tutorfair</i> for 6 weeks, <a href="Tutorfair.html">using data to drive their marketing and recruitment decisions</a>.  Below is an example of one of the visualisations (with random numbers instead of their data).</p>
-
-<a href="Tutorfair.html">
-    <img class="img-responsive" src="images1/trans_map.png" alt="">
+<a href="lineuplab.html">
+    <img class="img-responsive" src="images/lineuplab.svg" alt="">
 </a>
 
 <br><br>

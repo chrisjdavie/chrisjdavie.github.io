@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My data science freelancer personal home page">
+    <meta name="description" content="Tutorfair - analysing and visualising internal company data">
     <meta name="author" content="Chris J. Davie">
     
-    <title>Chris Davie - Data Scientist</title>
+    <title>Data driven PR - projection of future purchasing behaviour</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -72,9 +72,9 @@
 
         <!-- Page Header -->
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-header">Chris Davie
-                    <small>Data science and algorithm design - I solve business problems with data.</small>
+            <div class="col-lg-12">
+                <h1 class="page-header">PR
+                    <small>Data analysis for a press release.</small>
                 </h1>
             </div>
         </div>
@@ -82,32 +82,26 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-6">  
+            <div class="col-lg-7">  
+                 <p>I analysed consumer spending data as part of a PR campaign, these results covered on over 80 local news websites and news aggregators.</p>
+                <p><i>Skills employed:  Excel, data visualisation, report writing, time series projections, multivariate regression analysis, Python (numpy, scipy, matplotlib), project design, Linux</i></p>
+                 <img class="style-svg" src="images/PR.svg" alt="consumer spending">
+                 <p><i>A segment of consumers' spending on a product catagory over 2 years, with the model showing the downwards trend with seasonal variation.</i></p>
+                 <h1>Customer</h1>
+                 <p>I worked with a PR company to help represent an online shopping platform.  This PR company specialises in low cost, high exposure marketing, aiming for broad coverage in the media and online.</p>
+                 
+                 <h1>Challenge</h1>
+                 <p>Using the data from the online shopping behaviour on consumer spending, my analysis formed the basis of blog articles and press releases, designed to increase the coverage and the user base of this online platform.  I was given a very substantial dataset and needed to extract insights from it that would interest readers.  There were many thousands of users and hundreds of thousands of purchases, with hundreds of different descriptors.</p>
 
-<p>I'm a data science and algorithm design freelancer and consultant, and I enjoy using data and computational mathematics to solve business problems, and to help businesses make better decisions.  On the data science side, I typically gather and clean data, analyse it and create visualisations of the results.  I also provide code to allow automation, give presentations and write reports.  With algorithm design, I research, design, prototype and implement algorithms for novel applications.</p>
+<p>This data required cleaning and careful handling, with challenges common to data problems; some of the most interesting descriptors had very few purchases and fluctuated rapidly, there were often unrepresentative data points and sometimes quite clear trends that defied any reasonable explanation, or were much more extreme than found in other places.</p> 
 
-<a class="btn" href="portfolio.html">
-    <button class="btn btn-primary" style="
-       margin-top: 15px;
-       margin-bottom: 15px;
-    ">View my portfolio</button>
-</a>
+                <h1>Solution</h1>
+<p>There were trends and insights that could be extracted, customer behaviours that seemed very interesting to us.  I presented these in reports and spreadsheets, explaining both the results and the methodology.</p>
+                <h1>Results</h1>
+                <p>The articles were published in over 80 local news websites, and covered by major news aggregation websites.  Although not targeted, this level of coverage would have been expensive through more conventional marketing.</p>
 
-<p>I have 4 years Python experience and 9 months consulting experience, providing data analysis, algorithm design and visualisations.  My skills include statistical data analysis, MySQL, Google Analytics, Google Maps, GIS, web scraping, Cython and C++.  I have experience with algorithm development, using tree solutions to solve fantasy sports problems, designing a geographical carpooling algorithm and building grid-based analysis systems for computational Plasma Physics.  I am currently improving my machine learning and d3 skills.</p>
+<p>We went on to work together on more projects and bids.</p><br>
 
-<p>I have a PhD in Computational Physics from Imperial College London, have published academic papers and given presentations at international conferences.</p>
-
-<p>My most recent major project was working with Lineup Lab for 5 months, <a href="lineuplab.html">designing and implementing an algorithm for optimising fantasy sports</a>.  Below is an example visualisation of a <i>tree</i>, the type of solution used.</p>
-
-<a href="lineuplab.html">
-    <img class="img-responsive" src="images/lineuplab.svg" alt="">
-</a>
-
-<br><br>
-
-            </div>
-            <div class="col-md-6">  
-                <img class="img-responsive" src="images/Chris.jpg" alt="">
             </div>
         </div>
     
@@ -117,7 +111,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Chris J Davie</p>
+                    <p>Copyright &copy; Chris J Davie, 2015</p>
                 </div>
             </div>
             <!-- /.row -->

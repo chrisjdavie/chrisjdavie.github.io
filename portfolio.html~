@@ -83,19 +83,19 @@
                     <img class="style-svg" src="images/lineuplab.svg" alt="" style="margin-top: 12.5%;">
                 </a>
                 <h3>
-                    <a href="lineuplab.html">Lineuplab</a>
+                    <a href="lineuplab.html">Lineup Lab</a>
                 </h3>
-                <p>I worked with <i>lineuplab</i>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
+                <p>I worked with <i>Lineup Lab</i>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
             </div>        
             <div class="col-md-4 portfolio-item">
-                <a href="Cookit/">
-                    <img class="img-responsive" src="Cookit/images/ConsGORHH-12dec13_regions_.png" alt="Portions of Fruit and veg consumed in specific UK regions.">
+                <a href="PR.html">
+                    <img class="style-svg" src="images/PR.svg" alt="" style="margin-top: 12.5%;">
                 </a>
                 <h3>
-                    <a href="Cookit/">Cookit</a>
+                    <a href="lineuplab.html">Lineup Lab</a>
                 </h3>
-                <p>I analysed food consumption in the UK. This emphasised the need for health-based interventions, in support of a funding bid for <i>Cookit</i>.</p>
-            </div>
+                <p>I analysed consumer spending data as part of a PR campaign, that was covered on over 80 local news websites and news aggregators.</p>
+            </div>        
             <div class="col-md-4 portfolio-item">
                 <a href="Tutorfair.html">
                     <img class="img-responsive" src="images1/trans_map.png" alt="Example data on london map">
@@ -112,14 +112,14 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="globe/">
-                    <img class="img-responsive" src="globe/images/globe.png" alt="">
+                <a href="Cookit/">
+                    <img class="img-responsive" src="Cookit/images/ConsGORHH-12dec13_regions_.png" alt="Portions of Fruit and veg consumed in specific UK regions.">
                 </a>
                 <h3>
-                    <a href="globe/">Choropleth globe visualisations</a>
+                    <a href="Cookit/">Cookit</a>
                 </h3>
-                <p>An interactive globe visualisation would be awesome.  My boss agreed, as she is also awesome.  And so I'm making this.</p>
-            </div>        
+                <p>I analysed food consumption in the UK. This emphasised the need for health-based interventions, in support of a funding bid for <i>Cookit</i>.</p>
+            </div>     
             <div class="col-md-4 portfolio-item">
                 <a href="Olympics_redo/">
                     <img class="img-responsive" src="Olympics_redo/images/score_vs_rank.png" alt="">
@@ -181,7 +181,18 @@
 <!--                </h3>-->
 <!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>-->
 <!--            </div>-->
-        </div>
+
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="globe/">
+                    <img class="img-responsive" src="globe/images/globe.png" alt="">
+                </a>
+                <h3>
+                    <a href="globe/">Choropleth globe visualisations</a>
+                </h3>
+                <p>An interactive globe visualisation would be awesome.  My boss agreed, as she is also awesome.  And so I'm making this.</p>
+            </div>   
+        </div>       
         <!-- /.row -->
 
 <!--        <hr>-->
