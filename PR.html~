@@ -83,7 +83,7 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-lg-7">  
-                 <p>I analysed consumer spending data as part of a PR campaign, these results covered on over 80 local news websites and news aggregators.</p>
+                 <p>I analysed consumer spending data as part of a PR campaign, that was covered on over 80 local news websites and news aggregators.</p>
                 <p><i>Skills employed:  Excel, data visualisation, report writing, time series projections, multivariate regression analysis, Python (numpy, scipy, matplotlib), project design, Linux</i></p>
                  <img class="style-svg" src="images/PR.svg" alt="consumer spending">
                  <p><i>A segment of consumers' spending on a product catagory over 2 years, with the model showing the downwards trend with seasonal variation.</i></p>
