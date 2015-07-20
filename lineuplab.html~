@@ -90,7 +90,7 @@
                  <h1>Customer</h1>
                  <p><i>Lineup Lab</i> is a website that helps fantasy sports players calculate the players for their optimal fantasy teams for basketball and American football each day.<sup><a href="#fn1" id="ref1">1</a></sup></p>
                  
-                 <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009.  Now, 6 years later, it is at least billion dollar market and looks set for continued rapid growth.</p>
+                 <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009.  Now, 6 years later, it is at least a billion dollar market and looks set for continued rapid growth.</p>
                  
                  <h1>Challenge</h1>
                  <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams from all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
@@ -99,7 +99,7 @@
 
 <p>(The problem is a variant of <a href="http://en.wikipedia.org/wiki/Knapsack_problem#Multiple_knapsack_problem">“the multiple choice knapsack problem”</a>, a problem that, in this case, is known to be NP-hard.)</p>
                 <h1>Solution</h1>
-<p>I designed and implemented the algorithm to solve this problem.  After researching known solutions in the literature,  I wrote a simple proof of principle using the test data, prototyped a version of this using Python and implemented a full speed version using the Python libraries Numpy and Itertools.</p>
+<p>I designed and implemented the algorithm to solve this problem.  After researching known solutions in the literature,  I wrote a simple proof of principle using the test data, prototyped a version of this using <i>Python</i> and implemented a full speed version using the <i>Python</i> libraries <i>numpy</i> and <i>itertools</i>.</p>
 
 <p>The final algorithm was a tree-based algorithm, using two interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first.  This arrangement was also true of knapsacks and sub-combinations of knapsacks.</p>
                 <h1>Results</h1>

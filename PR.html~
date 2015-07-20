@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">PR
-                    <small>Data analysis for a press release.</small>
+                    <small>Data analysis for press releases</small>
                 </h1>
             </div>
         </div>
@@ -91,9 +91,9 @@
                  <p>I worked with a PR company to help represent an online shopping platform.  This PR company specialises in low cost, high exposure marketing, aiming for broad coverage in the media and online.</p>
                  
                  <h1>Challenge</h1>
-                 <p>Using the data from the online shopping behaviour on consumer spending, my analysis formed the basis of blog articles and press releases, designed to increase the coverage and the user base of this online platform.  I was given a very substantial dataset and needed to extract insights from it that would interest readers.  There were many thousands of users and hundreds of thousands of purchases, with hundreds of different descriptors.</p>
+                 <p>Using internal customer data on online consumer spending, my analysis formed the basis of blog articles and press releases, designed to increase the coverage and the user base of this online platform.  I was given a very substantial dataset to extract insights that would interest readers.  There were many thousands of users and hundreds of thousands of purchases, with hundreds of different descriptors.</p>
 
-<p>This data required cleaning and careful handling, with challenges common to data problems; some of the most interesting descriptors had very few purchases and fluctuated rapidly, there were often unrepresentative data points and sometimes quite clear trends that defied any reasonable explanation, or were much more extreme than found in other places.</p> 
+<p>This data required cleaning and careful handling, with challenges common to data problems; some of the most interesting descriptors had very few purchases and fluctuated rapidly, there were often unrepresentative data points and sometimes quite clear trends that defied any reasonable explanation, or were much more extreme than found in analysis of other, more accepted, data.</p> 
 
                 <h1>Solution</h1>
 <p>There were trends and insights that could be extracted, customer behaviours that seemed very interesting to us.  I presented these in reports and spreadsheets, explaining both the results and the methodology.</p>

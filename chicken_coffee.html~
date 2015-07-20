@@ -9,7 +9,7 @@
     <meta name="description" content="Tutorfair - analysing and visualising internal company data">
     <meta name="author" content="Chris J. Davie">
     
-    <title>Data driven PR - projection of future purchasing behaviour</title>
+    <title>Chicken, coffee and houseprices</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -73,8 +73,8 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">PR
-                    <small>Data analysis for press releases</small>
+                <h1 class="page-header">Chicken, coffee and carpooling
+                    <small>My friend does comedy gigs</small>
                 </h1>
             </div>
         </div>
@@ -83,24 +83,19 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-lg-7">  
-                 <p>I analysed consumer spending data as part of a PR campaign, that was covered on over 80 local news websites and news aggregators.</p>
-                <p><i>Skills employed:  Excel, data visualisation, report writing, time series projections, multivariate regression analysis, Python (numpy, scipy, matplotlib), project design, Linux</i></p>
-                 <img class="style-svg" src="images/PR.svg" alt="consumer spending">
-                 <p><i>A segment of consumers' spending on a product category over 2 years, with the model showing the downwards trend with seasonal variation.</i></p>
-                 <h1>Customer</h1>
-                 <p>I worked with a PR company to help represent an online shopping platform.  This PR company specialises in low cost, high exposure marketing, aiming for broad coverage in the media and online.</p>
+                 <p>A friend does comedy, and thinks you can find out about house prices using chicken and coffee.</p>
+                <p><i>Skills employed:  Open data analysis, Google Maps API, Python (numpy, scipy, matplotlib), data visualisation, project design, Linux</i></p>
+                 <img class="style-svg" src="images/hp_trim.png" alt="2014 house prices, London">
+                 <p><i>2014 house prices across London.</i></p>
+                 <h1>What's this about?</h1>
+                 <p>A friend of mine does comedy gigs.  One of his bits is about predicting house prices using chicken and coffee, the hypothesis being that chicken shops are more prevelant in less well off areas, coffee shops more prevelant in better off areas.  So, you can guage which areas are up and coming by comparing the prevelance of chicken and coffee.</p>
+                 <p>I set the data gathering, cleaning and visualisation as a project in a training course a friend runs, and me and one of the students worked on it.  We got the chicken and coffee shop locations using the google maps API, I got the house price data from the Land Registry, and we plotted it all up.</p>
                  
-                 <h1>Challenge</h1>
-                 <p>Using internal customer data on online consumer spending, my analysis formed the basis of blog articles and press releases, designed to increase the coverage and the user base of this online platform.  I was given a very substantial dataset to extract insights that would interest readers.  There were many thousands of users and hundreds of thousands of purchases, with hundreds of different descriptors.</p>
-
-<p>This data required cleaning and careful handling, with challenges common to data problems; some of the most interesting descriptors had very few purchases and fluctuated rapidly, there were often unrepresentative data points and sometimes quite clear trends that defied any reasonable explanation, or were much more extreme than found in analysis of other, more accepted, data.</p> 
-
-                <h1>Solution</h1>
-<p>There were trends and insights that could be extracted, customer behaviours that seemed very interesting to us.  I presented these in reports and spreadsheets, explaining both the results and the methodology.</p>
-                <h1>Results</h1>
-                <p>The articles were published in over 80 local news websites, and covered by major news aggregation websites.  Although not targeted, this level of coverage would have been expensive through more conventional marketing.</p>
-
-<p>We went on to work together on more projects and bids.</p><br>
+                 <p>Here's <a href="https://medium.com/@Sam_Floy/london-house-prices-explained-by-coffee-shops-and-fried-chicken-2a983fb73907">his write up.</a>  It's quite good.  He's seeing if he can get it in some papers.</p>
+                 
+                 <p><i>We also did some statistical analysis.  It really isn't very predictive at all, unfortunately.</i></p>
+                 
+                 <br>
 
             </div>
         </div>
