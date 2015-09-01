@@ -9,7 +9,7 @@
     <meta name="description" content="My data science freelancer personal home page">
     <meta name="author" content="Chris J. Davie">
     
-    <title>Chris Davie - Data Scientist</title>
+    <title>Chris Davie - algorithm designer and data analyst</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -84,7 +84,7 @@
         <div class="row">
             <div class="col-md-6">  
 
-<p>I'm a data science and algorithm design freelancer and consultant, and I enjoy using data and computational mathematics to solve business problems, and to help businesses make better decisions.  On the data science side, I typically gather and clean data, analyse it and create visualisations of the results.  I also provide code to allow automation, give presentations and write reports.  With algorithm design, I research, design, prototype and implement algorithms for novel applications.</p>
+<p>I'm an algorithm designer and data analyst, working with startups and SMEs, after I graduated last year from my Computational Physics PhD.  I enjoy using computational mathematics and insights from data to solve business problems, and to help businesses make better decisions.  I also research, design, prototype and implement algorithms for novel applications.</p>
 
 <a class="btn" href="portfolio.html">
     <button class="btn btn-primary" style="
