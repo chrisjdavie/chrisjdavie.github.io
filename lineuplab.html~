@@ -93,7 +93,7 @@
                  <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009.  Now, 6 years later, it is at least a billion dollar market and looks set for continued rapid growth.</p>
                  
                  <h1>Challenge</h1>
-                 <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams from all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
+                 <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams using all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
 
 <p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p> 
 
@@ -101,7 +101,7 @@
                 <h1>Solution</h1>
 <p>I designed and implemented the algorithm to solve this problem.  After researching known solutions in the literature,  I wrote a simple proof of principle using the test data, prototyped a version of this using <i>Python</i> and implemented a full speed version using the <i>Python</i> libraries <i>numpy</i> and <i>itertools</i>.</p>
 
-<p>The final algorithm was a tree-based algorithm, using two interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first.  This arrangement was also true of knapsacks and sub-combinations of knapsacks.</p>
+<p>The final algorithm was a tree-based algorithm, using multiple interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first.  This arrangement was also true of knapsacks and sub-combinations of knapsacks.  The solution also involved combinatorics and conventional code optimisations.</p>
                 <h1>Results</h1>
                 <p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for <i>Lineup Lab</i>'s use.  I provided an updated solution based on this new data, which consistently solved the problem in the required time.  After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
 
