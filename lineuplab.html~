@@ -93,7 +93,7 @@
                  <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009.  Now, 6 years later, it is at least a billion dollar market and looks set for continued rapid growth.</p>
                  
                  <h1>Challenge</h1>
-                 <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams using all the players in a given sport league, up to 350 players, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
+                 <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league.  As part of a new premium product, they required an algorithm that would find the best teams using all the players in a given sport league, up to 350 players in 9 positions, in a few seconds.  This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
 
 <p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p> 
 
