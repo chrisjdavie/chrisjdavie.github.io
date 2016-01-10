@@ -12,7 +12,7 @@ function initMap() {
             });
         }
         
-        var london = new google.maps.LatLng(51.508867, -0.128061);
+        var london = new google.maps.LatLng(51.528867, -0.118061);
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: london,

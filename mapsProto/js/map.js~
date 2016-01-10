@@ -12,7 +12,7 @@ function initMap() {
             });
         }
         
-        var london = new google.maps.LatLng(51.508867, -0.128061);
+        var london = new google.maps.LatLng(51.528867, -0.138061);
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: london,
@@ -64,7 +64,7 @@ function setLegendLabels() {
         var legendWidth = $('#legendGradient').outerWidth();
           $('#legend').append($('<div>').css({
             'position': 'absolute',
-            'right': legendWidth*0.1 + 'px',
+            'right': 0 + 'px',
             'top': '18px',
             'text-align': 'center'
         }).html('More chicken'));  
