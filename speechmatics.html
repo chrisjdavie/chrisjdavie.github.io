@@ -83,7 +83,8 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-lg-7">  
-                 <p>I work at <a href="https://www.speechmatics.com/"><i>Speechmatics</i></a>, a provider of automatic speech recognition, automating the building of ASR systems in multiple languages. I rework legacy and proof of concept code into reliable, scaleable and maintainable software.</p>
+                 <p>I work at <a href="https://www.speechmatics.com/"><i>Speechmatics</i></a>, a provider of automatic speech recognition, automating the building of ASR systems in multiple languages. I redesign and reimplement legacy and proof of concept code into reliable, scaleable and maintainable software.</p>
+                <p>The pipeline I designed and my team built produced models in over 20 languages last year, compared to the goal of 10 languages.</p>
                 <p><i>Skills employed:  Software design, data pipelines, web scraping, databases, PostgreSQL, Python (scrapy, numpy, scipy), project design, Linux</i></p>
 <iframe width="900" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~cjdavie/0.embed"></iframe>
                  <p><i>The global language coverage by Speechmatics, as of July 2016.</i></p>
@@ -99,8 +100,6 @@
                 <h1>Solution</h1>
                 <p>The process for solving this had to be carefully planned as the code base was very fragile and the pipeline had to work as soon as possible and continue to produce models throughout development. After understand the process and gathering the requirements, we began a process of building the solution, broadly in four parts.</p>
 
-<p><i>Hi! If you have the bad luck of reading this right now, it means you're reading it while I'm writing it. The links below are broken :( I should have them finished today, if I don't I'll turn them into bullet points. I don't think I'll have pretty pictures for them all alas, those take ages and what pretty pictures can I draw for a DB? Guess I would stick the schema up there, but it probably belongs to Speechmatics.</i></p>
-
                 <p><b><a href="speechmatics/prototype.html">The pipeline prototype.</a></b> The first stage was building the initial prototype, the earliest version of the pipeline that would allow a semi-automatic building of speech models. This involved a series of interfaces around the filesystem and existing code base.</p>
                 <p><b><a href="speechmatics/development.html">Development best practices.</a></b> <i>Speechmatics</i> used to be an R&D company and as such had not used development best practices. We introduced these, including modular code, specifications gathering, code design, testing, continuous integration and code review.</p>
                 <p><b><a href="speechmatics/data.html">Data storage solution.</a></b> The data had previously been stored in a rather ad-hoc fashion. We sanitised the data storage system, introduced a database and set up an datastore system and ORM to allow easy transition between the filesystem and database.</p>
@@ -109,6 +108,7 @@
 
                 <h1>Results</h1>
                 <p>This batch processing framework has now produced over 20 languages, 4 of which are near the quality of our flagship English mode. The German model produced by the framework increased the accuracy of results from 30% to nearly 75%. The model building process used to take 3 months of manual work for each language and now only takes 2 weeks and is nearly fully automatic once initialised, a process that takes around twenty minutes.</p>
+                <p>The goal for the languages team had been to produce ASR models for 10 languages - this automated pipeline allowed languages to build over 20.</p>
 
                 <h1>Limitations</h1>
                 <p>The process is not yet automatic as a language build normally requires a developer to intervene once a week, usually a short restart process. This is mainly due to the unreliability of the underpinning hardware. We are in the process of migrating this to the cloud. The pipeline now runs entirely in docker containers and will soon run on the Kubernetes orchestration system. Once that is achieved the transition to a cloud provider should be straight forwards. This will remove approximately 75% of the remaining failures in the pipeline, the rest being in more legacy code that has not yet been reworked.</p>
