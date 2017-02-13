@@ -98,7 +98,7 @@
 
 
                 <h1>Solution</h1>
-                <p>The process for solving this had to be carefully planned as the code base was very fragile and the pipeline had to work as soon as possible and continue to produce models throughout development. After understand the process and gathering the requirements, we began a process of building the solution, broadly in four parts.</p>
+                <p>The process for solving this had to be carefully planned as the code base was fragile and the pipeline had to work as soon as possible and continue to produce models throughout development. After understanding the process and gathering the requirements, we began a process of building the solution, broadly in four parts.</p>
 
                 <p><b><a href="speechmatics/prototype.html">The pipeline prototype.</a></b> The first stage was building the initial prototype, the earliest version of the pipeline that would allow a semi-automatic building of speech models. This involved a series of interfaces around the filesystem and existing code base.</p>
                 <p><b><a href="speechmatics/development.html">Development best practices.</a></b> <i>Speechmatics</i> used to be an R&D company and as such had not used development best practices. We introduced these, including modular code, specifications gathering, code design, testing, continuous integration and code review.</p>
@@ -111,7 +111,7 @@
                 <p>The goal for the languages team had been to produce ASR models for 10 languages - this automated pipeline allowed languages to build over 20.</p>
 
                 <h1>Limitations</h1>
-                <p>The process is not yet automatic as a language build normally requires a developer to intervene once a week, usually a short restart process. This is mainly due to the unreliability of the underpinning hardware. We are in the process of migrating this to the cloud. The pipeline now runs entirely in docker containers and will soon run on the Kubernetes orchestration system. Once that is achieved the transition to a cloud provider should be straight forwards. This will remove approximately 75% of the remaining failures in the pipeline, the rest being in more legacy code that has not yet been reworked.</p>
+                <p>The process is not yet automatic as a language build normally requires a developer to intervene once a week, usually a short process. This is mainly due to the unreliability of the underpinning hardware and we are migrating this to the cloud. The pipeline now runs entirely in docker containers and will soon run on the Kubernetes orchestration system, after which the transition to a cloud provider should be straight forwards. This will remove approximately 75% of the remaining failures in the pipeline, the rest being in more legacy code that has not yet been reworked.</p>
 
                 <p>Beyond that, a sensible process for orchestrating the scrapers will be introduced. The legacy system is very ad-hoc and many of the scrapers are not working. I have designed and implemented a proof-of-concept for an ETL pipeline for scraping and have designed a system for testing the scrapers to ensure they are easy to repair when they break.</p>
 
