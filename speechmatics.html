@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tutorfair - analysing and visualising internal company data">
+    <meta name="description" content="Speechmatics - speech recognition in multiple languages">
     <meta name="author" content="Chris J. Davie">
-    
+
     <title>Speechmatics - speech recognition in multiple languages</title>
 
     <!-- Bootstrap Core CSS -->
@@ -16,12 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
-    
+
     <link href="css/style_not_gh_pages.css" rel="stylesheet">
 
 
 
-<!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+    <!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +38,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -73,7 +74,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Speech to text 
+                <h1 class="page-header">Speech to text
                     <small>Speech recognition in multiple languages</small>
                 </h1>
             </div>
@@ -82,32 +83,52 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-lg-7">  
-                 <p>I worked at a provider of automatic speech recognition, automating the building of ASR systems in multiple languages.</p>
-                <p><i>Skills employed:  Software design, specification gathering, data pipelines, web scraping, databases, PostgreSQL, Python (scrapy, numpy, scipy), Luigi, project design, Linux</i></p>
-<iframe width="900" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~cjdavie/0.embed"></iframe>
-                 <p><i>The global language coverage, as of July 2016.</i></p>
-                 <h1>Speech to text</h1>
-                 <p><i>Speechmatics</i> provides cloud-based speech recognition, with a per-hour pricing, and also provides on-premesis solutions.
-                 
-                 <h1>Challenge</h1>
-                 <p>Previously, there was a largely manual process for building ASR systems, using state-of-the-art deep neural net technologies. This manual process worked in English and German, with ambitions for automatically building ASR systems for many world languages. While the process for building these new languages had been proven with German, the process needed to be automated, and made robust, reproducible and scaleable to 10s of languages.</p>
+            <div class="col-lg-7">
+                <p>I worked at a provider of automatic speech recognition, automating the building of ASR systems in
+                    multiple languages.</p>
+                <p><i>Skills employed: Software design, specification gathering, data pipelines, web scraping,
+                        databases, PostgreSQL, Python (scrapy, numpy, scipy), Luigi, project design, Linux</i></p>
+                <iframe width="900" height="500" frameborder="0" scrolling="no"
+                    src="https://plot.ly/~cjdavie/0.embed"></iframe>
+                <p><i>The global language coverage, as of July 2016.</i></p>
+                <h1>Speech to text</h1>
+                <p><i>Speechmatics</i> provides cloud-based speech recognition, with a per-hour pricing, and also
+                    provides on-premesis solutions.
 
-                <h1>Solution</h1>
-<p>Building speech recognition systems has two parts - the language model and acoustic model. I gathered the specifications for the acoustic model pipeline, I then designed and my team built this pipeline. We then went on to redesign and reimplement the underlying machine learning libraries, based on the success of the pipeline. This design combined the machine learning technology, some reworking of the software design methods, unit and integration testing and open-source pipeline software.</p> 
+                    <h1>Challenge</h1>
+                    <p>Previously, there was a largely manual process for building ASR systems, using state-of-the-art
+                        deep neural net technologies. This manual process worked in English and German, with ambitions
+                        for automatically building ASR systems for many world languages. While the process for building
+                        these new languages had been proven with German, the process needed to be automated, and made
+                        robust, reproducible and scaleable to 10s of languages.</p>
 
-<p>I also designed the data handling system, including the databases and data ingestion. This allowed rapid storing and processing of many thousands of hours of audio data, in many languages from a range of sources - both internal and external.</p>
+                    <h1>Solution</h1>
+                    <p>Building speech recognition systems has two parts - the language model and acoustic model. I
+                        gathered the specifications for the acoustic model pipeline, I then designed and my team built
+                        this pipeline. We then went on to redesign and reimplement the underlying machine learning
+                        libraries, based on the success of the pipeline. This design combined the machine learning
+                        technology, some reworking of the software design methods, unit and integration testing and
+                        open-source pipeline software.</p>
 
-<p>The design principles and technologies allowed a robust, maintainable and scalable framework for automatically building a full ASR system, from the initial data to a fully tested model, ready for deployment in the cloud.</p>
+                    <p>I also designed the data handling system, including the databases and data ingestion. This
+                        allowed rapid storing and processing of many thousands of hours of audio data, in many languages
+                        from a range of sources - both internal and external.</p>
 
-                <h1>Results</h1>
+                    <p>The design principles and technologies allowed a robust, maintainable and scalable framework for
+                        automatically building a full ASR system, from the initial data to a fully tested model, ready
+                        for deployment in the cloud.</p>
 
-                <p>This pipeline successfully built ASR systems for over 20 languages last year, where the goal was 10. These included French, Spanish and Japanese.<p> 
+                    <h1>Results</h1>
 
-</p>The previous manual language building process took many weeks of work, spread over months. This automated pipeline typically takes less than a day of work in total, with the build itself taking a few weeks.</p>
+                    <p>This pipeline successfully built ASR systems for over 20 languages last year, where the goal was
+                        10. These included French, Spanish and Japanese.<p>
+
+                        </p>The previous manual language building process took many weeks of work, spread over months.
+                        This automated pipeline typically takes less than a day of work in total, with the build itself
+                        taking a few weeks.</p>
             </div>
         </div>
-    
+
         <hr>
 
         <!-- Footer -->
@@ -132,5 +153,3 @@
 </body>
 
 </html>
-
-
