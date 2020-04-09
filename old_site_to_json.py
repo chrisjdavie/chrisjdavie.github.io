@@ -3,8 +3,8 @@ import re
 from html.parser import HTMLParser
 from pprint import pprint
 
-fname = "website_old/Tutorfair.html"
-
+fname = "website_old/spherical_collapse.html"
+output_fname = "portfolio_data/spherical-collapse.json"
 
 class OldPortfolioParser(HTMLParser):
 
@@ -143,7 +143,7 @@ for key, item in parser.reformatted.items():
     if key not in key_order:
         reformatted_ordered[key] = item
 
-with open("portfolio_data/targeted-marketing-analysis.json", "w") as portfolio_json_fh:
+with open(output_fname, "w") as portfolio_json_fh:
     json.dump(reformatted_ordered, portfolio_json_fh, indent=4)
 
 # pprint(parser.reformatted)
