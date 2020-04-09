@@ -2,159 +2,82 @@
 <html lang="en">
 
 <head>
-
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My freelancer personal home page">
-    <meta name="author" content="Chris J. Davie">
-
-    <title>Chris Davie - algorithm designer and data engineer</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <link href="css/style_not_gh_pages.css" rel="stylesheet">
-
-
-
-    <!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="album.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Home</a>
-                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
-                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <!--<li>-->
-                    <!--    <a href="#">Services</a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                    <!--    <a href="#">Contact</a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Header -->
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-header">Chris Davie
-                    <small>Data engineer, sofware developer</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-6">
-
-                <p>I’m a Python developer and Data Engineer with a PhD in Physics. I've delivered three small and
-                    medium sized software projects, so far all using Python. I’m currently searching for a new role,
-                    preferably with a data focus in a friendly team that writes high quality code (techniques like TDD,
-                    CI/CD and YAGNI where appropriate).</p>
-
-                <p>I’ve designed and helped implement 3 significant software projects, 2 helping drive revenue. I built
-                    batch processing pipelines for Wayhome, automatically <a href="property-pipeline.html">selecting
-                        properties for shared ownership</a>.
-                    Similarly, I designed and helped implement pipelines for Speechmatics, automatically <a
-                        href="speechmatics2.html">training
-                        speech-to-text transcription models</a>. For LineupLab, I built an algorithm that <a
-                        href="lineuplab2.html">helps sports gamblers</a>.
-                </p>
-
-                <p>My portfolio describes these projects in more detail.</p>
-
-                <a class="btn" href="portfolio.html">
-                    <button class="btn btn-primary" style="
-       margin-top: 15px;
-       margin-bottom: 15px;
-    ">View my portfolio</button>
-                </a>
-
-                <p>I’ve mainly worked in Python so far, I’ve used a range of libraries including Flask, SQLAlchemy,
-                    Celery, pytest, invoke, numpy, scipy, matplotlib and Luigi. I’m proficient in a number of other
-                    technologies, including Docker, Google Cloud Platform, PostgreSQL, redis and RabbitMQ. I’m always
-                    trying to learn new things - I’m currently building my fundamental computing skills.</p>
-                <br><br>
-
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="images/Chris.jpg" alt="">
-            </div>
-        </div>
-
-        <hr>
-
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-md-3">
-                    <p>Copyright &copy; Chris J Davie, 2020</p>
-                    <p></p>
-
-                    <p>
-                        <font color="white"><i>So, there's something strange with this bootstraping; the left hand side
-                                only aligns properly if the content of the page exceeds the length of the screen it's
-                                rendered in - I suspect it's to do with the reactive content, or some such. And this is
-                                what you're reading just at the moment, on a standard HD screen at 100% zoom this should
-                                drop off the end.
-                    </p>
-
-                    <p>This is of course undermining my confidence in the whole exercise and it is a not-very-elegant
-                        hack, but ah well, what can you do... (well, apart from make the text white)</i></font>
-                    </p>
-
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other
+                            background context. Make it a few sentences long so folks can pick up some informative
+                            tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- /.row -->
-        </footer>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" /></svg>
+                    <strong>Album</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/property-pipeline.jpg" class="img-fluid portfolio-image" alt="Property pipeline">
+                </svg>
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 

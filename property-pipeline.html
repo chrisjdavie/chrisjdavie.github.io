@@ -2,190 +2,130 @@
 <html lang="en">
 
 <head>
-
+    <title>Property Data Pipeline - presenting properties for shared ownership</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Wayhome - property data pipeline">
     <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="http://chrisjdavie.github.io/images/property-pipeline.jpg">
 
-    <title>Wayhome - property data pipeline</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="album.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <link href="css/style_not_gh_pages.css" rel="stylesheet">
-
-
-
-    <!--    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Home</a>
-                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
-                <a class="navbar-brand" href="testimonials.html">Testimonials</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <!--<li>-->
-                    <!--    <a href="#">Services</a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                    <!--    <a href="#">Contact</a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container -->
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Header -->
+    <main class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Property data pipeline
-                    <small>Presenting high quality properties for purchase</small>
-                </h1>
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">Property Data Pipeline</h1>
+                    <h2 class="text-muted"><small>Presenting homes for shared ownership</small></h2>
+                    <hr>
+                    <p><i>Wayhome</i> helps you buy a home. I built a pipeline that automatically selects the properties <i>Wayhome</i> could buy, to present to potential customers.</p>
+                    <p><i><b>Skills employed:</b> Software design, specification gathering, data pipelines, data collection, databases, BigQuery, PostgreSQL, Google cloud platform, Cloud Run, Python (SQLAlchemy, pytest, Invoke), TDD, project design, multi-threading, Linux</i></p>
+                    
+                        <img src="images/property-pipeline.jpg" alt="Property pipeline" class="img-fluid portfolio-image"></img>
+                    
+                    
+                    <p><i>Basic schematic of the property processing pipeline.</i></p>
+                    
+                        <h2 class="blog-post-subtitle">Help to buy your home</h2>
+                        
+                            <p><i>Wayhome</i> helps its customers buy their home - the customer buys 5%, <i>Wayhome</i> buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out <i>Wayhome</i>.</p>
+                        
+                        
+                            <h3>Challenge</h3>
+                            
+                                <p><i>Wayhome</i> needed to automatically select the properties a potential customer could choose, from a pool of hundreds of millions of property updates.</p>
+                            
+                                <p>The properties we presented to the customer had to be both good for the customer and good for <i>Wayhome</i> - good quality, fair rent and the house price likely to grow. These properties needed to be selected automatically, there are thousands of new properties listed in the UK a day. The data scientists had previously built metrics and machine learning models to decide which properties to show, these needed to be reliably applied to all newly listed properties.</p>
+                            
+                        
+                            <h3>Solution</h3>
+                            
+                                <p>I designed and built a batch processing pipeline to serve the property listings to our customers. The pipeline ran daily - the most rapidly changing input, these listing updates, arrived at a rate of a few thousand a day, while the time to purchase a property is typically months. A delay of 24 hours to display the property was fine.</p>
+                            
+                                <p>The listings were gathered from our providers every day and stored in a data lake. For new listings, the data was initially cleaned and then combined with geographical data, including flood and noise data. We then used our in-house machine learning model to predict the likely rent a property would bring.</p>
+                            
+                                <p>Finally, using heuristics calculated by the data team, we filtered for properties we could likely buy, and sent those listings to be displayed on our website.</p>
+                            
+                        
+                            <h3>Results</h3>
+                            
+                                <p>The data pipeline ran for several months, delivering the transformed listings data to our potential customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the team at <i>Wayhome</i>.</p>
+                            
+                        
+                        <hr>
+                    
+                        <h2 class="blog-post-subtitle">Analytics datamart</h2>
+                        
+                            <p>In addition to being shown to the customers, the property data needed to be straightforwardly analysed by the data team in a listings datamart.</p>
+                        
+                        
+                            <h3>Challenge</h3>
+                            
+                                <p>The raw listings were not useful for the data scientists - it was a large amount of data, hundreds of millions of rows, with thousands added and updated every day. This data was spread across multiple sources, in different formats, it wasn’t always correct or consistent and had many duplicates. This data needed to be transformed to allow straightforward analysis by the data team and stored in a datamart for easy access.</p>
+                            
+                        
+                            <h3>Solution</h3>
+                            
+                                <p>The initial gathering, storing, cleaning and combining was handled by the customer listings data pipeline. Unlike the customer listings pipeline, the properties weren't filtered - the data team wanted to analyse all the historical listings. The datamart pipeline transformed the data into a normalised model, and loaded it into the datamart for the data team to use.</p>
+                            
+                        
+                        <hr>
+                    
+                        <h2 class="blog-post-subtitle">Engineering process</h2>
+                        
+                            <p>This initial pipeline was built delivering value in small chunks - the highest value work, delivering listings to customers, was handled first, then each table in the analytics datamart was added one at a time. This work was completed, and fairly reliably ran each day.</p>
+                        
+                            <p>Additionally, I wrote a test framework to allow automated testing and test-first development when writing our BigQuery queries.</p>
+                        
+                            <p>As there were many queries being processed, these were batched and run concurrently. Once we had the initial pipeline running, we found a number of limitations with BigQuery - a wait of two hours to update data, leading to processing delays and the datamart being in an inconsistent state. Additionally, the queries to BigQuery would often hang. As more queries were added to the pipeline, these failures caused significant decreases in reliability, needing the pipeline to be regularly restarted.</p>
+                        
+                        
+                        <hr>
+                    
+                    
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-lg-7">
-                <p><i>Wayhome</i> helps you buy a home. I built a pipeline that automatically selects the properties
-                    <i>Wayhome</i> could buy, to present to potential customers.</p>
-                <p><i>Skills employed: Software design, specification gathering, data pipelines, data collection,
-                        databases, BigQuery, PostgreSQL, Google cloud platform, Cloud Run, Python (SQLAlchemy, pytest,
-                        Invoke), TDD, project design, multi-threading, Linux.</i></p>
-                <img class="img-responsive" src="images/property-pipeline.jpg"
-                    alt="Basic schematic of the property processing pipeline.">
-                <p><i>Basic schematic of the property processing pipeline.</i></p>
-                <h1>Help to buy your home</h1>
-                <p><i>Wayhome</i> helps its customers buy their home - the customer buys 5%, <i>Wayhome</i> buys 95%.
-                    The customer then pays rent on the part they don’t own, and gradually buys out <i>Wayhome</i></p>
-
-                <h2>Challenge</h2>
-                <p><i>Wayhome</i> needed to automatically select the properties a potential customer could choose, from
-                    a pool of hundreds of millions of property updates.</p>
-                <p>The properties we presented to the customer had to be both good for the customer and good for
-                    <i>Wayhome</i> - good quality, fair rent and the house price likely to grow. These properties
-                    needed to be selected automatically, there are thousands of new properties listed in the UK a
-                    day. The data scientists had previously built metrics and machine learning models to decide
-                    which properties to show, these needed to be reliably applied to all newly listed properties.
-                </p>
-
-                <h2>Solution</h2>
-                <p>I designed and built a batch processing pipeline to serve the property listings to our customers.
-                    The pipeline ran daily - the most rapidly changing input, these listing updates, arrived at a rate
-                    of a few thousand a day, while the time to purchase a property is typically months. A delay of 24
-                    hours to display the property was fine.</p>
-                <p>The listings were gathered from our providers every day and stored in a data lake. For new
-                    listings, the data was initially cleaned and then combined with geographical data, including
-                    flood and noise data. We then used our in-house machine learning model to predict the likely
-                    rent a property would bring.</p>
-                <p>Finally, using heuristics calculated by the data team, we filtered for properties we could likely
-                    buy, and sent those listings to be displayed on our website.</p>
-
-                <h2>Results</h2>
-
-                <p>The data pipeline ran for several months, delivering the transformed listings data to our potential
-                    customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the
-                    team at <i>Wayhome</i>.</p>
-
-                <h1>Analytics datamart</h1>
-                <p>In addition to being shown to the customers, the property data needed to be straightforwardly
-                    analysed by the data team in a listings datamart.</p>
-
-                <h2>Challenge</h2>
-                <p>The raw listings were not useful for the data scientists - it was a large amount of
-                    data, hundreds of millions of rows, with thousands added and updated every day. This data was
-                    spread across multiple sources, in different formats, it wasn’t always correct or consistent and
-                    had many duplicates. This data needed to be transformed to allow straightforward analysis by the
-                    data team and stored in a datamart for easy access.</p>
-
-                <h2>Solution</h2>
-                <p>The initial gathering, storing, cleaning and combining was handled by the customer listings data
-                    pipeline. Unlike the customer listings pipeline, the properties weren't filtered - the data team
-                    wanted to analyse all the historical listings. The datamart pipeline transformed the data into a
-                    normalised model, and loaded it into the datamart for the data team to use.</p>
-
-                <h2>Results</h2>
-                <p>The listings datamart was used regularly by the data team in their analytics - it became the primary
-                    reference for listings data, allowing the data team to more rapidly analyse clean, well modelled
-                    data, helping deliver timely analysis for <i>Wayhome</i>.</p>
-
-                <h1>Engineering process</h1>
-                <p>This initial pipeline was built delivering value in small chunks - the highest value work,
-                    delivering listings to customers, was handled first, then each table in the analytics datamart
-                    was added one at a time. This work was completed, and fairly reliably ran each day.</p>
-                <p>Additionally, I wrote a test framework to allow automated testing and test-first development when
-                    writing our BigQuery queries.</p>
-                <p>As there were many queries being processed, these were batched and run concurrently. Once we had
-                    the initial pipeline running, we found a number of limitations with BigQuery - a wait of two
-                    hours to update data, leading to processing delays and the datamart being in an inconsistent
-                    state. Additionally, the queries to BigQuery would often hang. As more queries were added to the
-                    pipeline, these failures caused significant decreases in reliability, needing the pipeline to be
-                    regularly restarted.</p>
-                <p>This was addressed in two ways - firstly the tables that managed the pipeline and the tables in
-                    the analytics datamart were moved to PostgreSQL, eliminating the update delay and removing the
-                    unreliable queries, and secondly we detected hung queries, abandoning and restarting them. With
-                    these changes, the reliability of the pipeline satisfied all our stakeholders.</p>
-            </div>
-        </div>
-
-        <hr>
-
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Chris J Davie, 2020</p>
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
                 </div>
             </div>
             <!-- /.row -->
         </footer>
 
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    </main>
 </body>
-
-</html>

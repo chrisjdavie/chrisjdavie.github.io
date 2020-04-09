@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ page_title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="{{ image_social_media_link }}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="album.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    {% block navbar %}
+    {% endblock %}
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">{{ title }}</h1>
+                    <h2 class="text-muted"><small>{{ subtitle }}</small></h2>
+                    <hr>
+                    <p>{{ tldr }}</p>
+                    <p><i><b>Skills employed:</b> {{ skills_employed }}</i></p>
+                    {% if image_link is defined %}
+                        <img src="{{ image_link }}" alt="{{ image_alt_text }}" class="img-fluid portfolio-image"></img>
+                    {% endif %}
+                    {% if image_embed_html is defined %}
+                        {{ image_embed_html }}
+                    {% endif %}
+                    <p><i>{{ image_caption }}</i></p>
+                    {% for sec in sections %}
+                        <h2 class="blog-post-subtitle">{{ sec.title }}</h2>
+                        {% for para in sec.paragraphs %}
+                            <p>{{ para }}</p>
+                        {% endfor %}
+                        {% for subsec in sec.subsections %}
+                            <h3>{{ subsec.title }}</h3>
+                            {% for para in subsec.paragraphs %}
+                                <p>{{ para }}</p>
+                            {% endfor %}
+                        {% endfor %}
+                        <hr>
+                    {% endfor %}
+                    {% for para in footnote %}
+                        {{ para }}<br>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>
