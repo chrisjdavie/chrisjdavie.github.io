@@ -34,13 +34,13 @@
                     <hr>
                     <p>{{ tldr }}</p>
                     <p><i><b>Skills employed:</b> {{ skills_employed }}</i></p>
-                    {% if image_link is defined %}
-                        <img src="{{ image_link }}" alt="{{ image_alt_text }}" class="img-fluid portfolio-image"></img>
+                    {% if image.link is defined %}
+                        <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image"></img>
                     {% endif %}
                     {% if image_embed_html is defined %}
                         {{ image_embed_html }}
                     {% endif %}
-                    <p><i>{{ image_caption }}</i></p>
+                    <p><i>{{ image.caption }}</i></p>
                     {% for sec in sections %}
                         <h2 class="blog-post-subtitle">{{ sec.title }}</h2>
                         {% for para in sec.paragraphs %}

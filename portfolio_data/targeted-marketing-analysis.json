@@ -6,9 +6,11 @@
     "company_name": "",
     "tldr": "I worked with Tutorfair, an online tutor marketplace, to use their data to more precisely direct their marketing and recruitment campaigns.",
     "skills_employed": " MySQL, Python, (Matplotlib, Numpy, basemap, fiona), statistics (regression analysis, significance testing), QGIS, GIS, project design, database design, Linux",
-    "image_caption": "An example of the visualisation of geographic data.  The shapes are the London postcode regions.",
-    "image_alt_text": "Example data on london map",
-    "image_link": "images/targeted-marketing-analysis.png",
+    "image": {
+        "caption": "An example of the visualisation of geographic data.  The shapes are the London postcode regions.",
+        "alt_text": "Example data on london map",
+        "link": "images/targeted-marketing-analysis.png"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/targeted-marketing-analysis.png",
     "sections": [
         {
