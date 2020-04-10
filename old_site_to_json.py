@@ -1,10 +1,12 @@
 import json
 import re
 from html.parser import HTMLParser
+from pathlib import Path
 from pprint import pprint
+from shutil import move
 
-fname = "website_old/RTI.html"
-output_fname = "portfolio_data/rti.json"
+fname = "website_old/chicken_coffee.html"
+output_path = Path("portfolio_data/chicken-coffee.json")
 
 class OldPortfolioParser(HTMLParser):
 
@@ -142,8 +144,18 @@ for key in key_order:
 for key, item in parser.reformatted.items():
     if key not in key_order:
         reformatted_ordered[key] = item
+reformatted_ordered["name"] = output_path.name.split(".")[0]
 
-with open(output_fname, "w") as portfolio_json_fh:
+if old_path := reformatted_ordered["image"].get("link"):
+    src_pic_path = "website_old"/Path(old_path)
+    dst_pic_path = Path("images")/(
+        reformatted_ordered["name"] + src_pic_path.suffix)
+
+    reformatted_ordered["image"]["link"] = str(dst_pic_path)
+    move(src_pic_path, dst_pic_path)
+
+with output_path.open("w") as portfolio_json_fh:
     json.dump(reformatted_ordered, portfolio_json_fh, indent=4)
+
 
 # pprint(parser.reformatted)
