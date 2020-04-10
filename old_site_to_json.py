@@ -3,8 +3,8 @@ import re
 from html.parser import HTMLParser
 from pprint import pprint
 
-fname = "website_old/spherical_collapse.html"
-output_fname = "portfolio_data/spherical-collapse.json"
+fname = "website_old/RTI.html"
+output_fname = "portfolio_data/rti.json"
 
 class OldPortfolioParser(HTMLParser):
 
@@ -21,6 +21,7 @@ class OldPortfolioParser(HTMLParser):
         self._tldr = ""
         self._new_para = False
         self.reformatted = {
+            "image": {},
             "sections": [
                 {
                     "subsections": []
@@ -41,9 +42,9 @@ class OldPortfolioParser(HTMLParser):
         if tag == "img":
             for attr in attrs:
                 if attr[0] == "alt":
-                    self.reformatted["image_alt_text"] = attr[1]
+                    self.reformatted["image"]["alt_text"] = attr[1]
                 if attr[0] == "src":
-                    self.reformatted["image_link"] = attr[1]
+                    self.reformatted["image"]["link"] = attr[1]
             self._in_img = True
         if tag == "meta":
             is_sm_image = False
@@ -113,7 +114,7 @@ class OldPortfolioParser(HTMLParser):
             new_text = self._fix_punctuation(new_text)
             self._current_paragraphs[-1] = new_text
         elif self._in_img:
-            self.reformatted["image_caption"] = strip_data
+            self.reformatted["image"]["caption"] = strip_data
             self._in_img = False
         elif "skills employed" in strip_data.lower():
             self._in_tldr = False
@@ -133,8 +134,7 @@ with open(fname, "r") as old_portfolio_page:
 
 key_order = [
     "name", "page_title", "title", "subtitle", "company_name", "tldr",
-    "skills_employed", "image_caption", "image_alt_text", "image_link",
-    "image_social_media_link", "sections"]
+    "skills_employed", "image", "image_social_media_link", "sections"]
 
 reformatted_ordered = {}
 for key in key_order:
