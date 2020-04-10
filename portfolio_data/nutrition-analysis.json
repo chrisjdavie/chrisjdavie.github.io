@@ -6,9 +6,11 @@
     "company_name": "Cookit",
     "tldr": "I analysed open government data about the amount of food consumed by different groups in the UK. This emphasised the need for health-based interventions in support of a funding bid for Cookit, a new startup.",
     "skills_employed": "Python, Excel, data cleaning, Matplotlib, project design, Linux",
-    "image_caption": "Portions of Fruit and veg consumed in specific UK regions.",
-    "image_alt_text": "Five-a-day consumed by region",
-    "image_link": "images/nutrition-analysis.png",
+    "image": {
+        "caption": "Portions of Fruit and veg consumed in specific UK regions.",
+        "alt_text": "Five-a-day consumed by region",
+        "link": "images/nutrition-analysis.png"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/nutrition-analysis.png",
     "sections": [
         {

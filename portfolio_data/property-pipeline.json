@@ -6,15 +6,17 @@
     "company_name": "Wayhome",
     "tldr": "Wayhome helps you buy a home. I built a pipeline that automatically selects the properties Wayhome could buy, to present to potential customers.",
     "skills_employed": "Software design, specification gathering, data pipelines, data collection, databases, BigQuery, PostgreSQL, Google cloud platform, Cloud Run, Python (SQLAlchemy, pytest, Invoke), TDD, project design, multi-threading, Linux",
-    "image_caption": "Basic schematic of the property processing pipeline.",
-    "image_alt_text": "Property pipeline",
-    "image_link": "images/property-pipeline.jpg",
+    "image": {
+        "caption": "Basic schematic of the property processing pipeline.",
+        "alt_text": "Property pipeline",
+        "link": "images/property-pipeline.jpg"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/property-pipeline.jpg",
     "sections": [
         {
             "title": "Help to buy your home",
             "paragraphs": [
-                "Wayhome helps its customers buy their home - the customer buys 5%, Wayhome buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out Wayhome."
+                "Wayhome helps its customers buy their home - the customer buys 5%, Wayhome buys 95%. The customer then pays rent on the part they don\u2019t own, and gradually buys out Wayhome."
             ],
             "subsections": [
                 {
@@ -49,7 +51,7 @@
                 {
                     "title": "Challenge",
                     "paragraphs": [
-                        "The raw listings were not useful for the data scientists - it was a large amount of data, hundreds of millions of rows, with thousands added and updated every day. This data was spread across multiple sources, in different formats, it wasn’t always correct or consistent and had many duplicates. This data needed to be transformed to allow straightforward analysis by the data team and stored in a datamart for easy access."
+                        "The raw listings were not useful for the data scientists - it was a large amount of data, hundreds of millions of rows, with thousands added and updated every day. This data was spread across multiple sources, in different formats, it wasn\u2019t always correct or consistent and had many duplicates. This data needed to be transformed to allow straightforward analysis by the data team and stored in a datamart for easy access."
                     ]
                 },
                 {
@@ -69,5 +71,6 @@
             ]
         }
     ],
+    "footnotes": "",
     "footnote": []
 }

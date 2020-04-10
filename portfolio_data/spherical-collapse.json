@@ -6,8 +6,10 @@
     "company_name": "",
     "tldr": "I examined physics underpinning laser fusion by simulating collapsing shocks through bounce and reflection at the origin, using high performance computing techniques",
     "skills_employed": " Hydrodynamics, time series analysis, mathematics, large dataset analysis, Linux, parallel computing, C++, Python, Cython, Matplotlib, NumPy, SciPy",
-    "image_caption": "Example simulation output, the lower half showing the shock front and top half showing a cut through of the hydrodynamic data.",
-    "image_embed_html": "<div class='tallvideoWrapper'><iframe src='https://www.youtube.com/embed/SEFMIBUF26A'></iframe></div>",
+    "image": {
+        "caption": "Example simulation output, the lower half showing the shock front and top half showing a cut through of the hydrodynamic data.",
+        "embed_html": "<div class='tallvideoWrapper'><iframe src='https://www.youtube.com/embed/SEFMIBUF26A'></iframe></div>"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/spherical-collapase-white-bg.png",
     "sections": [
         {

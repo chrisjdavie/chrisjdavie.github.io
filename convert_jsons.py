@@ -13,7 +13,19 @@ for data_json in old_dir.iterdir():
         old_name = "image_" + to_rename
         if old_name in data:
             data["image"][to_rename] = data[old_name]
-        data.pop(old_name)
+            data.pop(old_name)
+
+    key_order = [
+        "name", "page_title", "title", "subtitle", "company_name", "tldr",
+        "skills_employed", "image", "image_social_media_link", "sections",
+        "footnotes"]
+
+    reordered_data = {}
+    for key in key_order:
+        reordered_data[key] = data.get(key, "")
+    for key, item in data.items():
+        if key not in key_order:
+            reordered_data[key] = item
 
     with open(new_dir/data_json.name, "w") as new_fh:
-        json.dump(data, new_fh)
+        json.dump(reordered_data, new_fh, indent=4)

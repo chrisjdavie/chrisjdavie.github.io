@@ -6,9 +6,11 @@
     "company_name": "",
     "tldr": "Working with a Singaporean startup, I designed and prototyped an algorithm for carpooling, matching drivers and passengers.",
     "skills_employed": "algorithm design, algorithm prototyping, report writing, GIS, Google Maps API, Python (numpy, scipy, matplotlib), project design, Linux",
-    "image_caption": "The initial coarse matching stage for the algorithm. The red grid cells show the driver start and end points, the yellow cells show where he can likely pick people up for carpooling, overlaid onto a region of Singapore.",
-    "image_alt_text": "carpooling map",
-    "image_link": "images/carpooling.svg",
+    "image": {
+        "caption": "The initial coarse matching stage for the algorithm. The red grid cells show the driver start and end points, the yellow cells show where he can likely pick people up for carpooling, overlaid onto a region of Singapore.",
+        "alt_text": "carpooling map",
+        "link": "images/carpooling.svg"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/carpooling.png",
     "sections": [
         {

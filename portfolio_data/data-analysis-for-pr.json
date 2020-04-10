@@ -6,9 +6,11 @@
     "company_name": "",
     "tldr": "I analysed consumer spending data as part of a PR campaign that was covered on over 80 local news websites and news aggregators.",
     "skills_employed": "Excel, data visualisation, report writing, time series projections, multivariate regression analysis, Python (numpy, scipy, matplotlib), project design, Linux",
-    "image_caption": "A segment of consumers' spending on a product category over 2 years, with the model showing the downwards trend with seasonal variation.",
-    "image_alt_text": "consumer spending",
-    "image_link": "images/data-analysis-for-pr.svg",
+    "image": {
+        "caption": "A segment of consumers' spending on a product category over 2 years, with the model showing the downwards trend with seasonal variation.",
+        "alt_text": "consumer spending",
+        "link": "images/data-analysis-for-pr.svg"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/data-analysis-for-pr.png",
     "sections": [
         {

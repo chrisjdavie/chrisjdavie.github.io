@@ -37,8 +37,8 @@
                     {% if image.link is defined %}
                         <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image"></img>
                     {% endif %}
-                    {% if image_embed_html is defined %}
-                        {{ image_embed_html }}
+                    {% if image.embed_html is defined %}
+                        {{ image.embed_html }}
                     {% endif %}
                     <p><i>{{ image.caption }}</i></p>
                     {% for sec in sections %}

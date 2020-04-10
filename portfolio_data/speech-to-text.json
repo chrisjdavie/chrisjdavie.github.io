@@ -6,8 +6,10 @@
     "company_name": "Speechmatics",
     "tldr": "I worked at a provider of automatic speech recognition (ASR), automating the building of ASR systems in multiple languages.",
     "skills_employed": "Software design, specification gathering, data pipelines, web scraping, databases, PostgreSQL, Python (scrapy, numpy, scipy), Luigi, project design, Linux",
-    "image_caption": "Global language coverage, as of July 2016.",
-    "image_embed_html": "<iframe width='900' height='500' frameborder='0' scrolling='no' src='https://plot.ly/~cjdavie/0.embed'></iframe>",
+    "image": {
+        "caption": "Global language coverage, as of July 2016.",
+        "embed_html": "<iframe width='900' height='500' frameborder='0' scrolling='no' src='https://plot.ly/~cjdavie/0.embed'></iframe>"
+    },
     "image_social_media_link": "http://chrisjdavie.github.io/images/speech-to-text.png",
     "sections": [
         {
