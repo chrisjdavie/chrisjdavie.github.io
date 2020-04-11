@@ -35,7 +35,7 @@
                     <p>{{ tldr }}</p>
                     <p><i><b>Skills employed:</b> {{ skills_employed }}</i></p>
                     {% if image.link is defined %}
-                        <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image"></img>
+                        <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image {{ image.link_class }}"></img>
                     {% endif %}
                     {% if image.embed_html is defined %}
                         {{ image.embed_html }}

@@ -3,10 +3,11 @@ import re
 from html.parser import HTMLParser
 from pathlib import Path
 from pprint import pprint
-from shutil import move
+from shutil import copy
 
-fname = "website_old/chicken_coffee.html"
-output_path = Path("portfolio_data/chicken-coffee.json")
+old_webpath = Path("shares")
+fpath = old_webpath/"tips.html"
+output_path = Path("portfolio_data/stock-tips.json")
 
 class OldPortfolioParser(HTMLParser):
 
@@ -80,7 +81,7 @@ class OldPortfolioParser(HTMLParser):
         strip_data = data.strip()
         strip_data = re.sub("\n *", " ", strip_data)
 
-        if not strip_data or "Copyright" in strip_data:
+        if not strip_data or "Copyright" in strip_data or "maintained by" in strip_data:
             pass
         elif self._is_h1:
             if not self.reformatted.get("title"):
@@ -104,6 +105,8 @@ class OldPortfolioParser(HTMLParser):
                         }
                     )
         elif self._in_sections:
+            pprint(self.reformatted)
+            print(self._new_para, strip_data[-10:])
             if self._new_para:
                 self._current_paragraphs.append(
                     "")
@@ -131,7 +134,7 @@ class OldPortfolioParser(HTMLParser):
 
 parser = OldPortfolioParser()
 
-with open(fname, "r") as old_portfolio_page:
+with fpath.open("r") as old_portfolio_page:
     parser.feed(old_portfolio_page.read())
 
 key_order = [
@@ -144,18 +147,23 @@ for key in key_order:
 for key, item in parser.reformatted.items():
     if key not in key_order:
         reformatted_ordered[key] = item
-reformatted_ordered["name"] = output_path.name.split(".")[0]
+name = output_path.name.split(".")[0]
+reformatted_ordered["name"] = name
 
 if old_path := reformatted_ordered["image"].get("link"):
-    src_pic_path = "website_old"/Path(old_path)
-    dst_pic_path = Path("images")/(
-        reformatted_ordered["name"] + src_pic_path.suffix)
+    base_pic_path = old_webpath/Path(old_path)
+    stem = base_pic_path.stem
+    for src_pic_path in base_pic_path.parent.iterdir():
+        if stem in src_pic_path.stem:
+            diff = src_pic_path.stem.replace(stem, "").replace("_", "-")
+            dst_pic_path = Path("images")/(
+                name + diff + src_pic_path.suffix)
+            copy(src_pic_path, dst_pic_path)
+            if src_pic_path == base_pic_path:
+                reformatted_ordered["image"]["link"] = str(dst_pic_path)
 
-    reformatted_ordered["image"]["link"] = str(dst_pic_path)
-    move(src_pic_path, dst_pic_path)
 
 with output_path.open("w") as portfolio_json_fh:
     json.dump(reformatted_ordered, portfolio_json_fh, indent=4)
-
 
 # pprint(parser.reformatted)

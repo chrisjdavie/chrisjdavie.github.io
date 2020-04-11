@@ -83,6 +83,6 @@ body {
  * Because svgs don't always play nice
  */
 
- .style-rti-baseline {
+ .style-bust-svg {
   width: 85%; 
 }
