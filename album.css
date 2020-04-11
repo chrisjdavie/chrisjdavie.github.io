@@ -1,5 +1,11 @@
-.portfolio-image {
-    padding-bottom: .25rem;
+
+@media (min-width: 750px){
+  .img-wrapper {
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;    
+    height: 15vw;
+  }
 }
 
 body {
