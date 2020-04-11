@@ -5,9 +5,9 @@ from pathlib import Path
 from pprint import pprint
 from shutil import copy
 
-old_webpath = Path("shares")
-fpath = old_webpath/"tips.html"
-output_path = Path("portfolio_data/stock-tips.json")
+old_webpath = Path("Olympics_redo")
+fpath = old_webpath/"index.html"
+output_path = Path("portfolio_data/olympics-redo.json")
 
 class OldPortfolioParser(HTMLParser):
 
