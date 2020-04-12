@@ -47,5 +47,7 @@
         "image_link": "images/data-analysis-for-pr.svg",
         "tldr": "I analysed consumer spending data as part of a PR campaign, that was covered on over 80 local news websites and news aggregators."
     },
-    "created_date": "1970-01-10"
+    "created_date": "1970-01-10",
+    "category": "commercial",
+    "portfolio_link": "data-analysis-for-pr.html"
 }

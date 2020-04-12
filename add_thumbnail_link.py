@@ -13,7 +13,7 @@ for portfolio_data_path in portfolio_data_dir.iterdir():
     with portfolio_data_path.open("rb") as portfolio_data_fh:
         portfolio_data = json.load(portfolio_data_fh)
 
-    portfolio_data["category"] = "commercial"
+    portfolio_data["portfolio_link"] = portfolio_data["name"] + ".html"
 
     with portfolio_data_path.open("w") as portfolio_data_fh:
         json.dump(portfolio_data, portfolio_data_fh, indent=4)

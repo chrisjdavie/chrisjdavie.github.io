@@ -45,7 +45,9 @@
     "footnotes": [],
     "index": {
         "image_link": "images/nutrition-analysis.png",
-        "tldr": "I analysed food consumption in the UK. This emphasised the need for health-based interventions, in support of a funding bid for Cookit."
+        "tldr": "My analysis emphasised the need for health-based interventions, in support of a funding bid for Cookit."
     },
-    "created_date": "1970-01-07"
+    "created_date": "1970-01-07",
+    "category": "commercial",
+    "portfolio_link": "nutrition-analysis.html"
 }

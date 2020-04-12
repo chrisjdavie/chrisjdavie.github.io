@@ -77,5 +77,7 @@
         "image_link": "images/property-pipeline.jpg",
         "tldr": "Building a pipeline that automatically selects properties <i>Wayhome</i> could buy, to show to customers."
     },
-    "created_date": "1970-01-13"
+    "created_date": "1970-01-13",
+    "category": "commercial",
+    "portfolio_link": "property-pipeline.html"
 }

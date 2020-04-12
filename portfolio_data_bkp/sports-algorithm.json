@@ -56,5 +56,6 @@
         "image_link": "images/sports-algorithm.svg",
         "tldr": "Developing a custom algorithm for <i>Lineup Lab</i>, a fantasy sports website, that underpins a new premium product range."
     },
-    "created_date": "1970-01-11"
+    "created_date": "1970-01-11",
+    "category": "commercial"
 }
