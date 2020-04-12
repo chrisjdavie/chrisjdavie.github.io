@@ -25,9 +25,10 @@ def load_portfolio_data():
     return all_portfolio_data
 
 
-def render_portfolio_items(env, navbar, all_portfolio_data):
+def render_portfolio_items(env, navbar, headers, all_portfolio_data):
     template = env.get_template("portfolio.html.jinja")
     template.blocks["navbar"] = navbar.render
+    template.blocks["headers"] = headers.render
 
     for portfolio_data in all_portfolio_data:
 
@@ -43,12 +44,14 @@ def render_portfolio_items(env, navbar, all_portfolio_data):
             page_fh.write(page_src)
 
 
-def render_index_page(env, navbar, all_portfolio_data):
+def render_index_page(env, navbar, headers, all_portfolio_data):
 
     cols_in_a_row = 3
 
     template = env.get_template("index.html.jinja")
     template.blocks["navbar"] = navbar.render
+    template.blocks["headers"] = headers.render
+
     about = env.get_template("about.html.jinja")
     template.blocks["about"] = about.render
 
@@ -105,8 +108,9 @@ env = Environment(
     autoescape=select_autoescape(['html'])
 )
 navbar = env.get_template("navbar.html.jinja")
+headers = env.get_template("headers.html.jinja")
 
 all_portfolio_data = load_portfolio_data()
 
-render_portfolio_items(env, navbar, all_portfolio_data)
-render_index_page(env, navbar, all_portfolio_data)
+render_portfolio_items(env, navbar, headers, all_portfolio_data)
+render_index_page(env, navbar, headers, all_portfolio_data)

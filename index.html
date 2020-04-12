@@ -2,19 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
+    <title>Chris' project portfolio</title>
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="http://chrisjdavie.github.io/images/speech_to_text.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="album.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,17 +30,21 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
                 </li>
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="index.html#testimonials">Testimonials <span
+                            class="sr-only">(current)</span></a>
+                </li> -->
             </ul>
         </div>
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>Chris Davie's Project Portfolio</h1>
+        <a id="portfolio"><h1>Chris Davie's Project Portfolio</h1></a>
         <h1><small>Data engineering, software and research</small></h1>
     </div>
 
@@ -44,24 +55,24 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="property-pipeline.html.html">
-                            <img class="img-fluid img-wrapper" src="images/property-pipeline.jpg" alt="Property Data Pipeline">
+                        <a href="property_pipeline.html">
+                            <img class="img-fluid img-wrapper" src="images/property_pipeline.jpg" alt="Property Data Pipeline">
                             <h3>Property Data Pipeline</h3>
                         </a>
                         <p>Building a pipeline that automatically selects properties <i>Wayhome</i> could buy, to show to customers.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="speech-to-text.html.html">
-                            <img class="img-fluid img-wrapper" src="images/speech-to-text.png" alt="Speech-to-text pipeline">
+                        <a href="speech_to_text.html">
+                            <img class="img-fluid img-wrapper" src="images/speech_to_text.png" alt="Speech-to-text pipeline">
                             <h3>Speech-to-text pipeline</h3>
                         </a>
                         <p>Automating the building of speech-to-text systems in multiple languages, for a provider of automatic speech recognition.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="sports-algorithm.html.html">
-                            <img class="img-fluid img-wrapper" src="images/sports-algorithm.svg" alt="Sports Algorithm">
+                        <a href="sports_algorithm.html">
+                            <img class="img-fluid img-wrapper" src="images/sports_algorithm.svg" alt="Sports Algorithm">
                             <h3>Sports Algorithm</h3>
                         </a>
                         <p>Developing a custom algorithm for <i>Lineup Lab</i>, a fantasy sports website, that underpins a new premium product range.</p>
@@ -72,23 +83,23 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="data-analysis-for-pr.html.html">
-                            <img class="img-fluid img-wrapper" src="images/data-analysis-for-pr.svg" alt="Analysis for PR">
+                        <a href="data_analysis_for_pr.html">
+                            <img class="img-fluid img-wrapper" src="images/data_analysis_for_pr.svg" alt="Analysis for PR">
                             <h3>Analysis for PR</h3>
                         </a>
                         <p>I analysed consumer spending data as part of a PR campaign, that was covered on over 80 local news websites and news aggregators.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="targeted-marketing-analysis.html.html">
-                            <img class="img-fluid img-wrapper" src="images/targeted-marketing-analysis.png" alt="Analysis for marking">
+                        <a href="targeted_marketing_analysis.html">
+                            <img class="img-fluid img-wrapper" src="images/targeted_marketing_analysis.png" alt="Analysis for marking">
                             <h3>Analysis for marking</h3>
                         </a>
                         <p>I worked with Tutorfair to use their data to more precisely direct their marketing and recruitment campaigns.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="carpooling.html.html">
+                        <a href="carpooling.html">
                             <img class="img-fluid img-wrapper" src="images/carpooling.svg" alt="Carpooling algorithm">
                             <h3>Carpooling algorithm</h3>
                         </a>
@@ -100,8 +111,8 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="nutrition-analysis.html.html">
-                            <img class="img-fluid img-wrapper" src="images/nutrition-analysis.png" alt="Analysis of food data">
+                        <a href="nutrition_analysis.html">
+                            <img class="img-fluid img-wrapper" src="images/nutrition_analysis.png" alt="Analysis of food data">
                             <h3>Analysis of food data</h3>
                         </a>
                         <p>My analysis emphasised the need for health-based interventions, in support of a funding bid for Cookit.</p>
@@ -115,16 +126,16 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="rti.html.html">
-                            <img class="img-fluid img-wrapper" src="images/rti-baseline.svg" alt="Rayleigh-Taylor Instability">
+                        <a href="rti.html">
+                            <img class="img-fluid img-wrapper" src="images/rti_baseline.svg" alt="Rayleigh-Taylor Instability">
                             <h3>Rayleigh-Taylor Instability</h3>
                         </a>
                         <p>Building a platform to examine the physics behind the most damaging phenomena in laser fusion.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="spherical-collapase.html.html">
-                            <img class="img-fluid img-wrapper" src="images/spherical-collapse-transparent-bg.png" alt="Spherical collapse">
+                        <a href="spherical_collapase.html">
+                            <img class="img-fluid img-wrapper" src="images/spherical_collapse_transparent_bg.png" alt="Spherical collapse">
                             <h3>Spherical collapse</h3>
                         </a>
                         <p>Examining the physics behind a new scheme for laser fusion.</p>
@@ -138,24 +149,24 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="chicken-coffee.html.html">
-                            <img class="img-fluid img-wrapper" src="images/chicken-coffee.png" alt="Chicken, coffee and house prices">
+                        <a href="chicken_coffee.html">
+                            <img class="img-fluid img-wrapper" src="images/chicken_coffee.png" alt="Chicken, coffee and house prices">
                             <h3>Chicken, coffee and house prices</h3>
                         </a>
                         <p>A friend does comedy, and thinks you can find out about house prices using chicken and coffee.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="news-sentiment.html.html">
-                            <img class="img-fluid img-wrapper" src="images/news-sentiment.svg" alt="Sentiment of news">
+                        <a href="news_sentiment.html">
+                            <img class="img-fluid img-wrapper" src="images/news_sentiment.svg" alt="Sentiment of news">
                             <h3>Sentiment of news</h3>
                         </a>
                         <p>Looking at how well machine learning can assess the sentiment of news articles.</p>
                     </div>
                 
                     <div class="col-md-4">
-                        <a href="stock-tips.html.html">
-                            <img class="img-fluid img-wrapper" src="images/stock-tips.svg" alt="Stock tips vs. trackers">
+                        <a href="stock_tips.html">
+                            <img class="img-fluid img-wrapper" src="images/stock_tips.svg" alt="Stock tips vs. trackers">
                             <h3>Stock tips vs. trackers</h3>
                         </a>
                         <p>Performance of stock tips from the Telegraph compared to the FTSE 100.</p>
@@ -166,8 +177,8 @@
                 <div class="row">
                 
                     <div class="col-md-4">
-                        <a href="olympics-redo.html.html">
-                            <img class="img-fluid img-wrapper" src="images/olympics-redo.png" alt="Winter Olympics">
+                        <a href="olympics_redo.html">
+                            <img class="img-fluid img-wrapper" src="images/olympics_redo.png" alt="Winter Olympics">
                             <h3>Winter Olympics</h3>
                         </a>
                         <p>Comparing Winter Olympics results to geodemographic factors.</p>
@@ -180,7 +191,7 @@
 
         <div class="row">
             <div class="col-xl-8">
-                <hr>
+                <a id="about"><hr></a>
                 <h2>Chris Davie <small>- Data engineer, sofware developer</small></h2>
 
 <p>I’m a Python developer and Data Engineer with a PhD in Physics. I've delivered three small and
@@ -189,11 +200,11 @@
     CI/CD and YAGNI where appropriate).</p>
 
 <p>I’ve designed and helped implement 3 significant software projects, 2 helping drive revenue. I built
-    batch processing pipelines for Wayhome, automatically <a href=property-pipeline.html>selecting properties for shared ownership</a>. Similarly, I designed and helped
-    implement pipelines for Speechmatics, automatically training speech-to-text transcription models.
-    For LineupLab, I built an algorithm that helps fantasy sports players.</p>
+    batch processing pipelines for Wayhome, automatically <a href=property_pipeline.html>selecting properties for shared ownership</a>. Similarly, I designed and helped
+    implement pipelines for Speechmatics, automatically <a href=speech_to_text.html>training speech-to-text transcription models</a>.
+    For LineupLab, I built an algorithm that <a href=sports_algorithm.html>helps fantasy sports players</a>.</p>
 
-<p>My portfolio above describes these projects in more detail.</p>
+<p>My <a href="#portfolio">portfolio</a> above describes these projects in more detail.</p>
 
 <p>I’ve mainly worked in Python so far, I’ve used a range of libraries including Flask, SQLAlchemy,
     Celery, pytest, invoke, numpy, scipy, matplotlib and Luigi. I’m proficient in a number of other

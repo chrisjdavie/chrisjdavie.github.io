@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stock tips compared to the FTSE</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="http://chrisjdavie.github.io/images/speech_to_text.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="album.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="index.html#testimonials">Testimonials <span
+                            class="sr-only">(current)</span></a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">Stock tips vs. trackers</h1>
+                    <h2 class="text-muted"><small>Stock tip performance compared to the FTSE 100.</small></h2>
+                    <hr>
+                    <p>I compare the growth of shares recommended by the Telegraph against the growth of the FTSE 100, as competing investment strategies. The growth is comparable over the month the code has been running, while the volatility of the Telegraph tips is much higher.</p>
+                    <p><i><b>Skills employed:</b> YQL, Python, SciPy, matplotlib, Numpy, nltk, statistics, web scraping, data cleaning, Matplotlib, project design, Linux</i></p>
+                    
+                        <img src="images/stock_tips.svg" alt="Telegraph tips compared to the FTSE." class="img-fluid portfolio-image style-bust-svg"></img>
+                    
+                    
+                    <p><i>A month of FTSE growth compared to the Telegraph tips. The first image and method is at the end of every day, putting a unit of currency in any tips, the comparison the same but in the FTSE 100.</i></p>
+                    
+                        <h2 class="blog-post-subtitle">Motivation</h2>
+                        
+                            <p>I’m comparing the growth of shares tipped by the Telegraph tipster Questor, with the growth of the FTSE 100 index. This is mainly to develop a baseline growth to compare to any models I construct, and also to learn about stock markets and finance, and improve my coding — I hadn't done text handling or web scraping before.</p>
+                        
+                        
+                            <h3>Getting stock prices</h3>
+                            
+                                <p>The share and index price comes from YQL, a free tool provided by Yahoo to search their data tables, one of which is finance. It required a bit of reverse engineering of the genuine outputs and clever thinking about the Yahoo websites, but that wasn’t too hard. It’s not the best form for doing this, the results needed a bit of cleaning, but I suspect a nicer version of this would be quite expensive.</p>
+                            
+                        
+                            <h3>Comparison methods</h3>
+                            
+                                <p>The first method is at the end of every day, putting a unit of currency in any tips provided by Questor, the comparison the same but in the FTSE 100. The second is equally dividing a unit of currency over any tips from the previous week, the comparison is the FTSE again. Before plotting, both are normalised to the total money invested (as it varies with time) to allow the signal to be seen over the signal of more money being invested- the unitless ‘Change’ y-axes.</p>
+                            
+                                <p>The first method is the simplest I could think of, the second method is something close to what I might do. I suspect there are a wide range of ways of doing this, if I was extending it I'd look them up.</p>
+                            
+                        
+                            <h3>Results</h3>
+                            
+                                <p>The Telegraph tips and the FTSE shows comparable growth over the time considered, with much higher volatility from the tips. Telegraph share tips don’t seem to be the way to go.</p>
+                            
+                                <p>I enjoyed it as a baseline, and YQL seems a sensible way of approaching tests of this sort of investment.</p>
+                            
+                        
+                        <hr>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>

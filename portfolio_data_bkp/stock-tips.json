@@ -49,5 +49,6 @@
         "tldr": "Performance of stock tips from the Telegraph compared to the FTSE 100."
     },
     "created_date": "1970-01-02",
-    "category": "personal"
+    "category": "personal",
+    "portfolio_link": "stock-tips.html"
 }

@@ -2,14 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="album.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Chris' project portfolio</title>
+    {% block headers %}
+    {% endblock %}
 </head>
 
 <body>
@@ -17,7 +12,7 @@
     {% endblock %}
 
     <div class="jumbotron text-center">
-        <h1>Chris Davie's Project Portfolio</h1>
+        <a id="portfolio"><h1>Chris Davie's Project Portfolio</h1></a>
         <h1><small>Data engineering, software and research</small></h1>
     </div>
 
@@ -28,7 +23,7 @@
                 <div class="row">
                 {% for portfolio_item in row %}
                     <div class="col-md-4">
-                        <a href="{{ portfolio_item.portfolio_link }}.html">
+                        <a href="{{ portfolio_item.portfolio_link }}">
                             <img class="img-fluid img-wrapper" src="{{ portfolio_item.index.image_link }}" alt="{{ portfolio_item.title }}">
                             <h3>{{ portfolio_item.title }}</h3>
                         </a>
@@ -42,7 +37,7 @@
 
         <div class="row">
             <div class="col-xl-8">
-                <hr>
+                <a id="about"><hr></a>
                 {% block about %}
                 {% endblock %}
             </div>
