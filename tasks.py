@@ -41,9 +41,9 @@ class Venv:
 
 @task
 def clean_html(c):
-    index_page = Path("index.html")
-    if index_page.exists():
-        index_page.unlink()
+    start_page = Path("portfolio.html")
+    if start_page.exists():
+        start_page.unlink()
 
     portfolio_dir = Path("portfolio")
 

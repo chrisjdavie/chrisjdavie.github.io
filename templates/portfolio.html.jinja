@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ page_title }}</title>
+    <title>Chris' project portfolio</title>
     {% block headers %}
     {% endblock %}
 </head>
@@ -11,56 +11,55 @@
     {% block navbar %}
     {% endblock %}
 
-    {% if github_repo_link %}
-        <a id="forkme_banner" href="{{ github_repo_link }}">View on GitHub</a>
-    {% endif %}
+    <div class="jumbotron text-center">
+        <a id="portfolio"><h1>Chris Davie's Project Portfolio</h1></a>
+        <h1><small>Data engineering, software and research</small></h1>
+    </div>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-xl-2"></div>
-            <div class="col-xl-8 blog-main">
-                <div class="blog-post">
-                    <h1 class="blog-post-title">{{ title }}</h1>
-                    <h2 class="text-muted"><small>{{ subtitle }}</small></h2>
-                    <hr>
-                    <p>{{ tldr }}</p>
-                    <p><i><b>Skills employed:</b> {{ skills_employed }}</i></p>
-                    {% if image.link is defined %}
-                        <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image {{ image.link_class }}"></img>
-                    {% endif %}
-                    {% if image.embed_html is defined %}
-                        {{ image.embed_html }}
-                    {% endif %}
-                    <p><i>{{ image.caption }}</i></p>
-                    {% for sec in sections %}
-                        <h2 class="blog-post-subtitle">{{ sec.title }}</h2>
-                        {% for para in sec.paragraphs %}
-                            <p>{{ para }}</p>
-                        {% endfor %}
-                        {% for subsec in sec.subsections %}
-                            <h3>{{ subsec.title }}</h3>
-                            {% for para in subsec.paragraphs %}
-                                <p>{{ para }}</p>
-                            {% endfor %}
-                        {% endfor %}
-                        <hr>
-                    {% endfor %}
-                    {% for para in footnote %}
-                        {{ para }}<br>
-                    {% endfor %}
+    <div class="container">
+        {% for cat in categories %}
+            <h2 class="project-header">{{ cat.title }} <small>{{ cat.subtitle }}</small></h2>
+            {% for row in cat.rows %}
+                <div class="row">
+                {% for portfolio_item in row %}
+                    <div class="col-md-4">
+                        <a href="{{ portfolio_item.portfolio_link }}">
+                            <img class="img-fluid img-wrapper" src="portfolio/{{ portfolio_item.index.image_link }}" alt="{{ portfolio_item.title }}">
+                            <h3>{{ portfolio_item.title }}</h3>
+                        </a>
+                        <p>{{ portfolio_item.index.tldr }}</p>
+                    </div>
+                {% endfor %}
                 </div>
+            {% endfor %}
+        {% endfor %}
+
+
+        <div class="row">
+            <div class="col-xl-8">
+                <a id="about"><hr></a>
+                {% block about %}
+                {% endblock %}
             </div>
         </div>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-xl-2"></div>
-                <div class="col-xl-8 blog-main">
-                    <p>Copyright &copy; Christopher J Davie, 2020</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
 
-    </main>
+        <a id="testimonials"><hr></a>
+        <h2 class="project-header">Testimonials <small>Nice things people have said about me</small></h2>
+        {% block testimonials %}
+        {% endblock %} 
+    <footer>
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8">
+                <hr>
+                <p>Copyright &copy; Christopher J Davie, 2020</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </footer>
+    </div>
+    <!-- Footer -->
+
 </body>
+
+</html>

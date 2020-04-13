@@ -26,7 +26,7 @@ def load_portfolio_data():
 
 
 def render_portfolio_items(env, navbar, headers, all_portfolio_data):
-    template = env.get_template("portfolio.html.jinja")
+    template = env.get_template("portfolio_page.html.jinja")
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
 
@@ -55,7 +55,7 @@ def setup_portfolio_data(all_portfolio_data):
     """
     data format specified by
 
-    personalwebsite/templates/index.html.jinja
+    templates/portfolio.html.jinja
     """
     cols_in_a_row = 3
 
@@ -138,7 +138,7 @@ def load_setup_testimonial_data():
     """
     data format specified by
 
-    personalwebsite/templates/testimonials.html.jinja
+    templates/testimonials.html.jinja
     """
 
     cols_in_a_row = 2
@@ -157,9 +157,9 @@ def load_setup_testimonial_data():
     return formatted_data
 
 
-def render_index_page(env, navbar, headers, all_portfolio_data):
+def render_portfolio(env, navbar, headers, all_portfolio_data):
 
-    template = env.get_template("index.html.jinja")
+    template = env.get_template("portfolio.html.jinja")
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
 
@@ -182,8 +182,8 @@ def render_index_page(env, navbar, headers, all_portfolio_data):
         testimonials_data=testimonials
     )
 
-    with open("index.html", "w") as index_fh:
-        index_fh.write(page_src)
+    with open("portfolio.html", "w") as portfolio_fh:
+        portfolio_fh.write(page_src)
 
 
 env = Environment(
@@ -196,4 +196,4 @@ headers = env.get_template("headers.html.jinja")
 all_portfolio_data = load_portfolio_data()
 
 render_portfolio_items(env, navbar, headers, all_portfolio_data)
-render_index_page(env, navbar, headers, all_portfolio_data)
+render_portfolio(env, navbar, headers, all_portfolio_data)
