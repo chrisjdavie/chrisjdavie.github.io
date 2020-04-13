@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rayleigh-Taylor instability - investigating the most damaging phenomena in laser fusion experiments</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="http://chrisjdavie.github.io/images/speech_to_text.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/album.css">
+    <link rel="stylesheet" href="../css/gh_pages.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#testimonials">Testimonials <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">Rayleigh-Taylor Instability</h1>
+                    <h2 class="text-muted"><small>Examining the physics behind the most damaging phenomena in laser fusion</small></h2>
+                    <hr>
+                    <p>The Rayleigh-Taylor instability (RTI) is believed to be the culprit for the failure of current laser fusion experiments - it rips the fuel apart before it can burn.   I'm designing a 3D simulation to understand how it differs from 2D.</p>
+                    <p><i><b>Skills employed:</b> Hydrodynamics, convolution smoothing, time series analysis, mathematics, large dataset analysis, Linux, parallel computing, C++, Python, Cython, Matplotlib, NumPy SciPy.</i></p>
+                    
+                    
+                        <div class='videoWrapper'><iframe width=605 height=537 src='https://www.youtube.com/embed/NU3zwcj_fJc'></iframe></div>
+                    
+                    <p><i>Each blue circle represents the position of the blue line in the video above.  After about t>2.5, the simulation diverges from the analytic results - this is due to the inaccuracies from the grid.  The theory is not complete, it would have diverged from the simulation eventually (if I'd got the simulation behaving perfectly), but this shows at least I'm matching the test analytics.</i></p>
+                    
+                        <h2 class="blog-post-subtitle"></h2>
+                        
+                        
+                            <h3>Baseline RTI model</h3>
+                            
+                                <p>To examine RTI I’m constructing a baseline models to work from; planar geometry is the simplest case that replicates an analytic solution. I reproduce this solution within the regime of interest, the video above shows one of the final production simulations. The image below compares the simulation growth to the theory, that of Kull.</p>
+                            
+                                <p><img class='img-fluid portfolio-image style-bust-svg' src='images/rti-baseline.svg' alt='RTI growth, simulation compared to analytics.'></img></p>
+                            
+                                <p>Each blue circle represents the position of the blue line in the video above.  After about t>2.5, the simulation diverges from the analytic results - this is due to the inaccuracies from the grid.  The theory is not complete, it would have diverged from the simulation eventually (if I'd got the simulation behaving perfectly), but this shows at least I'm matching the test analytics.</p>
+                            
+                                <p>We are now extending this to spherical geometry and have reconstruct an analytic solution, as the first stage for examining IFE-relevant physics.</p>
+                            
+                        
+                            <h3>Kidder solution model</h3>
+                            
+                                <p><iframe width='605' height='454' src='https://www.youtube.com/embed/W_zIGHNh_y4' frameborder='0' allowfullscreen></iframe></p>
+                            
+                                <p>This is a video of the Kidder solution for compression of material. The analytic RTI growth rate uses the Kidder solution, a spherical compression that involves no heating of the material. As the first stage of this 3D simulation of spherical RTI, I recreate the Kidder solution (this example is symmetric 2D).</p>
+                            
+                        
+                        <hr>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>

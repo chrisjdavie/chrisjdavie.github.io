@@ -1,0 +1,69 @@
+[
+    {
+        "testimonials": [
+            [
+                "Chris is an excellent data engineer and programmer. He has a deep technical understanding of the field, ranging from traditional relational data technology to streaming and implementing production machine learning solutions.",
+                "Working with Chris he has built both conventional data pipelines and bleeding edge mathematical computing with equal care and attention. He works closely with business stakeholders to identify problems and is adept at designing effective solutions that fix business problems.",
+                "He has a natural passion for learning and is a remarkable critical thinker. While we've worked together he's been a constant source of new ideas.",
+                "His passion for learning extends into his approach to sharing his expertise. Chris is an excellent teacher. Generous with his time, he takes care to coach and train his colleagues, preferring to help them learn how to solve problems themselves."
+            ]
+        ],
+        "author": "Johnny Morris",
+        "role": "Chief Data Officer at Wayhome",
+        "date": "1970-01-01"
+    },
+    {
+        "testimonials": [
+            [
+                "I really enjoy working with Chris. No matter what the challenge, he communicates everything extremely well and is able to find creative and clever solutions. If I could, I would lock him up for another 6 months!"
+            ],
+            [
+                "Chris is an excellent developer and problem solver. Fast, Communicative, Creative. He is a rare find and I look forward to working with him on future projects."
+            ]
+        ],
+        "author": "Blake Pender",
+        "role": "Founder of Lineup Lab",
+        "date": "1970-01-01"
+    },
+    {
+        "testimonials": [
+            [
+                "Tutorfair were very lucky to have Chris undertake a project for us when he was at The ASI. He provided us with visualisations of where Tutorfair tutors were working through his technically complex, yet easy-to-understand maps.",
+                "What's more, when presenting he was comfortable answering both statistical, and conceptual questions in a detailed manner, always answering thoroughly, and with healthy dose of wit!"
+            ]
+        ],
+        "author": "Sam Floy",
+        "role": "Head of Tutors at Tutorfair",
+        "date": "1970-01-01"
+    },
+    {
+        "testimonials": [
+            [
+                "Chris has been part of a team here working on various data science projects. In addition to his technical skills, what we find very valuable is he is quick to understanding clients needs and identifying the right questions to ask and steps for solving complex problems. He's been delivering top quality work for us and to a tight schedule. A dedicated professional who's fun to work with. He is a valuable member of the team."
+            ]
+        ],
+        "author": "Angie Ma",
+        "role": "COO at The ASI",
+        "date": "1970-01-01"
+    },
+    {
+        "testimonials": [
+            [
+                "Chris is detail oriented, diligent, and approachable. A great combination when it comes to data. He helped us understand the consumption of fruit and vegetable per income in the UK, which is instrumental to our work at Cookit. The visual result of the data was clean and clear and we envisage to use the code and math in forthcoming projects. All in all I am happy to say that Chris is able to execute a scope diligently and add to the table when he sees potential of adding insights."
+            ]
+        ],
+        "author": "Juliana Zarate Davila",
+        "role": "Co-founder at Cookit",
+        "date": "1970-01-01"
+    },
+    {
+        "testimonials": [
+            [
+                "Chris and I have collaborated on data science projects for Tutorfair, analyzing tutor performance and availability, and Antidote, where we examined consumer spending traits over the past few years. It was nothing short of a pleasure to work with Chris, whose natural aptitude for data visualization and coding were invaluable throughout our work. Chris's sharp attention to detail and strict adherence to deadlines guaranteed the quality and efficiency of our projects, and his clear thinking and lucid exposition make him an ideal person to bounce ideas off. Chris is a first-class data scientist whose skills will lend themselves well to future projects!"
+            ]
+        ],
+        "author": "Conor Daly",
+        "role": "Application Engineer at The MathWorks",
+        "date": "1970-01-01"
+    }
+]

@@ -1,0 +1,16 @@
+    {% for row in testimonials_data %}
+        <div class="row">
+            {% for giver in row %}
+                <div class="col-md-6">
+                {% for paragraphs in giver.testimonials %}
+                    <blockquote>
+                    {% for para in paragraphs %}
+                        <p>{{ para }}</p>
+                    {% endfor %}
+                    </blockquote>
+                {% endfor %}
+                    <p>{{ giver.author }}, <i>{{ giver.role }}</i></p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}

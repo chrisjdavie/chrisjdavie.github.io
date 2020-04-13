@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ page_title }}</title>
+    {% block headers %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block navbar %}
+    {% endblock %}
+
+    {% if github_repo_link %}
+        <a id="forkme_banner" href="{{ github_repo_link }}">View on GitHub</a>
+    {% endif %}
+
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">{{ title }}</h1>
+                    <h2 class="text-muted"><small>{{ subtitle }}</small></h2>
+                    <hr>
+                    <p>{{ tldr }}</p>
+                    <p><i><b>Skills employed:</b> {{ skills_employed }}</i></p>
+                    {% if image.link is defined %}
+                        <img src="{{ image.link }}" alt="{{ image.alt_text }}" class="img-fluid portfolio-image {{ image.link_class }}"></img>
+                    {% endif %}
+                    {% if image.embed_html is defined %}
+                        {{ image.embed_html }}
+                    {% endif %}
+                    <p><i>{{ image.caption }}</i></p>
+                    {% for sec in sections %}
+                        <h2 class="blog-post-subtitle">{{ sec.title }}</h2>
+                        {% for para in sec.paragraphs %}
+                            <p>{{ para }}</p>
+                        {% endfor %}
+                        {% for subsec in sec.subsections %}
+                            <h3>{{ subsec.title }}</h3>
+                            {% for para in subsec.paragraphs %}
+                                <p>{{ para }}</p>
+                            {% endfor %}
+                        {% endfor %}
+                        <hr>
+                    {% endfor %}
+                    {% for para in footnote %}
+                        {{ para }}<br>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>

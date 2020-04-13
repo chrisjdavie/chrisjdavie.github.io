@@ -1,26 +1,10 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [3 Col Portfolio](http://startbootstrap.com/template-overviews/3-col-portfolio/)
+My personal website. If you want to render it, the easiest way is
+to run the command
 
-[3 Col Portfolio](http://startbootstrap.com/template-overviews/3-col-portfolio/) is a three column portfolio template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+`inv render`
 
-## Getting Started
+This requires `Python3.8`, `invoke` and probably `virtualenv` all installed. I'm pretty sure you can install `invoke` and `virtualenv` via `pip`.
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+This renders the templates in the `templates` directory, using the data in `testimonials.json` and the jsons in `portfolio/data`. Once it's rendered, it dumps a bunch of `html` files around - `index.html` in the root here and the portfolio pages in `portfolio`.
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-3-col-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/3-col-portfolio/).
-
-## Creator
-
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-3-col-portfolio/blob/gh-pages/LICENSE) license.
+I'm sure there's a nicer javascript way of writing this to open up the jsons and put them in page dynamically, but I'm a backend dev and this is a pretty straightforwards way of me setting up this while only having to learn a templating language (beyond what I already knew about css and bootstrap).

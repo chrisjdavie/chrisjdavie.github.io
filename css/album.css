@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+@media (min-width: 768px){
+  .img-wrapper {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height: 15vw;
+    object-fit: contain;
+    margin-top: 5%;
+  }
+
+  .project-header {
+    margin-top: 3%;
+  }
+
+  .new-section {
+    margin-top: 5%;
+  }
+}
+
+body {
+    /* Move down content because we have a fixed navbar that is 3.5rem tall */
+    padding-top: 3.5rem;
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding-top: 54px;
+    color: #505050;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Saira Extra', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    color: #612f1a;
+}  
+
+/*
+ * Navbar
+ */
+ .navbar {
+    background-color: #BD5D38 !important;
+  }
+
+/*
+ * Blog posts
+ */
+ .blog-post {
+    margin-bottom: 4rem;
+  }
+  .blog-post-title {
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+  }
+  .blog-post-subtitle{
+    margin-top: 1.5rem;
+    margin-bottom: .25rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+  }
+
+/*
+ * Wrap video
+ */
+ .videoWrapper {
+	position: relative;
+	padding-bottom: 85%; 
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ .tallvideoWrapper {
+	position: relative;
+	padding-bottom: 133%; 
+	padding-top: 25px;
+	height: 100%;
+}
+.tallvideoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    border: 0px;
+    float: left;
+}
+
+/*
+ * Because svgs don't always play nice
+ */
+
+ .style-bust-svg {
+  width: 85%; 
+}
