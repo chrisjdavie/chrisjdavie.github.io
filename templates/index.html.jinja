@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chris' project portfolio</title>
+    {% block headers %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block navbar %}
+    {% endblock %}
+
+    <div class="jumbotron text-center">
+        <a id="portfolio"><h1>Chris Davie's Project Portfolio</h1></a>
+        <h1><small>Data engineering, software and research</small></h1>
+    </div>
+
+    <div class="container">
+        {% for cat in categories %}
+            <h2 class="project-header">{{ cat.title }} <small>{{ cat.subtitle }}</small></h2>
+            {% for row in cat.rows %}
+                <div class="row">
+                {% for portfolio_item in row %}
+                    <div class="col-md-4">
+                        <a href="{{ portfolio_item.portfolio_link }}">
+                            <img class="img-fluid img-wrapper" src="portfolio/{{ portfolio_item.index.image_link }}" alt="{{ portfolio_item.title }}">
+                            <h3>{{ portfolio_item.title }}</h3>
+                        </a>
+                        <p>{{ portfolio_item.index.tldr }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+
+        <div class="row">
+            <div class="col-xl-8">
+                <a id="about"><hr></a>
+                {% block about %}
+                {% endblock %}
+            </div>
+        </div>
+
+        <a id="testimonials"><hr></a>
+        <h2 class="project-header">Testimonials <small>Nice things people have said about me</small></h2>
+        {% block testimonials %}
+        {% endblock %} 
+
+    </div>
+
+</body>
+
+</html>

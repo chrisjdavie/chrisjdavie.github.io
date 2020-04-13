@@ -3,12 +3,12 @@ from datetime import date
 from pathlib import Path
 from pprint import pprint
 
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 def load_portfolio_data():
 
-    portfolio_data_dir = Path("portfolio_data")
+    portfolio_data_dir = Path("portfolio/data")
 
     # load data
     all_portfolio_data = []
@@ -33,7 +33,7 @@ def render_portfolio_items(env, navbar, headers, all_portfolio_data):
     for portfolio_data in all_portfolio_data:
 
         page_src = template.render(
-            **portfolio_data
+            **portfolio_data, relative_position="../"
         )
         if company_name := portfolio_data.get("company_name"):
             company_name_italics = "<i>" + company_name + "</i>"
@@ -187,7 +187,7 @@ def render_index_page(env, navbar, headers, all_portfolio_data):
 
 
 env = Environment(
-    loader=PackageLoader('personalwebsite', 'templates'),
+    loader=FileSystemLoader('templates'),
     autoescape=select_autoescape(['html'])
 )
 navbar = env.get_template("navbar.html.jinja")

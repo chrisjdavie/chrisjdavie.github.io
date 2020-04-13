@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Analysis for marking - analysing and visualising internal company data</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    <meta property="og:image" content="http://chrisjdavie.github.io/images/speech_to_text.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/album.css">
+    <link rel="stylesheet" href="../css/gh_pages.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#testimonials">Testimonials <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <h1 class="blog-post-title">Analysis for marking</h1>
+                    <h2 class="text-muted"><small>Analysing and visualising internal company data</small></h2>
+                    <hr>
+                    <p>I worked with Tutorfair, an online tutor marketplace, to use their data to more precisely direct their marketing and recruitment campaigns.</p>
+                    <p><i><b>Skills employed:</b>  MySQL, Python, (Matplotlib, Numpy, basemap, fiona), statistics (regression analysis, significance testing), QGIS, GIS, project design, database design, Linux</i></p>
+                    
+                        <img src="images/targeted_marketing_analysis.png" alt="Example data on london map" class="img-fluid portfolio-image "></img>
+                    
+                    
+                    <p><i>An example of the visualisation of geographic data.  The shapes are the London postcode regions.</i></p>
+                    
+                        <h2 class="blog-post-subtitle">Online marketplace for tutors</h2>
+                        
+                            <p>Tutorfair is a London-based startup providing an online marketplace for tutors, currently growing rapidly.  It helps children succeed by making it easy to find the best tutors, and for every student who pays, they give free tutoring to a child who can't.</p>
+                        
+                            <p>The tutoring market in the UK is worth an estimated £6.5 billion a year, with 40% of school children in London having a tutor. Tutorfair was founded in 2012 and now provides tutors to thousands of school children.</p>
+                        
+                            <p>As a recent, technology-centred startup Tutorfair has a large, quite comprehensive and complete transactions and tutors databases.  They also have quite exhaustive records of their traffic website, collected using Google Analytics.   They market using Google Ads, making bids for appropriate key word searches.</p>
+                        
+                        
+                            <h3>Challenge</h3>
+                            
+                                <p>Tutorfair was about to substantially increase the amount they were bidding for Google Ads, and wanted to more accurately target their marketing efforts to specific regions to more successfully link tutors with children. Tutorfair also wanted to target their recruitment to areas where they already had a large demand for tutoring but weaker coverage from tutors.</p>
+                            
+                        
+                            <h3>Solution</h3>
+                            
+                                <p>To target marketing, the regions with high tutor coverage were prioritised; the areas in London where lots of tutors would travel to.  The regions with high sales were also prioritised – the Tutorfair infrastructure was well established in those regions, and would support an increase in demand.  I also looked for regions where tutors would visit for tutoring, but didn't have many sales, as additional targets for increased marketing.</p>
+                            
+                                <p>To find the tutor coverage, I calculated how far each tutor had travelled, and used this to estimate where in London they'd be willing to go. This was calculated using where the tutor lived and where the tutor had tutored, using the tutor and sales databases. I then estimated typical travel distances and potential coverage.</p>
+                            
+                                <p>To find the regions where Tutorfair has successfully sold, I used the sales database, and to find regions where people were looking for tutors, I used the Google Analytics information for the most popular location searches.</p>
+                            
+                                <p>This geographical information was presented on maps of London, along with more standard regression analyses.  I also repeated this analysis for subject tutored, and subject level tutored, though the subjects tutored were, in general, the subjects in demand.</p>
+                            
+                        
+                            <h3>Results</h3>
+                            
+                                <p>This lead to some clear recommendations – marketing should be directed to the regions where their tutor coverage is high, and recruitment should be directed where searches are high but coverage and sales are low.  Using these results, Tutorfair directed their marketing efforts towards the recommended regions, increasing the Google Ads bidding.</p>
+                            
+                                <p>They also took the analysis and plotting code and, as they were all automated, included it as part of their monthly reporting.</p>
+                            
+                        
+                        <hr>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>
