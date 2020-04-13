@@ -10,6 +10,11 @@
 <body>
     {% block navbar %}
     {% endblock %}
+
+    {% if github_repo_link %}
+        <a id="forkme_banner" href="{{ github_repo_link }}">View on GitHub</a>
+    {% endif %}
+
     <main class="container">
         <div class="row">
             <div class="col-xl-2"></div>

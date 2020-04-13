@@ -12,10 +12,20 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html#about">About <span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item active">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html#testimonials">Testimonials <span
                             class="sr-only">(current)</span></a>
-                </li> -->
+                </li>
+                {% if github_repo_link %}
+                    <section id="downloads">
+                    <a class="zip_download_link"
+                        href="{{ github_repo_link }}/zipball/master">Download this project as a
+                        .zip file</a>
+                    <a class="tar_download_link"
+                        href="{{ github_repo_link }}/tarball/master">Download this project as a
+                        tar.gz file</a>
+                </section>
+                {% endif %}
             </ul>
         </div>
     </nav>
