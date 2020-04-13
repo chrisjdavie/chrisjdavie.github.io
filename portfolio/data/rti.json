@@ -10,7 +10,7 @@
         "embed_html": "<div class='videoWrapper'><iframe width=605 height=537 src='https://www.youtube.com/embed/NU3zwcj_fJc'></iframe></div>",
         "caption": "Each blue circle represents the position of the blue line in the video above. \u00a0After about t>2.5, the simulation diverges from the analytic results - this is due to the inaccuracies from the grid. \u00a0The theory is not complete, it would have diverged from the simulation eventually (if I'd got the simulation behaving perfectly), but this shows at least I'm matching the test analytics."
     },
-    "image_social_media_link": "http://chrisjdavie.github.io/images/rti_white_bg.png",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/images/rti_white_bg.png",
     "sections": [
         {
             "subsections": [
