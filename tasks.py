@@ -58,3 +58,24 @@ def render(c):
     with Venv.virtualenv(c):
         c.run("python renderer.py")
         print("Rendered website")
+
+
+@task
+def spellcheck(c):
+
+    # Checks the spelling of all html files in the root directory and
+    # portfolio/*html.
+
+    # Flags socio and Internation as wrong even though they're in the
+    # custom dictionary
+
+    # uses a custom dictionary at `custom-dictionary.txt`
+    # for some reason socio and International are included in the custom
+    # dictionary but flagged as spelling errors. I suspect I've been clever
+    # with encoding
+
+    # bash scripting something horrible - aspell is clearly designed for
+    # use in the terminal. I could code this in Python, and would in a
+    # commerical project (in most cases) but it's just me here
+    cmd = "sed 's/^/@/' custom-dictionary.txt > tmpdict10892347.txt; cat tmpdict10892347.txt *.html portfolio/*html | aspell -a --mode html | cut -d ' ' -f 2 | grep -v '*' | sort | uniq; rm tmpdict10892347.txt"
+    c.run(cmd)

@@ -8,7 +8,7 @@
     "skills_employed": " MySQL, Python, (Matplotlib, Numpy, basemap, fiona), statistics (regression analysis, significance testing), QGIS, GIS, project design, database design, Linux",
     "image": {
         "caption": "An example of the visualisation of geographic data.  The shapes are the London postcode regions.",
-        "alt_text": "Example data on london map",
+        "alt_text": "Example data on a map of London",
         "link": "images/targeted_marketing_analysis.png"
     },
     "image_social_media_link": "http://chrisjdavie.github.io/portfolio/images/targeted_marketing_analysis.png",

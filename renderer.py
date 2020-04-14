@@ -62,7 +62,7 @@ def setup_portfolio_data(all_portfolio_data):
     categories = [
         {
             "category": "commercial",
-            "title": "Commerical Projects",
+            "title": "Commercial Projects",
             "subtitle": "",
             "rows": []
         },
@@ -98,7 +98,7 @@ def setup_portfolio_data(all_portfolio_data):
     categories = [
         {
             "category": "commercial",
-            "title": "Commerical Projects",
+            "title": "Commercial Projects",
             "subtitle": "",
             "rows": []
         },

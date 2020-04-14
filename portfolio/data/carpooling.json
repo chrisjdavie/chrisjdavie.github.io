@@ -28,7 +28,7 @@
                         "The algorithm was a two stage approach - an initial, coarse matching based on times and positions through a subdivision of the geographical areas of Singapore, and once a reasonable number of matches have been found, a more precise matching through the Google Maps API, confirming the validity of the coarse matches",
                         "I provided design documentation for the algorithm, and prototype code. I am also providing ongoing support for the implementation.",
                         "The complexity of the problem was greatly reduced by combining two free-to-access standard methods - using the Google maps API for the route finding, and a standard MySQL database for storing the results. There was no need for a full GIS (geographical information system) database as the complexity of the routes and mapping were handled by the Google API. MySQL databases are very mature, well established and appropriate for this sort of data, and there are very standard methods for switching them with other, more parallel databases should the load become too high.",
-                        "This solution is reasonably scaleable - the Google Maps APIs have a free quota of several hundred thousand queries a day."
+                        "This solution is reasonably scalable - the Google Maps APIs have a free quota of several hundred thousand queries a day."
                     ]
                 },
                 {

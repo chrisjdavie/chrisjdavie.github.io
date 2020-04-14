@@ -1,0 +1,227 @@
+   (BUTTON)
+
+     * [1]Portfolio (current)
+     * [2]About (current)
+     * [3]Testimonials (current)
+
+Chris Davie's Project Portfolio
+
+Data engineering, software and research
+
+Commerical Projects
+
+   [4]Property Data Pipeline
+
+Property Data Pipeline
+
+   Building a pipeline that automatically selects properties Wayhome could
+   buy, to show to customers.
+   [5]Speech-to-text pipeline
+
+Speech-to-text pipeline
+
+   Automating the building of speech-to-text systems in multiple
+   languages, for a provider of automatic speech recognition.
+   [6]Sports Algorithm
+
+Sports Algorithm
+
+   Developing a custom algorithm for Lineup Lab, a fantasy sports website,
+   that underpins a new premium product range.
+   [7]Analysis for PR
+
+Analysis for PR
+
+   I analysed consumer spending data as part of a PR campaign, that was
+   covered on over 80 local news websites and news aggregators.
+   [8]Analysis for marking
+
+Analysis for marking
+
+   I worked with Tutorfair to use their data to more precisely direct
+   their marketing and recruitment campaigns.
+   [9]Carpooling algorithm
+
+Carpooling algorithm
+
+   Working with a Singaporean startup, I designed and prototyped an
+   algorithm for carpooling, matching drivers and passengers.
+   [10]Analysis of food data
+
+Analysis of food data
+
+   My analysis emphasised the need for health-based interventions, in
+   support of a funding bid for Cookit.
+
+Research Projects My PhD work
+
+   [11]Rayleigh-Taylor Instability
+
+Rayleigh-Taylor Instability
+
+   Building a platform to examine the physics behind the most damaging
+   phenomena in laser fusion.
+   [12]Spherical collapse
+
+Spherical collapse
+
+   Examining the physics behind a new scheme for laser fusion.
+
+Personal Projects For interest
+
+   [13]Chicken, coffee and house prices
+
+Chicken, coffee and house prices
+
+   A friend does comedy, and thinks you can find out about house prices
+   using chicken and coffee.
+   [14]Sentiment of news
+
+Sentiment of news
+
+   Looking at how well machine learning can assess the sentiment of news
+   articles.
+   [15]Stock tips vs. trackers
+
+Stock tips vs. trackers
+
+   Performance of stock tips from the Telegraph compared to the FTSE 100.
+   [16]Winter Olympics
+
+Winter Olympics
+
+   Comparing Winter Olympics results to geodemographic factors.
+     __________________________________________________________________
+
+Chris Davie - Data engineer, software developer
+
+   I’m a Python developer and Data Engineer with a PhD in Physics. I've
+   delivered three small and medium sized software projects, so far all
+   using Python. I’m currently searching for a new role, preferably with a
+   data focus in a friendly team that writes high quality code (techniques
+   like TDD, CI/CD and YAGNI where appropriate).
+
+   I’ve designed and helped implement 3 significant software projects, 2
+   helping drive revenue. I built batch processing pipelines for Wayhome,
+   automatically [17]selecting properties for shared ownership. Similarly,
+   I designed and helped implement pipelines for Speechmatics,
+   automatically [18]training speech-to-text transcription models. For
+   Lineup Lab, I built an algorithm that [19]helps fantasy sports players.
+
+   My [20]portfolio above describes these projects in more detail.
+
+   I’ve mainly worked in Python so far, I’ve used a range of libraries
+   including Flask, SQLAlchemy, Celery, pytest, invoke, numpy, scipy,
+   matplotlib and Luigi. I’m proficient in a number of other technologies,
+   including Docker, Google Cloud Platform, PostgreSQL, redis and
+   RabbitMQ. I've also programmed in C++ and FORTRAN. I’m always trying to
+   learn new things - I’m currently building my fundamental computing
+   skills.
+     __________________________________________________________________
+
+Testimonials Nice things people have said about me
+
+     Chris is an excellent data engineer and programmer. He has a deep
+     technical understanding of the field, ranging from traditional
+     relational data technology to streaming and implementing production
+     machine learning solutions.
+
+     Working with Chris he has built both conventional data pipelines and
+     bleeding edge mathematical computing with equal care and attention.
+     He works closely with business stakeholders to identify problems and
+     is adept at designing effective solutions that fix business
+     problems.
+
+     He has a natural passion for learning and is a remarkable critical
+     thinker. While we've worked together he's been a constant source of
+     new ideas.
+
+     His passion for learning extends into his approach to sharing his
+     expertise. Chris is an excellent teacher. Generous with his time, he
+     takes care to coach and train his colleagues, preferring to help
+     them learn how to solve problems themselves.
+
+   Johnny Morris, Chief Data Officer at Wayhome
+
+     I really enjoy working with Chris. No matter what the challenge, he
+     communicates everything extremely well and is able to find creative
+     and clever solutions. If I could, I would lock him up for another 6
+     months!
+
+     Chris is an excellent developer and problem solver. Fast,
+     Communicative, Creative. He is a rare find and I look forward to
+     working with him on future projects.
+
+   Blake Pender, Founder of Lineup Lab
+
+     Tutorfair were very lucky to have Chris undertake a project for us
+     when he was at The ASI. He provided us with visualisations of where
+     Tutorfair tutors were working through his technically complex, yet
+     easy-to-understand maps.
+
+     What's more, when presenting he was comfortable answering both
+     statistical, and conceptual questions in a detailed manner, always
+     answering thoroughly, and with healthy dose of wit!
+
+   Sam Floy, Head of Tutors at Tutorfair
+
+     Chris has been part of a team here working on various data science
+     projects. In addition to his technical skills, what we find very
+     valuable is he is quick to understanding clients needs and
+     identifying the right questions to ask and steps for solving complex
+     problems. He's been delivering top quality work for us and to a
+     tight schedule. A dedicated professional who's fun to work with. He
+     is a valuable member of the team.
+
+   Angie Ma, COO at The ASI
+
+     Chris is detail oriented, diligent, and approachable. A great
+     combination when it comes to data. He helped us understand the
+     consumption of fruit and vegetable per income in the UK, which is
+     instrumental to our work at Cookit. The visual result of the data
+     was clean and clear and we envisage to use the code and math in
+     forthcoming projects. All in all I am happy to say that Chris is
+     able to execute a scope diligently and add to the table when he sees
+     potential of adding insights.
+
+   Juliana Zarate Davila, Co-founder at Cookit
+
+     Chris and I have collaborated on data science projects for
+     Tutorfair, analyzing tutor performance and availability, and
+     Antidote, where we examined consumer spending traits over the past
+     few years. It was nothing short of a pleasure to work with Chris,
+     whose natural aptitude for data visualization and coding were
+     invaluable throughout our work. Chris's sharp attention to detail
+     and strict adherence to deadlines guaranteed the quality and
+     efficiency of our projects, and his clear thinking and lucid
+     exposition make him an ideal person to bounce ideas off. Chris is a
+     first-class data scientist whose skills will lend themselves well to
+     future projects!
+
+   Conor Daly, Application Engineer at The MathWorks
+     __________________________________________________________________
+
+   Copyright © Christopher J Davie, 2020
+
+References
+
+   1. file:///home/chris/git/chrisjdavie.github.io/portfolio.html#portfolio
+   2. file:///home/chris/git/chrisjdavie.github.io/portfolio.html#about
+   3. file:///home/chris/git/chrisjdavie.github.io/portfolio.html#testimonials
+   4. file:///home/chris/git/chrisjdavie.github.io/portfolio/property_pipeline.html
+   5. file:///home/chris/git/chrisjdavie.github.io/portfolio/speech_to_text.html
+   6. file:///home/chris/git/chrisjdavie.github.io/portfolio/sports_algorithm2.html
+   7. file:///home/chris/git/chrisjdavie.github.io/portfolio/data_analysis_for_pr.html
+   8. file:///home/chris/git/chrisjdavie.github.io/portfolio/targeted_marketing_analysis.html
+   9. file:///home/chris/git/chrisjdavie.github.io/portfolio/carpooling.html
+  10. file:///home/chris/git/chrisjdavie.github.io/portfolio/nutrition_analysis.html
+  11. file:///home/chris/git/chrisjdavie.github.io/portfolio/rti.html
+  12. file:///home/chris/git/chrisjdavie.github.io/portfolio/spherical_collapase2.html
+  13. file:///home/chris/git/chrisjdavie.github.io/portfolio/chicken_coffee.html
+  14. file:///home/chris/git/chrisjdavie.github.io/portfolio/news_sentiment.html
+  15. file:///home/chris/git/chrisjdavie.github.io/portfolio/stock_tips.html
+  16. file:///home/chris/git/chrisjdavie.github.io/portfolio/olympics_redo.html
+  17. file:///home/chris/git/chrisjdavie.github.io/portfolio/property_pipeline.html
+  18. file:///home/chris/git/chrisjdavie.github.io/portfolio/speech_to_text.html
+  19. file:///home/chris/git/chrisjdavie.github.io/portfolio/sports_algorithm2.html
+  20. file:///home/chris/git/chrisjdavie.github.io/portfolio.html#portfolio

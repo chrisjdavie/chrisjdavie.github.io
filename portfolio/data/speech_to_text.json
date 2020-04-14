@@ -17,7 +17,7 @@
                 {
                     "title": "Challenge",
                     "paragraphs": [
-                        "Previously, there was a largely manual process for building ASR systems, using state-of-the-art deep neural net technologies. This manual process worked in English and German, with ambitions for automatically building ASR systems for many world languages. While the process for building these new languages had been proven with German, the process needed to be automated, and made robust, reproducible and scaleable to 10s of languages."
+                        "Previously, there was a largely manual process for building ASR systems, using state-of-the-art deep neural net technologies. This manual process worked in English and German, with ambitions for automatically building ASR systems for many world languages. While the process for building these new languages had been proven with German, the process needed to be automated, and made robust, reproducible and scalable to 10s of languages."
                     ]
                 },
                 {
@@ -37,7 +37,7 @@
             ],
             "title": "Speech recognition in many languages",
             "paragraphs": [
-                "Speechmatics provides cloud-based speech recognition in multiple languages, with a per-hour pricing, and also provides on-premesis solutions."
+                "Speechmatics provides cloud-based speech recognition in multiple languages, with a per-hour pricing, and also provides on-premises solutions."
             ]
         }
     ],

@@ -85,17 +85,17 @@
                         
                             <h3>Test data</h3>
                             
-                                <p>For the test data, I choose 99 articles from the business sections of news websites, classifying them as either'good news' or'bad news'. 99 articles is quite a small sample, but it's enough for this proof of principle.  Just two categories,'good news' or'bad news', is quite simple and can be quite subjective – if there was doubt, I tried to think in terms of the shareholders.</p>
+                                <p>For the test data, I choose 99 articles from the business sections of news websites, classifying them as either 'good news' or 'bad news'. 99 articles is quite a small sample, but it's enough for this proof of principle.  Just two categories,'good news' or 'bad news', is quite simple and can be quite subjective – if there was doubt, I tried to think in terms of the shareholders.</p>
                             
                         
                             <h3>Results</h3>
                             
-                                <p>The classifier always predicted the'bad news' well, but inconsistently predicted the'good news'.  This is similar to the comparison tutorial – at the same sample size, it reliably predicted the classification of one type of data but not the other.  This was probably due to the weightings assigned to vocabulary by the classifier for'bad news' being clearer – words like'debt','FCA','charges' and'cost' often occurred in bad news story – the vocabulary for'good news' wasn't as clear.</p>
+                                <p>The classifier always predicted the 'bad news' well, but inconsistently predicted the 'good news'.  This is similar to the comparison tutorial – at the same sample size, it reliably predicted the classification of one type of data but not the other.  This was probably due to the weightings assigned to vocabulary by the classifier for 'bad news' being clearer – words like 'debt','FCA','charges' and 'cost' often occurred in bad news story – the vocabulary for 'good news' wasn't as clear.</p>
                             
                         
                             <h3>Comparison</h3>
                             
-                                <p>scikits learn comes built in with the Rotten Tomatoes database, which contains several thousand entries, each labelled with a sentiment.  For similar dataset sizes, the comparison database predicted the sentiment with similar accuracy, and the accuracy increased until around 2,000 articles.  This is encouraging for the extension of this project to larger sample sizes.</p>
+                                <p>scikit learn comes built in with the Rotten Tomatoes database, which contains several thousand entries, each labelled with a sentiment.  For similar dataset sizes, the comparison database predicted the sentiment with similar accuracy, and the accuracy increased until around 2,000 articles.  This is encouraging for the extension of this project to larger sample sizes.</p>
                             
                         
                             <h3>Extensions</h3>
