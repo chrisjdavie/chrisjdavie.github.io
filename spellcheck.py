@@ -12,7 +12,7 @@ CUSTOM_DICTIONARY = [
 
 class WebpageParser(HTMLParser):
 
-    def __init__(self, spell):
+    def __init__(self, words):
         super().__init__()
 
         self._spell = spell
@@ -54,21 +54,6 @@ class WebpageParser(HTMLParser):
             misspelled = self._spell.unknown(clean_words)
             for word in misspelled:
                 print(word, self._spell.correction(word))
-
-def run_spellcheck():
-
-    spell = SpellChecker()
-    spell.word_frequency.load_words(CUSTOM_DICTIONARY)
-
-    parser = WebpageParser(spell)
-
-    portfolio = Path("portfolio.html")
-
-    with portfolio.open("r") as portfolio_fh:
-        html = portfolio_fh.read()
-
-    parser.feed(html)
-
 
 if __name__ == "__main__":
     run_spellcheck()
