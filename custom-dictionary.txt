@@ -73,3 +73,8 @@ vis
 whitepaper
 YQL
 html
+deliverables
+Jinja
+nav
+templating
+LinkedIn
