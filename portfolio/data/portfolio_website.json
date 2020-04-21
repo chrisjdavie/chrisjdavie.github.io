@@ -7,8 +7,7 @@
     "tldr": "I updated my website to look pretty, more up to date and be straight forwards to maintain",
     "skills_employed": "Bootstrap, Jinja, Python, Invoke, project design, Linux",
     "image": {
-        "link": "images/portfolio_website.png",
-        "alt_text": "Front page of my website, including images of projects I've completed.",
+        "embed_html": "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='http://chrisjdavie.github.io/portfolio.html'></iframe></div>",
         "caption": "Front page of my website, including images of projects I've completed."
     },
     "image_social_media_link": "http://chrisjdavie.github.io/portfolio/images/portfolio_website.png",

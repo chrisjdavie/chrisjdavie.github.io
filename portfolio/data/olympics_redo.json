@@ -8,8 +8,7 @@
     "skills_employed": " Statistics (non-parametric correlation coefficients, regression analysis), Python (Numpy, SciPy, Matplotlib, Scrapy), MySQL, database design, Web scraping, Linux",
     "image": {
         "link": "images/olympics_redo.png",
-        "alt_text": "scorings compared to rankings",
-        "caption": "A comparison of gold-based ranking to a medal scoring system.  Shows both Spearman's rho (the non-parametric analogue of the Pearson correlation coefficient) and Kendall's tau."
+        "embed_html": "<div><iframe src='https://www.youtube.com/embed/SEFMIBUF26A'>/iframe></div>"
     },
     "image_social_media_link": "",
     "sections": [
