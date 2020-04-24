@@ -67,7 +67,8 @@
             "paragraphs": [
                 "This initial pipeline was built delivering value in small chunks - the highest value work, delivering listings to customers, was handled first, then each table in the analytics datamart was added one at a time. This work was completed, and fairly reliably ran each day.",
                 "Additionally, I wrote a test framework to allow automated testing and test-first development when writing our BigQuery queries.",
-                "As there were many queries being processed, these were batched and run concurrently. Once we had the initial pipeline running, we found a number of limitations with BigQuery - a wait of two hours to update data, leading to processing delays and the datamart being in an inconsistent state. Additionally, the queries to BigQuery would often hang. As more queries were added to the pipeline, these failures caused significant decreases in reliability, needing the pipeline to be regularly restarted."
+                "As there were many queries being processed, these were batched and run concurrently. Once we had the initial pipeline running, we found a number of limitations with BigQuery - a wait of two hours to update data, leading to processing delays and the datamart being in an inconsistent state. Additionally, the queries to BigQuery would often hang. As more queries were added to the pipeline, these failures caused significant decreases in reliability, needing the pipeline to be regularly restarted.",
+                "These issues were solved by moving the datamart to PostgreSQL, which was reliable and could be updated instantly. The remaining BigQuery queries were wrapped with some retry logic, restarting if hung."
             ]
         }
     ],
