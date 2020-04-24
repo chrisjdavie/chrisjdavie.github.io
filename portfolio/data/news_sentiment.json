@@ -38,8 +38,7 @@
                     "title": "Extensions",
                     "paragraphs": [
                         "The main issue with this test was the sample size \u2013 99 articles is too few.  The tutorial I compared to scaled well with increasing sample size, so it does give hope that this will also improve.  The classifier here improved from 50 samples to 99 samples, and should do so again.  More articles will also allow comparisons of more sophisticated classifiers, beyond the basic linear classifier used here.",
-                        "The second issue was concerning turning this into a useful too.  I didn't really know anything about data science when I set out, and the code would be challenging to extend (often it was the first solution that came to mind).  If I redid it, I'd do my web scraping using tools designed for that, not Python string comprehension, and use document databases as the store.  And probably other things differently, but those are the obvious ones.",
-                        "shares maintained by chrisjdavie"
+                        "The second issue was concerning turning this into a useful too.  I didn't really know anything about data science when I set out, and the code would be challenging to extend (often it was the first solution that came to mind).  If I redid it, I'd do my web scraping using tools designed for that, not Python string comprehension, and use document databases as the store.  And probably other things differently, but those are the obvious ones."
                     ]
                 }
             ],
