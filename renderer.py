@@ -1,8 +1,10 @@
+import codecs
 import json
 from datetime import date
 from pathlib import Path
 from pprint import pprint
 
+import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
@@ -48,6 +50,48 @@ def render_portfolio_items(env, navbar, headers, all_portfolio_data):
                 pages_id + company_name)
 
         with open(portfolio_data["portfolio_link"], "w") as page_fh:
+            page_fh.write(page_src)
+
+
+def render_markdown(portfolio_md_path, company_name):
+
+    with codecs.open(portfolio_md_path) as md_fh:
+        text = md_fh.read()
+
+    html = markdown.markdown(text)
+
+    html = html.replace("<h1>", '<h1 class="blog-post-title">')
+    html = html.replace("<h2>", '<h2 class="blog-post-subtitle">')
+    html = html.replace('<h2 class="blog-post-subtitle">',
+                        '<h2 class="text-muted">', 1)
+    html = html.replace("<img ", '<img class="img-fluid portfolio-image " ')
+    if company_name:
+        html = html.replace(company_name, "<i>" + company_name + "</i>")
+
+    return html
+
+
+def render_portfolio_items_md(env, navbar, headers, all_portfolio_data):
+    template = env.get_template("portfolio_page_md.html.jinja")
+    template.blocks["navbar"] = navbar.render
+    template.blocks["headers"] = headers.render
+
+    for portfolio_data in all_portfolio_data:
+
+        fprefix = portfolio_data["name"]
+
+        portfolio_md_path = "portfolio/markdown/" + fprefix + ".md"
+        portfolio_html_path = "portfolio/" + fprefix + ".html"
+
+        contents = render_markdown(
+            portfolio_md_path, portfolio_data["company_name"]
+        )
+
+        page_src = template.render(
+            **portfolio_data, relative_position="../", contents=contents
+        )
+
+        with open(portfolio_html_path, "w") as page_fh:
             page_fh.write(page_src)
 
 
@@ -195,5 +239,13 @@ headers = env.get_template("headers.html.jinja")
 
 all_portfolio_data = load_portfolio_data()
 
-render_portfolio_items(env, navbar, headers, all_portfolio_data)
+all_portfolio_data_md = [
+    data for data in all_portfolio_data if not data.get("sections")
+]
+all_portfolio_data_old = [
+    data for data in all_portfolio_data if data.get("sections")
+]
+
+render_portfolio_items_md(env, navbar, headers, all_portfolio_data_md)
+render_portfolio_items(env, navbar, headers, all_portfolio_data_old)
 render_portfolio(env, navbar, headers, all_portfolio_data)
