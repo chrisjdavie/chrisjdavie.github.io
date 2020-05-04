@@ -81,7 +81,7 @@ def render_portfolio_items_md(env, navbar, headers, all_portfolio_data):
         fprefix = portfolio_data["name"]
 
         portfolio_md_path = "portfolio/markdown/" + fprefix + ".md"
-        portfolio_html_path = "portfolio/" + fprefix + ".html"
+        portfolio_html_path = portfolio_data["portfolio_link"]
 
         contents = render_markdown(
             portfolio_md_path, portfolio_data["company_name"]

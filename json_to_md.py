@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "speech_to_text"
+fname = "sports_algorithm"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
@@ -18,7 +18,7 @@ document_md += data["tldr"] + "\n\n"
 
 document_md += "**Skills employed:** " + data["skills_employed"] + "\n\n"
 
-if data["image"].get("image_link"):
+if data["image"].get("link"):
     document_md += (
         "![" + data["image"]["alt_text"] + "](" + data["image"]["link"] + ")" + "\n\n")
 if embed_html := data["image"].get("embed_html"):
