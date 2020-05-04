@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "property_pipeline"
+fname = "speech_to_text"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
@@ -18,8 +18,11 @@ document_md += data["tldr"] + "\n\n"
 
 document_md += "**Skills employed:** " + data["skills_employed"] + "\n\n"
 
-document_md += (
-    "![" + data["image"]["alt_text"] + "](" + data["image"]["link"] + ")" + "\n\n")
+if data["image"].get("image_link"):
+    document_md += (
+        "![" + data["image"]["alt_text"] + "](" + data["image"]["link"] + ")" + "\n\n")
+if embed_html := data["image"].get("embed_html"):
+    document_md += embed_html + "\n\n"
 
 document_md += "*" + data["image"]["caption"] + "*" + "\n\n"
 

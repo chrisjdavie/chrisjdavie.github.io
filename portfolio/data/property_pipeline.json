@@ -4,14 +4,12 @@
     "title": "Property Data Pipeline",
     "company_name": "Wayhome",
     "image_social_media_link": "http://chrisjdavie.github.io/portfolio/images/property_pipeline.jpg",
-    "footnotes": "",
-    "footnote": [],
     "index": {
         "image_link": "images/property_pipeline.jpg",
         "tldr": "Building a pipeline that automatically selects properties <i>Wayhome</i> could buy, to show to customers."
     },
     "created_date": "1970-01-13",
     "category": "commercial",
-    "github_repo_link": "",
-    "portfolio_link": "portfolio/property_pipeline.html"
+    "portfolio_link": "portfolio/property_pipeline.html",
+    "github_repo_link": ""
 }
