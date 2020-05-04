@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "sports_algorithm"
+fname = "targeted_marketing_analysis"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
