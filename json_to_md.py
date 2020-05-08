@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "stock_tips"
+fname = "olympics_redo"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
