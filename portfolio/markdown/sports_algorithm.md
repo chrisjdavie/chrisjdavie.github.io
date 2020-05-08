@@ -1,6 +1,6 @@
 # Sports Algorithm
 ## <small>Algorithm development for fantasy sports</small>
-
+___
 I worked with Lineup Lab, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.
 
 **Skills employed:** Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux

@@ -1,6 +1,6 @@
 # Analysis for PR
 ## <small>Stories for press releases</small>
-
+___
 I analysed consumer spending data as part of a PR campaign that was covered in over 80 local news websites and news aggregators.
 
 **Skills employed:** Excel, data visualisation, report writing, time series projections, multivariate regression analysis, Python (numpy, scipy, matplotlib), project design, Linux

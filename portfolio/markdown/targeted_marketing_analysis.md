@@ -1,6 +1,6 @@
-# Analysis for marking
+# Analysis for marketing
 ## <small>Analysing and visualising internal company data</small>
-
+___
 I worked with Tutorfair, an online tutor marketplace, to use their data to more precisely direct their marketing and recruitment campaigns.
 
 **Skills employed:**  MySQL, Python, (Matplotlib, Numpy, basemap, fiona), statistics (regression analysis, significance testing), QGIS, GIS, project design, database design, Linux

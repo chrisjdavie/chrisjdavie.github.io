@@ -1,6 +1,6 @@
 # Speech-to-text pipeline
 ## <small>Speech recognition in multiple languages</small>
-
+___
 I worked at a provider of automatic speech recognition (ASR), automating the building of ASR systems in multiple languages.
 
 **Skills employed:** Software design, specification gathering, data pipelines, web scraping, databases, PostgreSQL, Python (scrapy, numpy, scipy), Luigi, project design, Linux
