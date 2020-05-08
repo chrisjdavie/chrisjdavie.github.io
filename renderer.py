@@ -1,5 +1,6 @@
 import codecs
 import json
+import re
 from datetime import date
 from pathlib import Path
 from pprint import pprint
@@ -65,6 +66,14 @@ def render_markdown(portfolio_md_path, company_name):
     html = html.replace('<h2 class="blog-post-subtitle">',
                         '<h2 class="text-muted">', 1)
     html = html.replace("<img ", '<img class="img-fluid portfolio-image " ')
+
+    # svgs need a special class 'style-bust-svg' so this uses regex to do that
+    html = re.sub(
+        '(img class="[a-z\- ]*)"( .*images/[a-z_]*\.svg")',
+        r'\1 style-bust-svg"\2',
+        html
+    )
+
     if company_name:
         html = html.replace(company_name, "<i>" + company_name + "</i>")
 
