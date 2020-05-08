@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "spherical_collapse"
+fname = "portfolio_website"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
