@@ -2,7 +2,6 @@
     "name": "speech_to_text",
     "page_title": "Speech-to-text pipeline - speech recognition in multiple languages",
     "title": "Speech-to-text pipeline",
-    "company_name": "Speechmatics",
     "image_social_media_link": "http://chrisjdavie.github.io/portfolio/images/speech_to_text.png",
     "index": {
         "image_link": "images/speech_to_text.png",

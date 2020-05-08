@@ -28,33 +28,7 @@ def load_portfolio_data():
     return all_portfolio_data
 
 
-def render_portfolio_items(env, navbar, headers, all_portfolio_data):
-    template = env.get_template("portfolio_page.html.jinja")
-    template.blocks["navbar"] = navbar.render
-    template.blocks["headers"] = headers.render
-
-    for portfolio_data in all_portfolio_data:
-
-        page_src = template.render(
-            **portfolio_data, relative_position="../"
-        )
-        if company_name := portfolio_data.get("company_name"):
-            company_name_italics = "<i>" + company_name + "</i>"
-            page_src = page_src.replace(
-                company_name,
-                company_name_italics)
-            # 'cause this turns up in urls. Could do this more suscinctly
-            # with regex, but this is quicker and more obvious
-            pages_id = "chrisjdavie/"
-            page_src = page_src.replace(
-                pages_id + company_name_italics,
-                pages_id + company_name)
-
-        with open(portfolio_data["portfolio_link"], "w") as page_fh:
-            page_fh.write(page_src)
-
-
-def render_markdown(portfolio_md_path, company_name):
+def render_markdown(portfolio_md_path):
 
     with codecs.open(portfolio_md_path) as md_fh:
         text = md_fh.read()
@@ -74,9 +48,6 @@ def render_markdown(portfolio_md_path, company_name):
         html
     )
 
-    if company_name:
-        html = html.replace(company_name, "<i>" + company_name + "</i>")
-
     return html
 
 
@@ -92,9 +63,7 @@ def render_portfolio_items_md(env, navbar, headers, all_portfolio_data):
         portfolio_md_path = "portfolio/markdown/" + fprefix + ".md"
         portfolio_html_path = portfolio_data["portfolio_link"]
 
-        contents = render_markdown(
-            portfolio_md_path, portfolio_data["company_name"]
-        )
+        contents = render_markdown(portfolio_md_path)
 
         page_src = template.render(
             **portfolio_data, relative_position="../", contents=contents
@@ -248,13 +217,5 @@ headers = env.get_template("headers.html.jinja")
 
 all_portfolio_data = load_portfolio_data()
 
-all_portfolio_data_md = [
-    data for data in all_portfolio_data if not data.get("sections")
-]
-all_portfolio_data_old = [
-    data for data in all_portfolio_data if data.get("sections")
-]
-
-render_portfolio_items_md(env, navbar, headers, all_portfolio_data_md)
-render_portfolio_items(env, navbar, headers, all_portfolio_data_old)
+render_portfolio_items_md(env, navbar, headers, all_portfolio_data)
 render_portfolio(env, navbar, headers, all_portfolio_data)

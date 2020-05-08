@@ -11,7 +11,7 @@ I worked at a provider of automatic speech recognition (ASR), automating the bui
 
 ## Speech recognition in many languages
 
-*Speechmatics* provides cloud-based speech recognition in multiple languages, with a per-hour pricing, and also provides on-premises solutions.
+Speechmatics provides cloud-based speech recognition in multiple languages, with a per-hour pricing, and also provides on-premises solutions.
 
 ### Challenge
 

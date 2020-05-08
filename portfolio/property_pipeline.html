@@ -72,21 +72,21 @@
                     <h1 class="blog-post-title">Property Data Pipeline</h1>
 <h2 class="text-muted"><small>Presenting homes for shared ownership</small></h2>
 <hr />
-<p><i>Wayhome</i> helps you buy a home. I built a pipeline that automatically selects the properties <i>Wayhome</i> could buy, to present to potential customers.</p>
+<p><em>Wayhome</em> helps you buy a home. I built a pipeline that automatically selects the properties <em>Wayhome</em> could buy, to present to potential customers.</p>
 <p><strong>Skills employed:</strong> Software design, specification gathering, data pipelines, data collection, databases, BigQuery, PostgreSQL, Google cloud platform, Cloud Run, Python (SQLAlchemy, pytest, Invoke), TDD, project design, multi-threading, Linux</p>
 <p><img class="img-fluid portfolio-image " alt="Property pipeline" src="images/property_pipeline.jpg" /></p>
 <p><em>Basic schematic of the property processing pipeline.</em></p>
 <h2 class="blog-post-subtitle">Help to buy your home</h2>
-<p><i>Wayhome</i> helps its customers buy their home - the customer buys 5%, <i>Wayhome</i> buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out <i>Wayhome</i>.</p>
+<p><em>Wayhome</em> helps its customers buy their home - the customer buys 5%, <em>Wayhome</em> buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out <em>Wayhome</em>.</p>
 <h3>Challenge</h3>
-<p><i>Wayhome</i> needed to automatically select the properties a potential customer could choose, from a pool of hundreds of millions of property updates.</p>
-<p>The properties we presented to the customer had to be both good for the customer and good for <i>Wayhome</i> - good quality, fair rent and the house price likely to grow. These properties needed to be selected automatically, there are thousands of new properties listed in the UK a day. The data scientists had previously built metrics and machine learning models to decide which properties to show, these needed to be reliably applied to all newly listed properties.</p>
+<p><em>Wayhome</em> needed to automatically select the properties a potential customer could choose, from a pool of hundreds of millions of property updates.</p>
+<p>The properties we presented to the customer had to be both good for the customer and good for <em>Wayhome</em> - good quality, fair rent and the house price likely to grow. These properties needed to be selected automatically, there are thousands of new properties listed in the UK a day. The data scientists had previously built metrics and machine learning models to decide which properties to show, these needed to be reliably applied to all newly listed properties.</p>
 <h3>Solution</h3>
 <p>I designed and built a batch processing pipeline to serve the property listings to our customers. The pipeline ran daily - the most rapidly changing input, these listing updates, arrived at a rate of a few thousand a day, while the time to purchase a property is typically months. A delay of 24 hours to display the property was fine.</p>
 <p>The listings were gathered from our providers every day and stored in a data lake. For new listings, the data was initially cleaned and then combined with geographical data, including flood and noise data. We then used our in-house machine learning model to predict the likely rent a property would bring.</p>
 <p>Finally, using heuristics calculated by the data team, we filtered for properties we could likely buy, and sent those listings to be displayed on our website.</p>
 <h3>Results</h3>
-<p>The data pipeline ran for several months, delivering the transformed listings data to our potential customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the team at <i>Wayhome</i>.</p>
+<p>The data pipeline ran for several months, delivering the transformed listings data to our potential customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the team at <em>Wayhome</em>.</p>
 <hr />
 <h2 class="blog-post-subtitle">Analytics datamart</h2>
 <p>In addition to being shown to the customers, the property data needed to be straightforwardly analysed by the data team in a listings datamart.</p>

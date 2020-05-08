@@ -2,7 +2,7 @@
 ## <small>Presenting homes for shared ownership</small>
 ___
 
-*Wayhome* helps you buy a home. I built a pipeline that automatically selects the properties *Wayhome* could buy, to present to potential customers.
+Wayhome helps you buy a home. I built a pipeline that automatically selects the properties Wayhome could buy, to present to potential customers.
 
 **Skills employed:** Software design, specification gathering, data pipelines, data collection, databases, BigQuery, PostgreSQL, Google cloud platform, Cloud Run, Python (SQLAlchemy, pytest, Invoke), TDD, project design, multi-threading, Linux
 
@@ -12,13 +12,13 @@ ___
 
 ## Help to buy your home
 
-*Wayhome* helps its customers buy their home - the customer buys 5%, *Wayhome* buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out *Wayhome*.
+Wayhome helps its customers buy their home - the customer buys 5%, Wayhome buys 95%. The customer then pays rent on the part they don’t own, and gradually buys out Wayhome.
 
 ### Challenge
 
-*Wayhome* needed to automatically select the properties a potential customer could choose, from a pool of hundreds of millions of property updates.
+Wayhome needed to automatically select the properties a potential customer could choose, from a pool of hundreds of millions of property updates.
 
-The properties we presented to the customer had to be both good for the customer and good for *Wayhome* - good quality, fair rent and the house price likely to grow. These properties needed to be selected automatically, there are thousands of new properties listed in the UK a day. The data scientists had previously built metrics and machine learning models to decide which properties to show, these needed to be reliably applied to all newly listed properties.
+The properties we presented to the customer had to be both good for the customer and good for Wayhome - good quality, fair rent and the house price likely to grow. These properties needed to be selected automatically, there are thousands of new properties listed in the UK a day. The data scientists had previously built metrics and machine learning models to decide which properties to show, these needed to be reliably applied to all newly listed properties.
 
 ### Solution
 
@@ -30,7 +30,7 @@ Finally, using heuristics calculated by the data team, we filtered for propertie
 
 ### Results
 
-The data pipeline ran for several months, delivering the transformed listings data to our potential customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the team at *Wayhome*.
+The data pipeline ran for several months, delivering the transformed listings data to our potential customers. The pipeline ran at greater than 95% reliability, sufficient to fully satisfy the team at Wayhome.
 
 ___
 ## Analytics datamart

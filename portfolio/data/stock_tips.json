@@ -2,7 +2,6 @@
     "name": "stock_tips",
     "page_title": "Stock tips compared to the FTSE",
     "title": "Stock tips vs. trackers",
-    "company_name": "",
     "image_social_media_link": "",
     "index": {
         "image_link": "images/stock_tips.svg",
