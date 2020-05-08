@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 
-fname = "nutrition_analysis"
+fname = "rti"
 
 portfolio_json_path = "portfolio/data/" + fname + ".json"
 portfolio_md_path = "portfolio/markdown/" + fname + ".md"
@@ -29,7 +29,8 @@ if embed_html := data["image"].get("embed_html"):
 document_md += "*" + data["image"]["caption"] + "*" + "\n\n"
 
 for sec in data["sections"]:
-    document_md += "## " + sec["title"] + "\n\n"
+    if title := sec.get("title"):
+        document_md += "## " + title + "\n\n"
 
     for para in sec.get("paragraphs", []):
         document_md += para + "\n\n"
