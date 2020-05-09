@@ -52,7 +52,7 @@ def render_markdown(portfolio_md_path):
 
 
 def render_portfolio_items(env, navbar, headers, all_portfolio_data):
-    template = env.get_template("portfolio_page_md.html.jinja")
+    template = env.get_template("portfolio_page.html.jinja")
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
 
