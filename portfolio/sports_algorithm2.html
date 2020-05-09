@@ -70,57 +70,31 @@
             <div class="col-xl-8 blog-main">
                 <div class="blog-post">
                     <h1 class="blog-post-title">Sports Algorithm</h1>
-                    <h2 class="text-muted"><small>Algorithm development for fantasy sports</small></h2>
+<h2 class="text-muted"><small>Algorithm development for fantasy sports</small></h2>
+<hr />
+<p>I worked with <em>Lineup Lab</em>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
+<p><strong>Skills employed:</strong> Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux</p>
+<p><img class="img-fluid portfolio-image  style-bust-svg" alt="example of a player tree" src="images/sports_algorithm.svg" /></p>
+<p><em>A visualisation of a tree, the type of algorithm developed for </em>Lineup Lab<em>. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.</em></p>
+<h2 class="blog-post-subtitle">Helping find the best fantasy sports team</h2>
+<p><em>Lineup Lab</em> is a website that helps fantasy sports players calculate the players for their optimal fantasy teams for basketball and American football each day.<sup><a href='#fn1' id='ref1'>1</a></sup></p>
+<p><em>Lineup Lab</em> is part of the new fantasy sports market, which only came into existence in 2009. 6 years later it was at least a billion dollar market and looks set for continued rapid growth.</p>
+<h3>Challenge</h3>
+<p><em>Lineup Lab</em> had an algorithm that could generate the best teams from any 50 players in a given sports league. As part of a new premium product, they needed an algorithm that would find the best teams using all the players in a given sport league, up to 350 players in 9 positions, in a few seconds. This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
+<p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p>
+<p>(The problem is a variant of “the multiple choice knapsack problem”, a problem, in this case, known to be NP-hard.)</p>
+<h3>Solution</h3>
+<p>I designed and implemented the algorithm to solve this problem. After researching known solutions in the literature, I wrote a simple proof of principle using the test data, prototyped a version of this using Python and implemented a full speed version using the Python libraries numpy and itertools.</p>
+<p>The final algorithm was a tree-based algorithm, using multiple interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first. This arrangement was also true of knapsacks and sub-combinations of knapsacks. The solution also involved combinatorics and conventional code optimisations.</p>
+<h3>Results</h3>
+<p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for <em>Lineup Lab</em>'s use. I provided an updated solution based on this new data, which consistently solved the problem in the required time. After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
+<p>The algorithm was then deployed to the live server during the product release, underpinning all the solutions produced by the website, and has performed reliably ever since.</p>
+<p>We went on to work together on another set of sports and adding additional features to the algorithm.</p>
+<hr />
+<p><small id='fn1'>1. To win in fantasy sports the user must build a team with the highest possible "points" after a series of games - for example, in football a player who scores more goals would gain more points.</p>
+<p>Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance. Each player also has a corresponding statistical projection of their success, from other sources.</p>
+<p>Using <em>Lineup Lab</em>, the user can find the best team for a given budget, using these statistical scorings.<a href='#ref1' title='Jump back to footnote 1 in the text.'>↩</a></small></p>
                     <hr>
-                    <p>I worked with <i>Lineup Lab</i>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
-                    <p><i><b>Skills employed:</b> Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux</i></p>
-                    
-                        <img src="images/sports_algorithm.svg" alt="example of a player tree" class="img-fluid portfolio-image "></img>
-                    
-                    
-                    <p><i>A visualisation of a tree, the type of algorithm developed for <i>Lineup Lab</i>. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.</i></p>
-                    
-                        <h2 class="blog-post-subtitle">Helping find the best fantasy sports team</h2>
-                        
-                            <p><i>Lineup Lab</i> is a website that helps fantasy sports players calculate the players for their optimal fantasy teams for basketball and American football each day.<sup><a href='#fn1' id='ref1'>1</a></sup></p>
-                        
-                            <p><i>Lineup Lab</i> is part of the new fantasy sports market, which only came into existence in 2009. 6 years later it was at least a billion dollar market and looks set for continued rapid growth.</p>
-                        
-                        
-                            <h3>Challenge</h3>
-                            
-                                <p><i>Lineup Lab</i> had an algorithm that could generate the best teams from any 50 players in a given sports league. As part of a new premium product, they needed an algorithm that would find the best teams using all the players in a given sport league, up to 350 players in 9 positions, in a few seconds. This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
-                            
-                                <p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p>
-                            
-                                <p>(The problem is a variant of “the multiple choice knapsack problem”, a problem, in this case, known to be NP-hard.)</p>
-                            
-                        
-                            <h3>Solution</h3>
-                            
-                                <p>I designed and implemented the algorithm to solve this problem. After researching known solutions in the literature, I wrote a simple proof of principle using the test data, prototyped a version of this using Python and implemented a full speed version using the Python libraries numpy and itertools.</p>
-                            
-                                <p>The final algorithm was a tree-based algorithm, using multiple interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first. This arrangement was also true of knapsacks and sub-combinations of knapsacks. The solution also involved combinatorics and conventional code optimisations.</p>
-                            
-                        
-                            <h3>Results</h3>
-                            
-                                <p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for <i>Lineup Lab</i>'s use. I provided an updated solution based on this new data, which consistently solved the problem in the required time. After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
-                            
-                                <p>The algorithm was then deployed to the live server during the product release, underpinning all the solutions produced by the website, and has performed reliably ever since.</p>
-                            
-                                <p>We went on to work together on another set of sports and adding additional features to the algorithm.</p>
-                            
-                        
-                        <hr>
-                    
-                    
-                        <sup id='fn1'>1. To win in fantasy sports the user must build a team with the highest possible "points" after a series of games - for example, in football a player who scores more goals would gain more points.<br>
-                    
-                        Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance. Each player also has a corresponding statistical projection of their success, from other sources.<br>
-                    
-                        Using <i>Lineup Lab</i>, the user can find the best team for a given budget, using these statistical scorings.<a href='#ref1' title='Jump back to footnote 1 in the text.'>↩</a></sup><br>
-                    
                 </div>
             </div>
         </div>

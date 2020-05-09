@@ -1,8 +1,11 @@
+import codecs
 import json
+import re
 from datetime import date
 from pathlib import Path
 from pprint import pprint
 
+import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
@@ -25,6 +28,29 @@ def load_portfolio_data():
     return all_portfolio_data
 
 
+def render_markdown(portfolio_md_path):
+
+    with codecs.open(portfolio_md_path) as md_fh:
+        text = md_fh.read()
+
+    html = markdown.markdown(text)
+
+    html = html.replace("<h1>", '<h1 class="blog-post-title">')
+    html = html.replace("<h2>", '<h2 class="blog-post-subtitle">')
+    html = html.replace('<h2 class="blog-post-subtitle">',
+                        '<h2 class="text-muted">', 1)
+    html = html.replace("<img ", '<img class="img-fluid portfolio-image " ')
+
+    # svgs need a special class 'style-bust-svg' so this uses regex to do that
+    html = re.sub(
+        '(img class="[a-z\- ]*)"( .*images/[a-z_]*\.svg")',
+        r'\1 style-bust-svg"\2',
+        html
+    )
+
+    return html
+
+
 def render_portfolio_items(env, navbar, headers, all_portfolio_data):
     template = env.get_template("portfolio_page.html.jinja")
     template.blocks["navbar"] = navbar.render
@@ -32,22 +58,18 @@ def render_portfolio_items(env, navbar, headers, all_portfolio_data):
 
     for portfolio_data in all_portfolio_data:
 
-        page_src = template.render(
-            **portfolio_data, relative_position="../"
-        )
-        if company_name := portfolio_data.get("company_name"):
-            company_name_italics = "<i>" + company_name + "</i>"
-            page_src = page_src.replace(
-                company_name,
-                company_name_italics)
-            # 'cause this turns up in urls. Could do this more suscinctly
-            # with regex, but this is quicker and more obvious
-            pages_id = "chrisjdavie/"
-            page_src = page_src.replace(
-                pages_id + company_name_italics,
-                pages_id + company_name)
+        fprefix = portfolio_data["name"]
 
-        with open(portfolio_data["portfolio_link"], "w") as page_fh:
+        portfolio_md_path = "portfolio/markdown/" + fprefix + ".md"
+        portfolio_html_path = portfolio_data["portfolio_link"]
+
+        contents = render_markdown(portfolio_md_path)
+
+        page_src = template.render(
+            **portfolio_data, relative_position="../", contents=contents
+        )
+
+        with open(portfolio_html_path, "w") as page_fh:
             page_fh.write(page_src)
 
 
