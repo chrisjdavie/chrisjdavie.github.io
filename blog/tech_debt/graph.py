@@ -125,7 +125,7 @@ class Servers:
 
     value: int
 
-    name = "Severs"
+    name = "Servers"
     hatch = "-"
     color = (1.0, 0.4980392156862745, 0.054901960784313725, 1.0)
 
@@ -238,6 +238,6 @@ fig_expected.savefig("expected.svg")
 fig_actual = draw_actual()
 fig_actual.savefig("actual.svg")
 fig_with_servers = draw_with_servers()
-fig_with_servers.savefig("sever.svg")
+fig_with_servers.savefig("server.svg")
 
 plt.show()
