@@ -1,65 +1,57 @@
-# Failing to improve dev's experience when fixing technical debt
+# Fixed technical debt, didn't improve developer experience
 
-WRITE SUMMARY
+My team suffered from slow development time and high employee turnover - 90% of the team's time was spent fighting technical debt. We resolved almost half the technical debt, improving development time but not turnover.
 
-## Setting the scene
+We were spending the same amount of time on new work and other sources of technical debt as before, so even though work was completed in half the time, just over 80% of our time was still fighting technical debt. This was not enough to meaningfully improve the developer experience.
 
-I joined a team working on an internal service. This service was a consistent bottle neck; new features took a really long time to develop, and developers didn't stay in the team beyond a year.
+## Improving the technical situation
 
-It turned out we spent 10% of our time developing new features, the rest fighting technical debt. The biggest single chunk, about 50% of our time, was battling with the code base; figuring out what code did what, where new code should go, fixing the multiple daily crashes, manually resuming the jobs - we couldn't restart them, as nearly all runs failed.
+For my team, new features took a long time and developers didn't stay beyond a year. This was largely due to spending 90% of our time fighting technical debt. About half was battling the code base; figuring out complicated code, where new code should go, fixing daily crashes, manually resuming runs - nearly all runs failed.
 
-We fixed one chunk of the code as a proof of concept, and projected the full fix would take 3 months for the team and free up half our time.
+We fixed one chunk of code as a proof of concept and projected a full fix would take 3 months and free up half our time. We'd get faster feature development, the work paying for itself in 6 months, and work would be more rewarding.
 
-The commercial case was clear - faster feature development, the work paying for itself in 6 months - and then more dev time, doing more rewarding work.
+Two months later, we started; first added automated testing, bought in appropriate libraries, git, gitflow, CI/CD, consistent naming and code review. We deleted, rewrote, refactored and deduplicated code, increased test coverage and added automatic resume points, mitigating the remaining crashes.
 
-After a couple of months, we started our rebuild; first adding automated testing, bought in an appropriate framework, git, gitflow, CI/CD, consistent naming and code review. We deleted, rewrote, refactored and depulicated code, increased the test coverage and added automatic resume points, mitigating the damage from crashes.
+In slightly under the projected 3 months, we were done.
 
-And slightly under the projected 3 months, we were done.
+## Development time increased, but developers were still unhappy?
 
-## Results
+It worked - features were released rapidly on a regular schedule and the service was more reliable. The code was also 20% faster, a free benefit. Everyone outside the team was pleased. The team was, at first, more focused and felt more productive. 
 
-It worked - we had fixed the tech debt in the code. Features were released more rapidly, on a more predictable caidence and the system was reliable. It was also 20% faster, a free benefit. Everyone outside the team was pleased.
+But this faded - we were now spending most of our time fighting with the servers; looking for what had caused the crashes, managing that, relaunching the runs. We had fixed the code base, where had that time gone? Why were we now mostly fighting servers, even though our productivity was boosted?
 
-And the team was at first happy, more focused and productive. But this faded - we were now spending all our time fighting with the servers; looking for what had caused the crashes, mitigating that, relaunching the run.
+## The time to complete new work was the same
 
-This was really strange - we had been spending all our time fighting the code base, and had fixed it. But where had all that time gone? Why were we now mostly fighting servers, even though our productivity was boosted?
-
-## Why the dev experience remained shocking
-
-We were naively expecting all the time we spent working on the code tech debt to turn into time working on new features. I've visualised this expectation below, new work entirely replacing code debt work.
+We naively expected the time we spent on code tech debt to be replaced with time on new features. I've visualised this expectation below, new work replacing code debt work.
 
 ![Graph showing tech debt replaced entirely with feature work, with over half of the devs time spent on feature work](expected.svg)
 
-The values in the plot is representative - each task is different.
+In reality the time spent on code debt was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other sources of technical debt.
 
-The time spent on code debt was reduced, the time spent in all other tasks remained the same. So the majority of time for each feature was now spent dealing with the other sources of technical debt.
-
-The graph below represents the work our team was doing, in terms of total time spent working on each type of task - each other area of work expanded to fill the space left by the removed tech debt.
+The graph below represents the proportion of time spent working on each type of task before and after the fix - each other area of work expanding to fill the space left by removed tech debt.
 
 ![Graph showing all areas of work expanding to replace the removed tech debt, with only 8% extra time being spent on feature work, from a base of 10%](actual.svg)
 
-We did have a large increase in the amount of time working on new features - almost double in this example, 10% to 18%. An improvement, but a small minority - really didn't notice the improvement. We noticed fighting other problems, rather than code.
+We did have a large increase in the amount of new work - almost double, 10% to 18%. But still a small minority - we didn't notice the improvement.
 
-The next biggest problem was our company server farm! There were a host of issues; the software was rarely updated, most servers each running different versions of packages (in one case, an entirely different OS). It used a dated, unsupported distributed compute platform. Two of the servers had flakey hardware and would crash. People would log onto the servers and run things on the fly, crashing things and causing unexpected changes
+The next biggest problem was the company server farm. The software was rarely updated, each server running different versions. It used an unsupported distributed compute platform. Two of the servers had flakey hardware and would crash. People would log onto the servers and run code, causing crashes and unexpected changes.
 
-So what would we spend our time on, if we fixed the severs, dealing with 90% of the worst failures?
+So what would we spend our time on if we fixed 90% of the server problems?
 
 ![Graph showing all areas of work expanding to replace the removed server debt](server.svg)
 
-Approaching half of our dev time would then be doing new work. This should be noticable, but it still much still less than you'd aim for. To get so something reasonable, say 80% of time developing, we'd have to significantly reduce the remaining code debt, probably tackle the servers a second time and figure out the other sources of problems - which included external dependencies not working well.
+Approaching half of our time would then be doing new work. To get to 80%, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.
 
-## We didn't get to fix it
+## We couldn't fix it
 
-In the end, we didn't get to fix these problems. The team was no longer a bottle neck, the commercial case wasn't there - it would have taken around another couple of months to fix the servers, let alone solving the other problems.
+In the end, we didn't fix these problems. The team was no longer a bottleneck, the commercial case wasn't there - it would have taken months to fix the servers. These were also shared problems, the servers and the external dependencies, and other teams didn't agree these were problems!
 
-These were also shared problems, the servers and the external dependencies, we'd need to fix these problems with other teams, who didn't necessarily even agree they were problems that needed fixing!
+To solve technical problems, our team would have to dedicate perhaps a year to them - too much perhaps to ask from a company. 
 
-If it was merely solving the technical problems, perhaps if our team dedicated 6 months to a year to resolving the issues we could fix it, but that's a lot to ask from a company. 
+For the company, we successfully fixed the bottleneck, but it wasn't enough to improve the experience of working on the system - team members kept moving on!
 
-We successfully fixed the tech debt as bottle neck in the company, but it wasn't enough to improve the experience of working on the system - the team members kept moving on at the same rate!
+## Avoid the situation, the fix may be too hard
 
-## Main takeaways
+Tackling enough technical debt to improve developer experience can take much longer than gaining commercial benefits - happy commercial stakeholders, unhappy techies.
 
-That I was extremly naive and unrealistically optimistic about fixing tech debt. If the hope is to improve the experience of developers; more engaged, building and learning rapidly and generally happier and more hopeful, tackling technical debt is likely going to take a very long time, even after the commercial benefits are very clear - happy commercial stakeholders, and unhappy technies.
-
-It also taught me to be focused on the quality of code and systems I'm working on. It is really, really important address repeated pain points early. Recovery from poor quality systems will take more time than people are likely willing to spend, it's much more straight forward to figure out how to not get into that state in the first place.
+It's important to focus on quality, addressing pain points early - recovery from poor quality systems will take a long time, it's more straight forward to avoid it entirely!
