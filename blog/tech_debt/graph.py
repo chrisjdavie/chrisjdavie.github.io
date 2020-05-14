@@ -167,7 +167,7 @@ def draw_expected():
         "After\n(Expected)"
     ]
 
-    graph_title = "Expected time spent on catagories of work,\nbefore and after resolving technical debt"
+    graph_title = "Expected time spent on catagories of work,\nbefore and after resolving code debt"
 
     work_before = WorkTypes(NewWork(10), CodeDebt(50), Other(40))
     work_after = WorkTypes(NewWork(55), CodeDebt(5), Other(40))
@@ -194,7 +194,7 @@ def draw_actual():
         "After\n(Actual)"
     ]
 
-    graph_title = "Actual time spent on catagories of work,\nbefore and after resolving technical debt"
+    graph_title = "Actual time spent on catagories of work,\nbefore and after resolving code debt"
 
     bar_plts, ax, fig = draw_tech_debt_plot(
         [work_before.normalised_data(), work_after.normalised_data()],
@@ -209,7 +209,7 @@ def draw_actual():
 
 
 def draw_with_servers():
-    graph_title = "Potential time spent on catagories of work,\nbefore and after resolving technical debt"
+    graph_title = "Potential time spent on catagories of work,\nbefore and after resolving server debt"
 
     bar_labels = [
         "Before",
