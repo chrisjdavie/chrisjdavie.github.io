@@ -208,14 +208,16 @@ def render_portfolio(env, navbar, headers, all_portfolio_data):
         portfolio_fh.write(page_src)
 
 
-env = Environment(
-    loader=FileSystemLoader('templates'),
-    autoescape=select_autoescape(['html'])
-)
-navbar = env.get_template("navbar.html.jinja")
-headers = env.get_template("headers.html.jinja")
+if __name__ == "__main__":
 
-all_portfolio_data = load_portfolio_data()
+    env = Environment(
+        loader=FileSystemLoader('templates'),
+        autoescape=select_autoescape(['html'])
+    )
+    navbar = env.get_template("navbar.html.jinja")
+    headers = env.get_template("headers.html.jinja")
 
-render_portfolio_items(env, navbar, headers, all_portfolio_data)
-render_portfolio(env, navbar, headers, all_portfolio_data)
+    all_portfolio_data = load_portfolio_data()
+
+    render_portfolio_items(env, navbar, headers, all_portfolio_data)
+    render_portfolio(env, navbar, headers, all_portfolio_data)

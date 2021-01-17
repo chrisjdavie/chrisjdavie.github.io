@@ -1,5 +1,6 @@
-# Fixed technical debt, didn't improve developer experience
-
+# Fixed tech debt, not dev experience
+## <small>Increased productivity, didn't make us happy</small>
+___
 My team suffered from slow development time and high employee turnover - 90% of the team's time was spent fighting technical debt. We resolved almost half the technical debt, improving development time but not turnover.
 
 We were spending the same amount of time on new work and other sources of technical debt as before, so even though work was completed in half the time, just over 80% of our time was still fighting technical debt. This was not enough to meaningfully improve the developer experience.
@@ -24,13 +25,13 @@ But this faded - we were now spending most of our time fighting with the servers
 
 We naively expected the time we spent on code tech debt to be replaced with time on new features. I've visualised this expectation below, new work replacing code debt work.
 
-![Graph showing tech debt replaced entirely with feature work, with over half of the devs time spent on feature work](expected.svg)
+![Graph showing tech debt replaced entirely with feature work, with over half of the devs time spent on feature work](tech_debt/expected.svg)
 
 In reality the time spent on code debt was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other sources of technical debt.
 
 The graph below represents the proportion of time spent working on each type of task before and after the fix - each other area of work expanding to fill the space left by removed tech debt.
 
-![Graph showing all areas of work expanding to replace the removed tech debt, with only 8% extra time being spent on feature work, from a base of 10%](actual.svg)
+![Graph showing all areas of work expanding to replace the removed tech debt, with only 8% extra time being spent on feature work, from a base of 10%](tech_debt/actual.svg)
 
 We did have a large increase in the amount of new work - almost double, 10% to 18%. But still a small minority - we didn't notice the improvement.
 
@@ -38,7 +39,7 @@ The next biggest problem was the company server farm. The software was rarely up
 
 So what would we spend our time on if we fixed 90% of the server problems?
 
-![Graph showing all areas of work expanding to replace the removed server debt](server.svg)
+![Graph showing all areas of work expanding to replace the removed server debt](tech_debt/server.svg)
 
 Approaching half of our time would then be doing new work. To get to 80%, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.
 
