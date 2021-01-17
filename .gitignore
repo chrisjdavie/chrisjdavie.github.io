@@ -5,3 +5,5 @@ shares
 *code-workspace
 scratch/
 .venv/
+
+*__pycache__*
