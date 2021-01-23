@@ -233,11 +233,14 @@ def draw_with_servers():
     return fig
 
 
-fig_expected = draw_expected()
-fig_expected.savefig("expected.svg")
-fig_actual = draw_actual()
-fig_actual.savefig("actual.svg")
-fig_with_servers = draw_with_servers()
-fig_with_servers.savefig("server.svg")
+if __name__ == "__main__":
 
-plt.show()
+    print("FOOM")
+    fig_expected = draw_expected()
+    fig_expected.savefig("expected.svg")
+    fig_actual = draw_actual()
+    fig_actual.savefig("actual.svg")
+    fig_with_servers = draw_with_servers()
+    fig_with_servers.savefig("server.svg")
+
+    plt.show()

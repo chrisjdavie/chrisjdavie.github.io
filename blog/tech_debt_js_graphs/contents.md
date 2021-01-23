@@ -1,5 +1,6 @@
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-  <script src="tech_debt_js_graphs/bar_chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/patternomaly/1.3.2/patternomaly.js"></script>
+<script src="tech_debt_js_graphs/bar_chart.js"></script>
 
 # Fixed tech debt, not dev experience
 
@@ -29,7 +30,9 @@ But this faded - we were now spending most of our time fighting with the servers
 
 We naively expected the time we spent on code tech debt to be replaced with time on new features. I've visualised this expectation below, new work replacing code debt work.
 
-<canvas id="myChart"></canvas>
+<p class=plot-title>Expected time spent on catagories of work, <br>before and after resolving code debt</p>
+
+<canvas id="myChart" class="plot"></canvas>
 <script>draw_chart()</script>
 
 In reality the time spent on code debt was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other sources of technical debt.

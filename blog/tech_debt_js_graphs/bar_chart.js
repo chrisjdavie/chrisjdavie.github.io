@@ -1,23 +1,24 @@
-function draw_chart(){
+function draw_chart() {
+    var patternSize = 20;
     var barChartData = {
         labels: ['Before', 'After (Expected)'],
         datasets: [{
             label: 'Other',
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            backgroundColor: pattern.draw('diagonal', 'rgba(31, 119, 180)'), //',
             data: [
                 40,
                 40
             ]
         }, {
             label: 'Code debt',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            backgroundColor: pattern.draw('zigzag-vertical', 'rgba(44, 160, 44)'),
             data: [
                 50,
                 5
             ]
         }, {
             label: 'New Work',
-            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            backgroundColor: pattern.draw('diagonal-right-left', 'rgba(214, 39, 40)'),
             data: [
                 10,
                 55
@@ -26,19 +27,18 @@ function draw_chart(){
 
     };
     var ctx = document.getElementById('myChart').getContext('2d');
+    var body = document.body;
+    var style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+    var fontSize = parseFloat(style);
+    // body.style.fontSize;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: barChartData,
         options: {
-            title: {
-                display: true,
-                text: ['Expected work time,', 'before and after resolving code debt'],
-                fontSize: 32
-            },
             legend: {
                 display: true,
                 labels: {
-                    fontSize: 20
+                    fontSize: fontSize
                 }
             },
             tooltips: {
@@ -50,9 +50,10 @@ function draw_chart(){
                     lineWeight: 2,
                     stacked: true,
                     ticks: {
-                        fontSize: 24
+                        fontSize: fontSize,
+                        fontStyle: "bold"
                     },
-                    gridLines : {
+                    gridLines: {
                         lineWidth: 0
                     }
                 }],
@@ -64,10 +65,11 @@ function draw_chart(){
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Proportion of developer time, %',
-                        fontSize: 24
+                        labelString: 'Proportion of dev time, %',
+                        fontSize: fontSize,
+                        fontStyle: "bold"
                     },
-                    gridLines : {
+                    gridLines: {
                         drawBorder: false,
                         zeroLineWidth: 0.5
                     }
