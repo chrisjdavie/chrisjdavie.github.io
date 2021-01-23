@@ -41,6 +41,9 @@ def render_markdown(portfolio_md_path):
                         '<h2 class="text-muted">', 1)
     html = html.replace("<img ", '<img class="img-fluid portfolio-image " ')
 
+    html = html.replace("<plot-title>", "<center><plot-title>")
+    html = html.replace("</plot-title>", "</plot-title></center>")
+
     # svgs need a special class 'style-bust-svg' so this uses regex to do that
     html = re.sub(
         '(img class="[a-z\- ]*)"( .*images/[a-z_]*\.svg")',
