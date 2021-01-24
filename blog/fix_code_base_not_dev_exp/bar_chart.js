@@ -89,7 +89,7 @@ function draw_chart(
                     }
                 }]
             },
-            aspectRatio: 1.75
+            aspectRatio: 1.5
         }
     });
 }
