@@ -14,7 +14,7 @@ We fixed the worst of the code base, but were didn't notice any improvement in o
 
 For my team, new features took a long time and developers didn't stay at the company beyond a year. This was in large part due to spending 90% of our time fighting broken systems. About half was battling the code base; figuring out spaghetti code, where new code should go, fixing daily crashes, manually resuming runs - nearly all runs failed.
 
-We fixed one chunk of code as a proof of concept and projected a full fix would take 3 months and free up half our time. We'd get faster feature development, the work paying for itself in 6 months, and work would be more rewarding. Some politicing later, we were given the green light.
+We fixed one chunk of code as a proof of concept and projected a full fix would take 3 months and free up half our time. We'd get faster feature development, the work paying for itself in 6 months, and work would be more rewarding. Some politicking later, we were given the green light.
 
 Two months later, we started; first added automated testing, bought in appropriate libraries, git, gitflow, frequent integration and deployments, consistent naming and code review. We deleted, rewrote, refactored and deduplicated code, increased test coverage and added automatic resume points, mitigating the remaining crashes.
 
@@ -35,7 +35,7 @@ We naively expected the time we spent on code problems would be replaced with ti
 <canvas id="bar_expected" class="plot"></canvas>
 <script>draw_chart("bar_expected", 'After (Expected)', [40, 40], [50, 5], [10, 55])</script>
 
-In reality as the time spent on code problems was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other broken systmes.
+In reality as the time spent on code problems was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other broken systems.
 
 The graph below represents the actual proportion of time spent on each type of task before and after the fix - other areas of work expanding to fill the time left by removed code problems.
 

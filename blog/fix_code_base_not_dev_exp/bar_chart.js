@@ -88,7 +88,8 @@ function draw_chart(
                         zeroLineWidth: 0.5
                     }
                 }]
-            }
+            },
+            aspectRatio: 1.75
         }
     });
 }
