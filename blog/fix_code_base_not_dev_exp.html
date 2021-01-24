@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Fixed tech debt, not dev experience</title>
+    <title>Fixed code base, not dev experience</title>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Chris J. Davie">
     
-        <meta property="og:image" content="http://chrisjdavie.github.io/blog/fix_code_base_not_dev_exp/actual.svg">        
+        <meta property="og:image" content="http://chrisjdavie.github.io/portfolio/images/speech_to_text.png">
     
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -102,7 +102,7 @@
 <p>The next biggest problem was the company server farm. The severs were rarely updated, each server running different OS and software versions, with different configurations. It used an unsupported distributed compute platform. Two of the servers had flakey hardware and would crash. People would log onto the servers and run code, causing crashes and unexpected changes.</p>
 <p>So what would we spend our time on if we fixed 90% of the server problems?</p>
 <canvas id="bar_servers" class="plot"></canvas>
-<script>draw_chart("bar_servers", 'After (Actual)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
+<script>draw_chart("bar_servers", 'After (Projected)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
 
 <p>Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.</p>
 <h2 class="blog-post-subtitle">We couldn't fix it</h2>

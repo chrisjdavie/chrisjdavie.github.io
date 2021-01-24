@@ -50,7 +50,7 @@ The next biggest problem was the company server farm. The severs were rarely upd
 So what would we spend our time on if we fixed 90% of the server problems?
 
 <canvas id="bar_servers" class="plot"></canvas>
-<script>draw_chart("bar_servers", 'After (Actual)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
+<script>draw_chart("bar_servers", 'After (Projected)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
 
 Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.
 
