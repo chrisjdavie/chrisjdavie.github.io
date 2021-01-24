@@ -10,7 +10,7 @@ def render_blog_page(env, navbar, headers):
         "page_title": "Fixed code base, not dev experience",
         "title": "Fixed code base, not dev experience",
         "subtitle": "Increased productivity, didn't make us happy",
-        # "image_social_media_link": "http://chrisjdavie.github.io/blog/fix_code_base_not_dev_exp/actual.svg",
+        "image_social_media_link": "http://chrisjdavie.github.io/blog/fix_code_base_not_dev_exp/socials.jpg",
         # "index": {
         #     "image_link": "blog/fix_code_base_not_dev_exp/actual.svg",
         #     "tldr": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
