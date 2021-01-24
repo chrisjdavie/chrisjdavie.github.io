@@ -30,7 +30,7 @@ But this faded - we were now spending most of our time fighting with the servers
 
 We naively expected the time we spent on code problems would be replaced with time on new features. I've visualised this expectation below, new work replacing work on code problems.
 
-<p class=plot-title>Expected time spent on catagories of work, <br>before and after resolving code problems</p>
+<p class=plot-title>Expected time spent on catagories of work, before and after resolving code problems</p>
 
 <canvas id="bar_expected" class="plot"></canvas>
 <script>draw_chart("bar_expected", 'After (Expected)', [40, 40], [50, 5], [10, 55])</script>
@@ -39,7 +39,7 @@ In reality as the time spent on code problems was reduced, the time on all other
 
 The graph below represents the actual proportion of time spent on each type of task before and after the fix - other areas of work expanding to fill the time left by removed code problems.
 
-<p class=plot-title>Actual time spent on catagories of work, <br>before and after resolving code debt</p>
+<p class=plot-title>Actual time spent on catagories of work, before and after resolving code problems</p>
 <canvas id="bar_actual" class="plot"></canvas>
 <script>draw_chart("bar_actual", 'After (Actual)', [40, 73], [50, 9], [10, 18])</script>
 
@@ -49,10 +49,11 @@ The next biggest problem was the company server farm. The severs were rarely upd
 
 So what would we spend our time on if we fixed 90% of the server problems?
 
+<p class=plot-title>Potential time spent on catagories of work, before and after resolving server problems</p>
 <canvas id="bar_servers" class="plot"></canvas>
 <script>draw_chart("bar_servers", 'After (Projected)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
 
-Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.
+Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code issues, tackle the servers again and fix other problems - including external dependencies.
 
 ## We couldn't fix it
 

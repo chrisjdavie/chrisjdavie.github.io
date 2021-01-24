@@ -87,24 +87,25 @@
 <p>But this faded - we were now spending most of our time fighting with the servers; looking for what had caused the crashes, managing that, relaunching the runs. We had fixed the code base, where had that time gone? Why were we now mostly fighting servers, even though our productivity was boosted?</p>
 <h2 class="blog-post-subtitle">Man hours for new work stayed the same</h2>
 <p>We naively expected the time we spent on code problems would be replaced with time on new features. I've visualised this expectation below, new work replacing work on code problems.</p>
-<p class=plot-title>Expected time spent on catagories of work, <br>before and after resolving code problems</p>
+<p class=plot-title>Expected time spent on catagories of work, before and after resolving code problems</p>
 
 <canvas id="bar_expected" class="plot"></canvas>
 <script>draw_chart("bar_expected", 'After (Expected)', [40, 40], [50, 5], [10, 55])</script>
 
 <p>In reality as the time spent on code problems was reduced, the time on all other tasks remained the same - the majority of time now spent managing the other broken systmes.</p>
 <p>The graph below represents the actual proportion of time spent on each type of task before and after the fix - other areas of work expanding to fill the time left by removed code problems.</p>
-<p class=plot-title>Actual time spent on catagories of work, <br>before and after resolving code debt</p>
+<p class=plot-title>Actual time spent on catagories of work, before and after resolving code problems</p>
 <canvas id="bar_actual" class="plot"></canvas>
 <script>draw_chart("bar_actual", 'After (Actual)', [40, 73], [50, 9], [10, 18])</script>
 
 <p>We did have a large increase in the amount of new work - almost double. But still a small minority - we didn't notice the improvement.</p>
 <p>The next biggest problem was the company server farm. The severs were rarely updated, each server running different OS and software versions, with different configurations. It used an unsupported distributed compute platform. Two of the servers had flakey hardware and would crash. People would log onto the servers and run code, causing crashes and unexpected changes.</p>
 <p>So what would we spend our time on if we fixed 90% of the server problems?</p>
+<p class=plot-title>Potential time spent on catagories of work, before and after resolving server problems</p>
 <canvas id="bar_servers" class="plot"></canvas>
 <script>draw_chart("bar_servers", 'After (Projected)', [18, 36], [9, 18], [18, 36], [55, 10])</script>
 
-<p>Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code debt, tackle the servers again and fix other problems - including external dependencies.</p>
+<p>Around a third of our time would then be doing new work, a large increase but still a minority. To get to 80% of our time on new work, a good target, we'd need to reduce the remaining code issues, tackle the servers again and fix other problems - including external dependencies.</p>
 <h2 class="blog-post-subtitle">We couldn't fix it</h2>
 <p>In the end, we didn't fix these problems. The team was no longer a bottleneck, the commercial case wasn't there - it would have taken months to fix the servers. These were also shared, the servers and the external dependencies, and other teams didn't agree these were problems!</p>
 <p>To solve these, our team would have to dedicate perhaps a year to them - too much to ask from a company. </p>
