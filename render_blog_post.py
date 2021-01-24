@@ -7,8 +7,8 @@ def render_blog_page(env, navbar, headers):
 
     blog_data = {
         "name": "fix_code_base_not_dev_exp",
-        "page_title": "Fixed tech debt, not dev experience",
-        "title": "Fixed tech debt, not dev experience",
+        "page_title": "Fixed code base, not dev experience",
+        "title": "Fixed code base, not dev experience",
         "subtitle": "Increased productivity, didn't make us happy",
         # "image_social_media_link": "http://chrisjdavie.github.io/blog/fix_code_base_not_dev_exp/actual.svg",
         # "index": {
