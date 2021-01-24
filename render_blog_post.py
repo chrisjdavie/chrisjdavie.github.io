@@ -6,17 +6,17 @@ from renderer import render_markdown
 def render_blog_page(env, navbar, headers):
 
     blog_data = {
-        "name": "tech_debt",
+        "name": "fix_code_base_not_dev_exp",
         "page_title": "Fixed tech debt, not dev experience",
         "title": "Fixed tech debt, not dev experience",
-        "subtitle": "Resolving tech debt increased productivity, but didn't make us happy",
-        "image_social_media_link": "http://chrisjdavie.github.io/blog/tech_debt/actual.svg",
-        "index": {
-            "image_link": "blog/tech_debt/actual.svg",
-            "tldr": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-        },
+        "subtitle": "Increased productivity, didn't make us happy",
+        # "image_social_media_link": "http://chrisjdavie.github.io/blog/fix_code_base_not_dev_exp/actual.svg",
+        # "index": {
+        #     "image_link": "blog/fix_code_base_not_dev_exp/actual.svg",
+        #     "tldr": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        # },
         "created_date": "2021-01-16",
-        "relative_link": "blog/tech_debt.html",
+        "relative_link": "blog/fix_code_base_not_dev_exp.html",
         "github_repo_link": ""
     }
 
@@ -24,7 +24,7 @@ def render_blog_page(env, navbar, headers):
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
 
-    blog_md_path = "blog/tech_debt/contents.md"
+    blog_md_path = "blog/fix_code_base_not_dev_exp/contents.md"
     blog_html_path = blog_data["relative_link"]
 
     contents = render_markdown(blog_md_path)
