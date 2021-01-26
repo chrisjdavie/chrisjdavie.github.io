@@ -1,0 +1,14 @@
+{
+    "name": "chicken_coffee",
+    "page_title": "Chicken, coffee and house prices",
+    "title": "Chicken, coffee and house prices",
+    "image_social_media_link": "",
+    "index": {
+        "image_link": "chicken_coffee/chicken_coffee.png",
+        "tldr": "A friend does comedy, and thinks you can find out about house prices using chicken and coffee."
+    },
+    "created_date": "1970-01-04",
+    "category": "personal",
+    "portfolio_link": "portfolio/chicken_coffee.html",
+    "github_repo_link": ""
+}
