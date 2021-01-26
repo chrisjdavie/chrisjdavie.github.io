@@ -9,23 +9,7 @@ import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
-def load_portfolio_data():
-
-    portfolio_data_dir = Path("portfolio/data")
-
-    # load data
-    all_portfolio_data = []
-    for portfolio_data_path in portfolio_data_dir.iterdir():
-        if portfolio_data_path.suffix != ".json":
-            continue
-
-        with portfolio_data_path.open("rb") as portfolio_data_fh:
-            all_portfolio_data.append(json.load(portfolio_data_fh))
-
-        all_portfolio_data.sort(
-            key=lambda x: date.fromisoformat(x["created_date"]), reverse=True)
-
-    return all_portfolio_data
+PORTFOLIO_DIR = Path("portfolio")
 
 
 def render_markdown(portfolio_md_path):
@@ -54,26 +38,35 @@ def render_markdown(portfolio_md_path):
     return html
 
 
-def render_portfolio_items(env, navbar, headers, all_portfolio_data):
+def render_portfolio_items(env, navbar, headers):
     template = env.get_template("portfolio_page.html.jinja")
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
 
-    for portfolio_data in all_portfolio_data:
+    all_portfolio_data = []
 
-        fprefix = portfolio_data["name"]
+    for item_dir in PORTFOLIO_DIR.iterdir():
 
-        portfolio_md_path = "portfolio/markdown/" + fprefix + ".md"
-        portfolio_html_path = portfolio_data["portfolio_link"]
+        if item_dir.is_dir():
 
-        contents = render_markdown(portfolio_md_path)
+            portfolio_data_path = item_dir/"data.json"
+            with portfolio_data_path.open("r") as pd_fh:
+                portfolio_data = json.load(pd_fh)
+            all_portfolio_data.append(portfolio_data)
 
-        page_src = template.render(
-            **portfolio_data, relative_position="../", contents=contents
-        )
+            portfolio_md_path = item_dir / "contents.md"
+            portfolio_html_path = portfolio_data["portfolio_link"]
 
-        with open(portfolio_html_path, "w") as page_fh:
-            page_fh.write(page_src)
+            contents = render_markdown(portfolio_md_path)
+
+            page_src = template.render(
+                **portfolio_data, relative_position="../", contents=contents
+            )
+
+            with open(portfolio_html_path, "w") as page_fh:
+                page_fh.write(page_src)
+
+    return all_portfolio_data
 
 
 def setup_portfolio_data(all_portfolio_data):
@@ -184,6 +177,9 @@ def load_setup_testimonial_data():
 
 def render_portfolio(env, navbar, headers, all_portfolio_data):
 
+    all_portfolio_data.sort(
+        key=lambda x: date.fromisoformat(x["created_date"]), reverse=True)
+
     template = env.get_template("portfolio.html.jinja")
     template.blocks["navbar"] = navbar.render
     template.blocks["headers"] = headers.render
@@ -220,7 +216,5 @@ if __name__ == "__main__":
     navbar = env.get_template("navbar.html.jinja")
     headers = env.get_template("headers.html.jinja")
 
-    all_portfolio_data = load_portfolio_data()
-
-    render_portfolio_items(env, navbar, headers, all_portfolio_data)
+    all_portfolio_data = render_portfolio_items(env, navbar, headers)
     render_portfolio(env, navbar, headers, all_portfolio_data)

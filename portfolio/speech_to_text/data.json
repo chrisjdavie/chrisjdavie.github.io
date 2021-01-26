@@ -1,0 +1,14 @@
+{
+    "name": "speech_to_text",
+    "page_title": "Speech-to-text pipeline - speech recognition in multiple languages",
+    "title": "Speech-to-text pipeline",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/speech_to_text/speech_to_text.png",
+    "index": {
+        "image_link": "speech_to_text/speech_to_text.png",
+        "tldr": "Automating the building of speech-to-text systems in multiple languages, for a provider of automatic speech recognition."
+    },
+    "created_date": "1970-01-12",
+    "category": "commercial",
+    "portfolio_link": "portfolio/speech_to_text.html",
+    "github_repo_link": ""
+}

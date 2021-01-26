@@ -1,0 +1,14 @@
+{
+    "name": "sports_algorithm",
+    "page_title": "Sports algorithm - algorithm development for a fantasy sports website",
+    "title": "Sports Algorithm",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/sports_algorithm/sports_algorithm.png",
+    "index": {
+        "image_link": "sports_algorithm/sports_algorithm.svg",
+        "tldr": "Developing a custom algorithm for <i>Lineup Lab</i>, a fantasy sports website, that underpins a new premium product range."
+    },
+    "created_date": "1970-01-11",
+    "category": "commercial",
+    "portfolio_link": "portfolio/sports_algorithm2.html",
+    "github_repo_link": ""
+}
