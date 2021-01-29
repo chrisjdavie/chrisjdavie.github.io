@@ -1,11 +1,18 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta.9/chart.min.js"></script>
+<script src="sports_algorithm/beta_annotations/chartjs-plugin-annotation.min.js"></script>
+<script src="sports_algorithm/scatter_chart.js"></script>
+
 # Sports Algorithm
+
 ## <small>Algorithm development for fantasy sports</small>
+
 ___
 I worked with *Lineup Lab*, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.
 
 **Skills employed:** Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux
 
-![example of a player tree](sports_algorithm/sports_algorithm.svg)
+<canvas id="scatter_chart" class="ratio ratio-1x1"></canvas>
+<script>draw_chart()</script>
 
 *A visualisation of a tree, the type of algorithm developed for *Lineup Lab*. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.*
 

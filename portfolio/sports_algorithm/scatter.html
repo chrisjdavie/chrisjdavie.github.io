@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta.9/chart.min.js"></script>
+    <script src="beta_annotations/chartjs-plugin-annotation.min.js"></script>
+    <div style="width:75%">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script>
+
+        var color = Chart.helpers.color;
+
+        var scatterChartData = {
+            datasets: [{
+                label: 'Players',
+                data: [{
+                    x: 150,
+                    y: 100
+                }, {
+                    x: 195,
+                    y: 190
+                }, {
+                    x: 200,
+                    y: 300
+                }, {
+                    x: 300,
+                    y: 310
+                }, {
+                    x: 110,
+                    y: 180
+                }, {
+                    x: 120,
+                    y: 225
+                }, {
+                    x: 175,
+                    y: 275
+                }, {
+                    x: 170,
+                    y: 320
+                }],
+                backgroundColor: 'rgba(31, 119, 180)',
+                pointBackgroundColor: 'rgba(31, 119, 180)',
+                pointRadius: 20,
+                pointHoverBorderWidth: 10,
+                pointHoverRadius: 30
+            }, {
+                label: 'Trunk Node',
+                data: [{
+                    x: 301,
+                    y: 99
+                }],
+                backgroundColor: 'rgba(255, 127, 14)',
+                pointBackgroundColor: 'rgba(255, 127, 14)',
+                pointRadius: 20,
+                pointHoverBorderWidth: 10,
+                pointHoverRadius: 30,
+                pointStyle: 'triangle'
+            }],
+        };
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myScatter = new Chart(ctx, {
+            type: 'scatter',
+            data: scatterChartData,
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Chart.js Scatter Chart'
+                    },
+                    drawTime: 'afterDatasetsDraw',
+                    annotations: {
+                        trunk_node: {
+                            type: 'line',
+                            xScaleID: 'x',
+                            yScaleID: 'y',
+                            xMin: 300,
+                            yMin: 100,
+                            xMax: 100,
+                            yMax: 200,
+                            borderColor: 'black',
+                            borderWidth: 5,
+                            label: {
+                                enabled: false
+                            },
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
