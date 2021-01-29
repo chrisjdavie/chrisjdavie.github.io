@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+    <p>Before the script...</p>
+
+    <div style="width:75%">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta.9/chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart')
+        var scatterChart = new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Players',
+                    data: [{
+                        x: 150,
+                        y: 100
+                    }, {
+                        x: 195,
+                        y: 190
+                    }, {
+                        x: 200,
+                        y: 300
+                    }, {
+                        x: 300,
+                        y: 310
+                    }, {
+                        x: 110,
+                        y: 180
+                    }, {
+                        x: 120,
+                        y: 225
+                    }, {
+                        x: 175,
+                        y: 275
+                    }, {
+                        x: 170,
+                        y: 320
+                    }],
+                    backgroundColor: 'rgba(31, 119, 180)',
+                    pointBackgroundColor: 'rgba(31, 119, 180)',
+                    pointRadius: 20,
+                    pointHoverBorderWidth: 10,
+                    pointHoverRadius: 30
+                }, {
+                    label: 'Trunk Node',
+                    data: [{
+                        x: 301,
+                        y: 99
+                    }, {
+                        x: 200,
+                        y: 200
+                    }],
+                    backgroundColor: 'rgba(255, 127, 14)',
+                    pointBackgroundColor: 'rgba(255, 127, 14)',
+                    pointRadius: 20,
+                    pointHoverBorderWidth: 10,
+                    pointHoverRadius: 30,
+                    pointStyle: 'triangle'
+                }]
+            },
+            options: {
+                interaction: {
+                    mode: 'nearest'
+                },
+                scales: {
+                    xAxes: [{
+                        type: 'linear',
+                        position: 'bottom'
+                    }]
+                }
+            }
+        });      
+    </script>
+
+</body>
+
+</html>
