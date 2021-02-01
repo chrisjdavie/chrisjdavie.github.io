@@ -6,7 +6,6 @@ function draw_chart(
     new_work = null,
     servers = null) {
 
-    var patternSize = 20;
     var datasets = [];
     if (other) {
         datasets.push({
@@ -49,10 +48,14 @@ function draw_chart(
         type: 'bar',
         data: barChartData,
         options: {
-            legend: {
-                display: true,
-                labels: {
-                    fontSize: fontSize
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        font: {
+                            size: fontSize
+                        }
+                    }
                 }
             },
             tooltips: {
@@ -60,18 +63,20 @@ function draw_chart(
                 intersect: false
             },
             scales: {
-                xAxes: [{
+                x: {
                     lineWeight: 2,
                     stacked: true,
                     ticks: {
-                        fontSize: fontSize,
-                        fontStyle: "bold"
+                        font: {
+                            size: fontSize,
+                            style: "bold"
+                        }
                     },
                     gridLines: {
                         lineWidth: 0
                     }
-                }],
-                yAxes: [{
+                },
+                y: {
                     stacked: true,
                     display: true,
                     ticks: {
@@ -80,14 +85,16 @@ function draw_chart(
                     scaleLabel: {
                         display: true,
                         labelString: 'Proportion of dev time, %',
-                        fontSize: fontSize,
-                        fontStyle: "bold"
+                        font: {
+                            size: fontSize,
+                            style: "bold"
+                        }
                     },
                     gridLines: {
                         drawBorder: false,
                         zeroLineWidth: 0.5
                     }
-                }]
+                }
             },
             aspectRatio: 1.5
         }
