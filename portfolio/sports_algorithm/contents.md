@@ -12,7 +12,24 @@ I worked with *Lineup Lab*, a fantasy sports website, to develop a custom algori
 **Skills employed:** Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux
 
 <canvas id="scatter_chart"></canvas>
-<script>draw_chart()</script>
+<script>
+
+    function draw_chart_sized(chart){
+        if chart{
+            chart.destroy()
+        }
+
+        if (window.outerWidth < 768){
+            new_chart = draw_chart(10)
+        } else {
+            new_chart = draw_chart(20)
+        };
+        return new_chart
+    };
+    chart = draw_chart_sized(null)
+    window.onresize = draw_chart_sized(chart)
+
+</script>
 
 *A visualisation of a tree, the type of algorithm developed for *Lineup Lab*. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.*
 

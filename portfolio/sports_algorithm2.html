@@ -3,12 +3,12 @@
 
 <head>
     <title>Sports algorithm - algorithm development for a fantasy sports website</title>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Chris J. Davie">
-    
-        <meta property="og:image" content="http://chrisjdavie.github.io/portfolio/sports_algorithm/sports_algorithm.png">        
-    
+
+    <meta property="og:image" content="http://chrisjdavie.github.io/portfolio/sports_algorithm/sports_algorithm.png">
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/album.css">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-        <div class="container">
+    <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
             <div class="row">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -35,16 +35,18 @@
                 <div class="collapse navbar-collapse ml-4 mr-4" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../portfolio.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../portfolio.html#portfolio">Portfolio <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="../portfolio.html#about">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../portfolio.html#about">About <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="../portfolio.html#testimonials">Testimonials <span
                                     class="sr-only">(current)</span></a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -62,7 +64,7 @@
         </nav>
     </div>
 
-    
+
 
     <main class="container">
         <div class="row">
@@ -70,36 +72,89 @@
             <div class="col-xl-8 blog-main">
                 <div class="blog-post">
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta.9/chart.min.js"></script>
-<script src="sports_algorithm/beta_annotations/chartjs-plugin-annotation.min.js"></script>
-<script src="sports_algorithm/scatter_chart.js"></script>
+                    <script src="sports_algorithm/beta_annotations/chartjs-plugin-annotation.min.js"></script>
+                    <script src="sports_algorithm/scatter_chart.js"></script>
 
-<h1 class="blog-post-title">Sports Algorithm</h1>
-<h2 class="text-muted"><small>Algorithm development for fantasy sports</small></h2>
-<hr />
-<p>I worked with <em>Lineup Lab</em>, a fantasy sports website, to develop a custom algorithm that underpins a new premium product range.</p>
-<p><strong>Skills employed:</strong> Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux</p>
-<canvas id="scatter_chart"></canvas>
-<script>draw_chart()</script>
+                    <h1 class="blog-post-title">Sports Algorithm</h1>
+                    <h2 class="text-muted"><small>Algorithm development for fantasy sports</small></h2>
+                    <hr />
+                    <p>I worked with <em>Lineup Lab</em>, a fantasy sports website, to develop a custom algorithm that
+                        underpins a new premium product range.</p>
+                    <p><strong>Skills employed:</strong> Algorithm design, Mathematics, Python, (numpy, scipy), Cython,
+                        TDD, project design, Linux</p>
+                    <canvas id="scatter_chart"></canvas>
+                    <script>
 
-<p><em>A visualisation of a tree, the type of algorithm developed for </em>Lineup Lab<em>. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.</em></p>
-<h2 class="blog-post-subtitle">Helping find the best fantasy sports team</h2>
-<p><em>Lineup Lab</em> is a website that helps fantasy sports players calculate the players for their optimal fantasy teams for basketball and American football each day.<sup><a href='#fn1' id='ref1'>1</a></sup></p>
-<p><em>Lineup Lab</em> is part of the new fantasy sports market, which only came into existence in 2009. 6 years later it was at least a billion dollar market and looks set for continued rapid growth.</p>
-<h3>Challenge</h3>
-<p><em>Lineup Lab</em> had an algorithm that could generate the best teams from any 50 players in a given sports league. As part of a new premium product, they needed an algorithm that would find the best teams using all the players in a given sport league, up to 350 players in 9 positions, in a few seconds. This would provide their users with a comprehensive selection of the best teams for use in fantasy sports.</p>
-<p>There are trillions of possible teams with all the players considered, and a direct computation of this would take more time and computational resources than they had.</p>
-<p>(The problem is a variant of “the multiple choice knapsack problem”, a problem, in this case, known to be NP-hard.)</p>
-<h3>Solution</h3>
-<p>I designed and implemented the algorithm to solve this problem. After researching known solutions in the literature, I wrote a simple proof of principle using the test data, prototyped a version of this using Python and implemented a full speed version using the Python libraries numpy and itertools.</p>
-<p>The final algorithm was a tree-based algorithm, using multiple interacting trees of players and positions, exploiting many features of the data; as an example, any player with a lower salary and higher points value would be picked first. This arrangement was also true of knapsacks and sub-combinations of knapsacks. The solution also involved combinatorics and conventional code optimisations.</p>
-<h3>Results</h3>
-<p>While the initial algorithm worked on all the test data, it was later found to sometimes slow down during testing on the development server against real-world data, no longer providing an answer quickly enough for <em>Lineup Lab</em>'s use. I provided an updated solution based on this new data, which consistently solved the problem in the required time. After a final round of testing, adding features and bug fixes, we were happy with the performance and reliability of the algorithm.</p>
-<p>The algorithm was then deployed to the live server during the product release, underpinning all the solutions produced by the website, and has performed reliably ever since.</p>
-<p>We went on to work together on another set of sports and adding additional features to the algorithm.</p>
-<hr />
-<p><small id='fn1'>1. To win in fantasy sports the user must build a team with the highest possible "points" after a series of games - for example, in football a player who scores more goals would gain more points.</p>
-<p>Each user has a certain budget to buy players for their team, with each player having a price, based on their previous performance. Each player also has a corresponding statistical projection of their success, from other sources.</p>
-<p>Using <em>Lineup Lab</em>, the user can find the best team for a given budget, using these statistical scorings.<a href='#ref1' title='Jump back to footnote 1 in the text.'>↩</a></small></p>
+                        function draw_chart_sized(chart) {
+                            if (chart) {
+                                chart.destroy()
+                            }
+                            console.log(window.innerWidth)
+                            if (window.innerWidth < 768) {
+                                new_chart = draw_chart(10)
+                            } else {
+                                new_chart = draw_chart(20)
+                            };
+                            return new_chart
+                        };
+                        chart = draw_chart_sized(null)
+                        window.onresize = function () {
+                            chart = draw_chart_sized(chart)
+                        };
+
+                    </script>
+
+                    <p><em>A visualisation of a tree, the type of algorithm developed for </em>Lineup Lab<em>. Here,
+                            each node is a better choice than the nodes behind. The colour shows the depth of the tree
+                            from the trunk node.</em></p>
+                    <h2 class="blog-post-subtitle">Helping find the best fantasy sports team</h2>
+                    <p><em>Lineup Lab</em> is a website that helps fantasy sports players calculate the players for
+                        their optimal fantasy teams for basketball and American football each day.<sup><a href='#fn1'
+                                id='ref1'>1</a></sup></p>
+                    <p><em>Lineup Lab</em> is part of the new fantasy sports market, which only came into existence in
+                        2009. 6 years later it was at least a billion dollar market and looks set for continued rapid
+                        growth.</p>
+                    <h3>Challenge</h3>
+                    <p><em>Lineup Lab</em> had an algorithm that could generate the best teams from any 50 players in a
+                        given sports league. As part of a new premium product, they needed an algorithm that would find
+                        the best teams using all the players in a given sport league, up to 350 players in 9 positions,
+                        in a few seconds. This would provide their users with a comprehensive selection of the best
+                        teams for use in fantasy sports.</p>
+                    <p>There are trillions of possible teams with all the players considered, and a direct computation
+                        of this would take more time and computational resources than they had.</p>
+                    <p>(The problem is a variant of “the multiple choice knapsack problem”, a problem, in this case,
+                        known to be NP-hard.)</p>
+                    <h3>Solution</h3>
+                    <p>I designed and implemented the algorithm to solve this problem. After researching known solutions
+                        in the literature, I wrote a simple proof of principle using the test data, prototyped a version
+                        of this using Python and implemented a full speed version using the Python libraries numpy and
+                        itertools.</p>
+                    <p>The final algorithm was a tree-based algorithm, using multiple interacting trees of players and
+                        positions, exploiting many features of the data; as an example, any player with a lower salary
+                        and higher points value would be picked first. This arrangement was also true of knapsacks and
+                        sub-combinations of knapsacks. The solution also involved combinatorics and conventional code
+                        optimisations.</p>
+                    <h3>Results</h3>
+                    <p>While the initial algorithm worked on all the test data, it was later found to sometimes slow
+                        down during testing on the development server against real-world data, no longer providing an
+                        answer quickly enough for <em>Lineup Lab</em>'s use. I provided an updated solution based on
+                        this new data, which consistently solved the problem in the required time. After a final round
+                        of testing, adding features and bug fixes, we were happy with the performance and reliability of
+                        the algorithm.</p>
+                    <p>The algorithm was then deployed to the live server during the product release, underpinning all
+                        the solutions produced by the website, and has performed reliably ever since.</p>
+                    <p>We went on to work together on another set of sports and adding additional features to the
+                        algorithm.</p>
+                    <hr />
+                    <p><small id='fn1'>1. To win in fantasy sports the user must build a team with the highest possible
+                            "points" after a series of games - for example, in football a player who scores more goals
+                            would gain more points.</p>
+                    <p>Each user has a certain budget to buy players for their team, with each player having a price,
+                        based on their previous performance. Each player also has a corresponding statistical projection
+                        of their success, from other sources.</p>
+                    <p>Using <em>Lineup Lab</em>, the user can find the best team for a given budget, using these
+                        statistical scorings.<a href='#ref1' title='Jump back to footnote 1 in the text.'>↩</a></small>
+                    </p>
                     <hr>
                 </div>
             </div>

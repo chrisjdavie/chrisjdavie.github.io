@@ -1,4 +1,4 @@
-function draw_chart() {
+function draw_chart(pointRadius) {
 
     class Node {
         constructor(x, y) {
@@ -50,23 +50,26 @@ function draw_chart() {
         [4, 4]
     ]
 
+    var pointHoverBorderWidth = pointRadius / 2
+    var pointHoverRadius = 1.5 * pointRadius
+
     var scatterChartData = {
         datasets: [{
             label: 'Players',
             data: player_data,
             backgroundColor: 'rgba(31, 119, 180)',
             pointBackgroundColor: 'rgba(31, 119, 180)',
-            pointRadius: 20,
-            pointHoverBorderWidth: 10,
-            pointHoverRadius: 30
+            pointRadius: pointRadius,
+            pointHoverBorderWidth: pointHoverBorderWidth,
+            pointHoverRadius: pointHoverRadius
         }, {
             label: 'Trunk Node',
             data: trunk_data,
             backgroundColor: 'rgba(214, 39, 40)',
             pointBackgroundColor: 'rgba(214, 39, 40)',
-            pointRadius: 20,
-            pointHoverBorderWidth: 10,
-            pointHoverRadius: 30,
+            pointRadius: pointRadius,
+            pointHoverBorderWidth: pointHoverBorderWidth,
+            pointHoverRadius: pointHoverRadius,
             pointStyle: 'triangle'
         }, {
             type: 'line',
@@ -173,4 +176,6 @@ function draw_chart() {
             aspectRatio: 1.5
         }
     });
+
+    return myScatter
 }
