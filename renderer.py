@@ -30,7 +30,7 @@ def render_markdown(portfolio_md_path):
 
     # svgs need a special class 'style-bust-svg' so this uses regex to do that
     html = re.sub(
-        '(img class="[a-z\- ]*)"( .*images/[a-z_]*\.svg")',
+        '(img class="[a-z\- ]*)"( .*[a-z_]*\.svg")',
         r'\1 style-bust-svg"\2',
         html
     )
