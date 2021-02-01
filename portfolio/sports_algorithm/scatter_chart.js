@@ -123,6 +123,7 @@ function draw_chart(pointRadius) {
         type: 'scatter',
         data: scatterChartData,
         options: {
+            animation: false,
             interaction: {
                 mode: 'nearest'
             },
