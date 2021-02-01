@@ -8,12 +8,12 @@ function draw_chart() {
         }
     }
     let node3 = new Node(300, 310)
-    let node2 = new Node(250, 300)
+    let node2 = new Node(265, 300)
 
     let node100 = new Node(170, 320)
-    let node10 = new Node(200, 250)
+    let node10 = new Node(210, 250)
     node10.children.push(node100)
-    let node1 = new Node(245, 190)
+    let node1 = new Node(260, 190)
     node1.children.push(node10)
 
     let node01 = new Node(120, 225)
