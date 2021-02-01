@@ -11,7 +11,7 @@ I worked with *Lineup Lab*, a fantasy sports website, to develop a custom algori
 
 **Skills employed:** Algorithm design, Mathematics, Python, (numpy, scipy), Cython, TDD, project design, Linux
 
-<canvas id="scatter_chart" class="ratio ratio-1x1"></canvas>
+<canvas id="scatter_chart"></canvas>
 <script>draw_chart()</script>
 
 *A visualisation of a tree, the type of algorithm developed for *Lineup Lab*. Here, each node is a better choice than the nodes behind. The colour shows the depth of the tree from the trunk node.*
