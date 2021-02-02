@@ -15,11 +15,11 @@ I worked with *Lineup Lab*, a fantasy sports website, to develop a custom algori
 <script>
 
     function draw_chart_sized(chart){
-        if chart{
+        if (chart){
             chart.destroy()
         }
 
-        if (window.outerWidth < 768){
+        if (window.innerWidth < 768){
             new_chart = draw_chart(10)
         } else {
             new_chart = draw_chart(20)
@@ -27,7 +27,9 @@ I worked with *Lineup Lab*, a fantasy sports website, to develop a custom algori
         return new_chart
     };
     chart = draw_chart_sized(null)
-    window.onresize = draw_chart_sized(chart)
+    window.onresize = function () {
+        chart = draw_chart_sized(chart)
+    };
 
 </script>
 
