@@ -1,4 +1,4 @@
-function draw_chart(pointRadius) {
+function draw_scatter_chart(pointRadius) {
 
     class Node {
         constructor(x, y) {
@@ -181,4 +181,24 @@ function draw_chart(pointRadius) {
     });
 
     return myScatter
+}
+
+function manage_chart_dynamics() {
+
+    function draw_scatter_chart_sized(chart) {
+        if (chart) {
+            chart.destroy()
+        }
+
+        if (window.innerWidth < 768) {
+            new_chart = draw_scatter_chart(10)
+        } else {
+            new_chart = draw_scatter_chart(20)
+        };
+        return new_chart
+    };
+    chart = draw_scatter_chart_sized(null)
+    window.onresize = function () {
+        chart = draw_scatter_chart_sized(chart)
+    };
 }
