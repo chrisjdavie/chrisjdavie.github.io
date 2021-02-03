@@ -1,0 +1,14 @@
+{
+    "name": "interactive_visualisations",
+    "page_title": "Interactive data visualisation - learning JS, prettier graphs",
+    "title": "Interactive data visualisations",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/portfolio_website/portfolio_website.png",
+    "index": {
+        "image_link": "interactive_visualisations/socials.png",
+        "tldr": "Learning JavaScript and prettier ways of displaying data."
+    },
+    "created_date": "2021-02-02",
+    "category": "personal",
+    "portfolio_link": "portfolio/interactive_visualisations.html",
+    "github_repo_link": "https://github.com/chrisjdavie/chrisjdavie.github.io"
+}

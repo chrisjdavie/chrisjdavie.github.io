@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interactive data visualisation - learning JS, prettier graphs</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chris J. Davie">
+    
+        <meta property="og:image" content="http://chrisjdavie.github.io/portfolio/portfolio_website/portfolio_website.png">        
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/album.css">
+    <link rel="stylesheet" href="../css/gh_pages.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+            <div class="row">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-4 mr-4" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../portfolio.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../portfolio.html#about">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../portfolio.html#testimonials">Testimonials <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        
+                            <section id="downloads">
+                            <a class="zip_download_link"
+                                href="https://github.com/chrisjdavie/chrisjdavie.github.io/zipball/master">Download this project as a
+                                .zip file</a>
+                            <a class="tar_download_link"
+                                href="https://github.com/chrisjdavie/chrisjdavie.github.io/tarball/master">Download this project as a
+                                tar.gz file</a>
+                        </section>
+                        
+                    </ul>
+                </div>
+            </div>
+            <a class="mr-2" href="mailto:cjdavie+fromsite@googlemail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 8 8" fill="white">
+                    <path d="M0 0v1l4 2 4-2v-1h-8zm0 2v4h8v-4l-4 2-4-2z" transform="translate(0 1)" />
+                </svg>
+            </a>
+            <a href="http://www.linkedin.com/in/chris-davie">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    
+        <a id="forkme_banner" href="https://github.com/chrisjdavie/chrisjdavie.github.io">View on GitHub</a>
+    
+
+    <main class="container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 blog-main">
+                <div class="blog-post">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta.9/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/patternomaly/1.3.2/patternomaly.js"></script>
+<script src="../blog/fix_code_base_not_dev_exp/bar_chart.js"></script>
+<script src="sports_algorithm/beta_annotations/chartjs-plugin-annotation.min.js"></script>
+<script src="../portfolio/sports_algorithm/scatter_chart.js"></script>
+
+<h1 class="blog-post-title">Interactive data visualisations</h1>
+<h2 class="text-muted"><small>Data visualisations using browser technologies</small></h2>
+<hr />
+<p>Building interactive data visualisations, to learn JavaScript and prettier ways of displaying data.</p>
+<canvas id="demo_bars" class="plot"></canvas>
+<script>draw_chart("demo_bars", 'After', [10, 40], [20, 30], [30, 20], [40, 10])</script>
+
+<p><em>A bar chart visualisation, for a blog post I might finish</em></p>
+<p>This portfolio site had many graphs, largely static images built in Python. Python produces crisp academic graphs, but not interactive, web-based visualisations.</p>
+<p>I'd like to build dynamic visualisations, but Python's are ugly, with odd dynamic behaviour. It seems sensible to use JavaScript, it's the language of the web, and learning it will let me build more things!</p>
+<p>So I researched JavaScript data visualisation libraries - there are a lot! I chose Chart.js - a well documented, easy to use, feature rich, well maintained and widely used library. I'm pleased with the visualisations I then built, above and below, judge for yourself.</p>
+<canvas id="scatter_chart"></canvas>
+<script>manage_chart_dynamics()</script>
+<p><em>A visualisation of a tree, the type of algorithm developed for </em>Lineup Lab<em>.</em></p>
+<p>There are great features in Chart.js - simple to use, easy to customise, large plugin ecosystem; I really like annotations for drawing on graphs, and patternomaly, making bar charts color-blind friendly. There are difficulties - it's hard to control precisely - the legend for the lines is a box, and there are too many lines on the axes, reducing them takes much code.</p>
+<p>I found customisation in Python to be more straightforward - part of that is familiarity.</p>
+<p>Learning JavaScript went well - functions, callbacks, objects, browser console use. I integrated this into my portfolio pages, using resizing and JavaScript files. I also learnt what jQuery is, but didn't use it.</p>
+<p>It highlighted how unfamilar I am with JavaScript - my code is ugly! I also have no idea how to test visualisations, test-first development for this would be interesting.</p>
+<p>This has gone really well - interactive visualisations, a decent introduction to JavaScript, and an enjoyable project!</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 blog-main">
+                    <p>Copyright &copy; Christopher J Davie, 2020</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </main>
+</body>
