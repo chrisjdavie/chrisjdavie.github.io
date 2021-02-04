@@ -85,51 +85,15 @@ def setup_portfolio_data(all_portfolio_data):
             "rows": []
         },
         {
-            "category": "research",
-            "title": "Research Projects",
-            "subtitle": "My PhD work",
-            "rows": []
-        },
-        {
             "category": "personal",
             "title": "Personal Projects",
             "subtitle": "For interest",
-            "rows": []
-        }
-    ]
-
-    for cat in categories:
-
-        cat_data = [
-            data for data in all_portfolio_data if data["category"] == cat["category"]
-        ]
-
-        rows = []
-        # split in 3s
-        for i, portfolio_data in enumerate(cat_data):
-            if not i % cols_in_a_row:
-                rows.append([])
-            rows[-1].append(portfolio_data)
-
-        cat["rows"] = rows
-
-    categories = [
-        {
-            "category": "commercial",
-            "title": "Commercial Projects",
-            "subtitle": "",
             "rows": []
         },
         {
             "category": "research",
             "title": "Research Projects",
             "subtitle": "My PhD work",
-            "rows": []
-        },
-        {
-            "category": "personal",
-            "title": "Personal Projects",
-            "subtitle": "For interest",
             "rows": []
         }
     ]
