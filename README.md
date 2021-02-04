@@ -2,6 +2,8 @@ My personal website. If you want to render it, the easiest way is to run the com
 
  `inv render`
 
+This runs the `render` function in the `tasks.py` file.
+
 This requires `Python3.8` , `invoke` and probably `virtualenv` all installed. I'm pretty sure you can install `invoke` and `virtualenv` via `pip` .
 
 This renders the templates in the `templates` directory, using the data in `testimonials.json` and the jsons in `portfolio/<page_name>/data.json` . Once it's rendered, it dumps a bunch of `html` files around - `portfolio.html` in the root here and the portfolio pages in `portfolio/*` .
