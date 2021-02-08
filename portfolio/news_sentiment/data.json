@@ -2,7 +2,7 @@
     "name": "news_sentiment",
     "page_title": "News sentiment analysis",
     "title": "Sentiment of news",
-    "image_social_media_link": "",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/news_sentiment/news_sentiment_white.png",
     "index": {
         "image_link": "news_sentiment/news_sentiment.svg",
         "tldr": "Looking at how well machine learning can assess the sentiment of news articles."

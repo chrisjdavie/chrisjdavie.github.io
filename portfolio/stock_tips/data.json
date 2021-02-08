@@ -2,7 +2,7 @@
     "name": "stock_tips",
     "page_title": "Stock tips compared to the FTSE",
     "title": "Stock tips vs. trackers",
-    "image_social_media_link": "",
+    "image_social_media_link": "http://chrisjdavie.github.io/portfolio/stock_tips_white.png",
     "index": {
         "image_link": "stock_tips/stock_tips.svg",
         "tldr": "Performance of stock tips from the Telegraph compared to the FTSE 100."
