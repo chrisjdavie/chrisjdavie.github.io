@@ -27,12 +27,12 @@ So I researched JavaScript data visualisation libraries - there are a lot! I cho
 <script>manage_chart_dynamics()</script>
 *A visualisation of a tree, the type of algorithm developed for *Lineup Lab*.*
 
-There are great features in Chart.js - simple to use, easy to customise, large plugin ecosystem; I really like annotations for drawing on graphs, and patternomaly, making bar charts color-blind friendly. There are difficulties - it's hard to control precisely - the legend for the lines is a box, and there are too many lines on the axes, reducing them takes much code.
+There are great features in Chart.js - simple to use, easy to customise, large plugin ecosystem; I really like annotations for drawing on graphs, and patternomaly, making bar charts colour-blind friendly. There are difficulties - it's hard to control precisely - the legend for the lines is a box, and there are too many lines on the axes, reducing them takes much code.
 
 I found customisation in Python to be more straightforward - part of that is familiarity.
 
 Learning JavaScript went well - functions, callbacks, objects, browser console use. I integrated this into my portfolio pages, using resizing and JavaScript files. I also learnt what jQuery is, but didn't use it.
 
-It highlighted how unfamilar I am with JavaScript - my code is ugly! I also have no idea how to test visualisations, test-first development for this would be interesting.
+It highlighted how unfamiliar I am with JavaScript - my code is ugly! I also have no idea how to test visualisations, test-first development for this would be interesting.
 
 This has gone really well - interactive visualisations, a decent introduction to JavaScript, and an enjoyable project!
