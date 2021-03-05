@@ -1,0 +1,75 @@
+{
+    "Blog post ideas": [
+        "power of developers",
+        "deciding what to learn",
+        "self regulation",
+        "how to decide what to fix",
+        "Overfitting as a thing that exams are",
+        "incommunicable knowledge",
+        "Linear regression beyond the simple approach",
+        "excel as a tool for teaching programming",
+        "agile, lean, six sigma model",
+        "Incrementalism as the only consistent way of introducing meaningful change",
+        "No silver bullets",
+        "situational approach to CI/CD",
+        "The difference between targets and metrics, distortion of processes",
+        "Survivorship bias in startup funding",
+        "the wood for the trees - detail in project management",
+        "when data science should and shouldn't be used",
+        "Should you go and work for a startup because of shares/good ideas?",
+        "The links between scaling a startup and scaling up a social intervention",
+        "Steps needed before a problem can be solved",
+        "<YouTube personality> as a scalable social enterprise"
+    ],
+    "excel as a tool for teaching programming": [],
+    "the wood for the trees - detail in project management": [
+        "we are taught at the lowest operational level nearly always",
+        "When is an abstraction useful, when is it dangerous"
+    ],
+    "When is an abstraction useful, when is it dangerous": [],
+    "we are taught at the lowest operational level nearly always": [],
+    "Linear regression beyond the simple approach": [],
+    "situational approach to CI/CD": [
+        "coloniser, settler, town planner",
+        "Steps needed before a problem can be solved"
+    ],
+    "Steps needed before a problem can be solved": [
+        "how to decide what to fix",
+        "platforming"
+    ],
+    "how to decide what to fix": [
+        "risk matrices",
+        "caching as an analogy",
+        "deciding what to learn",
+        "when should you use k8s",
+        "situational approach to CI/CD",
+        "Steps needed before a problem can be solved",
+        "Fixed technical debt, didn't improve developer experience"
+    ],
+    "Fixed technical debt, didn't improve developer experience": [],
+    "when should you use k8s": [],
+    "risk matrices": [],
+    "caching as an analogy": [],
+    "deciding what to learn": [
+        "Should you go and work for a startup because of shares/good ideas?"
+    ],
+    "Should you go and work for a startup because of shares/good ideas?": [],
+    "platforming": [],
+    "coloniser, settler, town planner": [],
+    "self regulation": [],
+    "when data science should and shouldn't be used": [],
+    "power of developers": [],
+    "The difference between targets and metrics, distortion of processes": [],
+    "Overfitting as a thing that exams are": [],
+    "incommunicable knowledge": [],
+    "No silver bullets": [],
+    "agile, lean, six sigma model": [],
+    "The links between scaling a startup and scaling up a social intervention": [],
+    "Incrementalism as the only consistent way of introducing meaningful change": [],
+    "Survivorship bias in startup funding": [],
+    "<YouTube personality> as a scalable social enterprise": [
+        "<YouTube personality>",
+        "Incrementalism as the only consistent way of introducing meaningful change"
+    ],
+    "<YouTube personality>": []
+}
