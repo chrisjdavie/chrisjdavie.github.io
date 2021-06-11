@@ -25,3 +25,5 @@ I've built this page using Python and jinja2, generating html pages. These html 
 I'm sure there's a nicer javascript way of writing this build the page dynamically, but I'm a data engineer/backend dev and this is a pretty straightforwards way of me setting up this while mainly only having to learn a templating language (beyond what I already knew about css and bootstrap).
 
 I've learn a bit of javascript doing this, largely for plotting the interactive plots. The javascript is not great, but the graphs are pretty.
+
+(this is an edit to make github pages work?)
