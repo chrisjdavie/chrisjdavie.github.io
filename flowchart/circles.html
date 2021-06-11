@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- HTML5 document type -->
+<html>
+
+<head>
+    <!-- use go-debug.js when developing and go.js when deploying -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+    circle {
+        fill: orange;
+    }
+
+    g.item text {
+        fill: #ddd;
+        font-size: 70px;
+        text-anchor: middle;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <svg width="760" height="140">
+        <g transform="translate(70, 70)">
+            <g class="item" transform="translate(0, 0)">
+                <circle r="40" />
+            </g>
+            <g class="item" transform="translate(120, 0)">
+                <circle r="40" />
+            </g>
+            <g class="item" transform="translate(240, 0)">
+                <circle r="40" />
+            </g>
+        </g>
+    </svg>
+    <script>
+        d3.selectAll('g.item')
+            .append('text')
+            .text(function (d, i) {
+                return i + 1;
+            })
+            .attr('y', 50)
+            .attr('x', 30);;
+    </script>
+</body>

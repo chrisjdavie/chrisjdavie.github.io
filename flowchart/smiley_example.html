@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <script>
+        var customSymbolTypes = d3.map({
+            'thin-x': function (size) {
+                size = Math.sqrt(size);
+                return 'M' + (-size / 2) + ',' + (-size / 2) +
+                    'l' + size + ',' + size +
+                    'm0,' + -(size) +
+                    'l' + (-size) + ',' + size;
+            },
+            'smiley': function (size) {
+                size = Math.sqrt(size);
+                var pad = size / 5;
+                var r = size / 8;
+                return 'M' + ((-size / 2) + pad) + ',' + (-size / 2) +
+                    ' m' + (-r) + ',0' +
+                    ' a' + r + ',' + r + ' 0 1,0' + (r * 2) + ',0' +
+                    ' a' + r + ',' + r + ' 0 1,0' + (-(r * 2)) + ',0' +
+
+                    'M' + ((size / 2) - pad) + ',' + (-size / 2) +
+                    ' m' + (-r) + ',0' +
+                    ' a' + r + ',' + r + ' 0 1,0' + (r * 2) + ',0' +
+                    ' a' + r + ',' + r + ' 0 1,0' + (-(r * 2)) + ',0' +
+
+                    'M' + (-size / 2) + ',' + ((size / 2) - (2 * pad)) +
+                    'q' + (size / 2) + ',' + (pad * 2) + ' ' + size + ',0';
+            }
+        });
+
+        d3.svg.customSymbol = function () {
+            var type,
+                size = 64;
+            function symbol(d, i) {
+                return customSymbolTypes.get(type.call(this, d, i))(size.call(this, d, i));
+            }
+            symbol.type = function (_) {
+                if (!arguments.length) return type;
+                type = d3.functor(_);
+                return symbol;
+            };
+            symbol.size = function (_) {
+                if (!arguments.length) return size;
+                size = d3.functor(_);
+                return symbol;
+            };
+            return symbol;
+        };
+
+        function getSymbol(type, size) {
+            size = size || 64;
+            if (d3.svg.symbolTypes.indexOf(type) !== -1) {
+                return d3.svg.symbol().type(type).size(size)();
+            } else {
+                return d3.svg.customSymbol().type(type).size(size)();
+            }
+        }
+
+        var data = ['circle', 'diamond', 'thin-x', 'smiley', 'square'];
+
+        var svg = d3.select('body').append('svg')
+    </script>
+</body>
+
+</html>
