@@ -4,3 +4,6 @@
 * * II - explanatory (and automated - dashboards)
 * * III - predictive
 * * IV - predictive, and automated (in prod, automated test and build)
+* Need to comment on the competitors evolution
+* * Renewables - Solar, Wind close to commodity behaviour
+* * Nuclear fision - If you don't mind radioactive waste, Fission already works, is mature, but suffers huge HR issues (plants need to stop melting down/leaking, globally)
