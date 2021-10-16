@@ -4,7 +4,13 @@
 
 ___
 
-I'm learning Wardely Maps, to more clearly articulate my thoughts. Here, I use it to describe the evolution of a project I worked on, from R&D to a core compentent driving revenue at a startup.
+Wardely Maps are a technique to enable communication of the structure and direction a project, to allow better decisions with this projects. As a developer, they have the potential to allow me to communicate many complexities of the decisions I'm making on technical projects to my business colleagues - more clearly represent my understanding of the environment (organisational structure, teams around), communicate how the things I'm building depend on each other and this wider environment, and reach better informed decisions with my colleagues have, day-to-day, exposure to the detail of different chunks of the problem.
+
+As I'm learning Wardely Maps, I'm using them to describe the evolution of a project I worked on for a year, and it's evolution from R&D to a core compentent driving revenue at a startup.
+
+# Lineup Lab
+
+Lineup Lab helps sports gamblers make better decisions, with the aim of enabling them to win more; I've written more about it **HERE**. At the core of the pO
 
 * Move knapsack problem to low product - knowledge, "Theory"
 # What is a Wardley map
