@@ -15,6 +15,9 @@ I'm learning Wardely Maps, to more clearly articulate my thoughts. Here, I use i
 * What are the lines?
 * * Links in a dependency chain (the dependencies are not universally downwards, away from the customer)
 * *  "There is a flow of risk, information and money between components."
+# Explain the project by expanding nodes
+* from the first, customer facing nodes, representing the solution to customer problems
+* adding on the next layer, next layer, etc, until external contract
 # Initial R&D project
 * R&D from blake
 * Brief 
