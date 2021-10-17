@@ -10,10 +10,21 @@ As I'm learning Wardely Maps, I'm using them to describe the evolution of a proj
 
 # Lineup Lab
 
-Lineup Lab helps sports gamblers make better decisions, with the aim of enabling them to win more; I've written more about it **HERE**. At the core of the pO
+Lineup Lab helps sports gamblers make better decisions, with the aim of enabling them to win more; I've written more about it **HERE**. My algorithm provided the advice; given a set of sports people, some statistics around their projected performance, and details of the game set up, my algorithm provided the optimal configuration of sports people to bet on.
+
+My algorithm started out as an R&D project, researching and testing different approaches and adaptions that would allow this problem to be solved. The project gradually progressed to becoming more fully fledged, broader - feature expansions; different sports, optional rules, different solution techniques. I almost included more sophisticated development processes - automated testing, test driven development, refining the API, and more systematic delivery of the software to my customer. Additionally I used more sophiticated software techniques - multiprocessing, design patterns, internal abstractions of the interface.
+
+This was a fascinating project to learn from, and quite rare - it's unusual to be able to prototype an algorithm, and grow it into a fully fledged project.
+
+**The paragraph below is the core, move it up or something**
+
+But while I can list the techniques I used above, and can discuss why I made the changes I did, the model for the system mainly exists in my mind (and also in code, but no-one else has read it in detail). This required a high degree of trust between me and my client around decisions being made. It worked really well, but when I first read about Wardley Maps, I realised this was framework that could very easily communicate many much of the important high-level decisions I was making, without needing to communicate so much detail that it becomes unwieldy.
 
 * Move knapsack problem to low product - knowledge, "Theory"
 # What is a Wardley map
+
+Here, I'm using a Wardley Map as a tool for communicating the evolution of this algorithm. There are many more layers to mapping, helping strategic decision making for entire organisations, but it's really interesting at this granular level too (I'm working on a much larger, inter-organisation map for a large research project - big and small!)
+
 * X axis - evolution
 * * In this context, software
 * Y axis - visibility
