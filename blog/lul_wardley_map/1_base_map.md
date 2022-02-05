@@ -12,6 +12,8 @@ As I'm learning Wardely Maps, I'm using them to describe the evolution of a proj
 
 Lineup Lab helps sports gamblers make better decisions, with the aim of enabling them to win more; I've written more about it **HERE**. My algorithm provided the advice; given a set of sports people, some statistics around their projected performance, and details of the game set up, my algorithm provided the optimal configuration of sports people to bet on.
 
+## A graph of my project
+
 My algorithm started out as an R&D project, researching and testing different approaches and adaptions that would allow this problem to be solved. The project gradually progressed to becoming more fully fledged, broader - feature expansions; different sports, optional rules, different solution techniques. I almost included more sophisticated development processes - automated testing, test driven development, refining the API, and more systematic delivery of the software to my customer. Additionally I used more sophiticated software techniques - multiprocessing, design patterns, internal abstractions of the interface.
 
 This was a fascinating project to learn from, and quite rare - it's unusual to be able to prototype an algorithm, and grow it into a fully fledged project.
