@@ -1,4 +1,5 @@
 # Spherical collapse
+
 ## <small>Examining the physics behind a new scheme for laser fusion</small>
 
 ___
@@ -7,7 +8,7 @@ I examined physics underpinning laser fusion by simulating collapsing shocks thr
 
 **Skills employed:**  Hydrodynamics, time series analysis, mathematics, large dataset analysis, Linux, parallel computing, C++, Python, Cython, Matplotlib, NumPy, SciPy
 
-<div class='tallvideoWrapper'><iframe src='https://www.youtube.com/embed/SEFMIBUF26A'></iframe></div>
+<div class='tallvideoWrapper'><iframe src='https://www.youtube.com/embed/w9z8Mn9ABJE'></iframe></div>
 
 *Example simulation output, the lower half showing the shock front and top half showing a cut through of the hydrodynamic data.*
 
@@ -36,4 +37,3 @@ The most resource intensive and difficult computational challenge was finding th
 I designed and implemented this algorithm for finding the shock front, and optimised the most resource intensive parts of this Python code using a range of techniques, including exploiting natural symmetries in the geometry of the problem and the requirement that the shock front position was smoothly varying. I also used computational techniques, firstly rewriting the code in compiled Python (Cython), ensuring the code ran in stride and ensuring that the code could be simply vectorised by the compiler and libraries.
 
 I finally wrote it in such a way that could be run in parallel, and this parallelisation was effective on up to 15 nodes, after which it was processing the data faster than the simulation was producing it (a rate of 100s Gb/min).
-

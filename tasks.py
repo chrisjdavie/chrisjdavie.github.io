@@ -28,6 +28,7 @@ class Venv:
             c.run(cls._build)
 
         with cls._virtualenv(c):
+            c.run("python -m ensurepip")
             c.run("pip install --upgrade pip")
             c.run("pip install -r requirements.txt", hide=False, echo=True)
 
